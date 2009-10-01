@@ -39,6 +39,7 @@ if "%1" == "html" (
 	echo.Build finished. The HTML pages are in %BUILDDIR%/html.
 	xcopy %BUILDDIR%\html ..\doc\html /e /y
 	RMDIR %BUILDDIR% /s /q
+	rem RMDIR generated /s /q
 	goto end
 )
 
