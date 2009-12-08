@@ -265,7 +265,7 @@ class feMerge(BaseElement, CoreAttrib):
     def get_in(self):
         return self._attributes.get('in')
 
-class feMergeNode(BaseElement, CoreAttrib, FilterColorAttrib, FilterPrimitiveAttrib):
+class feMergeNode(BaseElement, CoreAttrib, FilterColorAttrib, FilterPrimitiveWithInAttrib):
     """
     Class representing the feMergeNode element of an svg doc.
     """

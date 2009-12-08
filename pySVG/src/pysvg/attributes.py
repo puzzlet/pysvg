@@ -377,7 +377,7 @@ class FilterAttrib:
     """
     The FilterAttrib class defines the Filter.attrib attribute sets.
     """
-    def set_filter(self, style):
+    def set_filter(self, filter):
         self._attributes['filter'] = filter
     
     def get_filter(self):
