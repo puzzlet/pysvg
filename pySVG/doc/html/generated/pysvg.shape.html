@@ -78,9 +78,48 @@ For licensing information please refer to license.txt</p>
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.shape.circle.getBottomLeft">
+<tt class="descname">getBottomLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getBottomLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the lower left point of the circle. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.circle.getBottomRight">
+<tt class="descname">getBottomRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getBottomRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the lower right point of the circle. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.circle.getDiameter">
+<tt class="descname">getDiameter</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getDiameter" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the diameter of the circle. Requires the radius to be a number</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.shape.circle.getElementAt">
 <tt class="descname">getElementAt</tt><big>(</big><em>pos</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getElementAt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.circle.getHeight">
+<tt class="descname">getHeight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the height of the circle. Requires the radius to be a number</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.circle.getTopLeft">
+<tt class="descname">getTopLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getTopLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the upper left point of the circle. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.circle.getTopRight">
+<tt class="descname">getTopRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getTopRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the upper right point of the circle. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.circle.getWidth">
+<tt class="descname">getWidth</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.circle.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the width of the circle. Requires the radius to be a number</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.circle.getXML">
@@ -341,6 +380,11 @@ This function can be used for debugging purposes. It is also used by getXML in S
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.shape.circle.moveToPoint">
+<tt class="descname">moveToPoint</tt><big>(</big><em>(x</em>, <em>y)</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.moveToPoint" title="Permalink to this definition">¶</a></dt>
+<dd>Moves the circle to the point x,y</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.shape.circle.quote_attrib">
 <tt class="descname">quote_attrib</tt><big>(</big><em>inStr</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.quote_attrib" title="Permalink to this definition">¶</a></dt>
 <dd>Transforms characters between xml notation and python notation.</dd></dl>
@@ -423,7 +467,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.circle.set_filter">
-<tt class="descname">set_filter</tt><big>(</big><em>style</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.set_filter" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_filter</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.set_filter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -637,8 +681,42 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.shape.ellipse.getBottomLeft">
+<tt class="descname">getBottomLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.getBottomLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the lower left point of the ellipse. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.ellipse.getBottomRight">
+<tt class="descname">getBottomRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.getBottomRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the lower right point of the ellipse. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.shape.ellipse.getElementAt">
 <tt class="descname">getElementAt</tt><big>(</big><em>pos</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.getElementAt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.ellipse.getHeight">
+<tt class="descname">getHeight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.ellipse.getTopLeft">
+<tt class="descname">getTopLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.getTopLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the upper left point of the ellipse. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.ellipse.getTopRight">
+<tt class="descname">getTopRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.getTopRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the upper right point of the ellipse. 
+Requires the radius and the coordinates to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.ellipse.getWidth">
+<tt class="descname">getWidth</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.getWidth" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -987,7 +1065,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.ellipse.set_filter">
-<tt class="descname">set_filter</tt><big>(</big><em>style</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.set_filter" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_filter</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.set_filter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1216,9 +1294,45 @@ a style including STROKE and STROKE-WIDTH</p>
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.shape.line.getBottomLeft">
+<tt class="descname">getBottomLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.line.getBottomLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the the bottom left coordinate of the line as tuple.
+Coordinates must be numbers.</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.line.getBottomRight">
+<tt class="descname">getBottomRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.line.getBottomRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the the bottom right coordinate of the line as tuple.
+Coordinates must be numbers.</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.shape.line.getElementAt">
 <tt class="descname">getElementAt</tt><big>(</big><em>pos</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.getElementAt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.line.getHeight">
+<tt class="descname">getHeight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.line.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the height of the line. This is always a positive number.
+Coordinates must be numbers.</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.line.getTopLeft">
+<tt class="descname">getTopLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.line.getTopLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the the top left coordinate of the line as tuple.
+Coordinates must be numbers.</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.line.getTopRight">
+<tt class="descname">getTopRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.line.getTopRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the the top right coordinate of the line as tuple.
+Coordinates must be numbers.</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.line.getWidth">
+<tt class="descname">getWidth</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.line.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves the width of the line. This is always a positive number.
+Coordinates must be numbers.</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.line.getXML">
@@ -1484,6 +1598,11 @@ This function can be used for debugging purposes. It is also used by getXML in S
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.shape.line.moveToPoint">
+<tt class="descname">moveToPoint</tt><big>(</big><em>(x</em>, <em>y)</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.moveToPoint" title="Permalink to this definition">¶</a></dt>
+<dd>Moves the line to the point x,y</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.shape.line.quote_attrib">
 <tt class="descname">quote_attrib</tt><big>(</big><em>inStr</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.quote_attrib" title="Permalink to this definition">¶</a></dt>
 <dd>Transforms characters between xml notation and python notation.</dd></dl>
@@ -1556,7 +1675,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.line.set_filter">
-<tt class="descname">set_filter</tt><big>(</big><em>style</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.set_filter" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_filter</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.set_filter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2195,7 +2314,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.path.set_filter">
-<tt class="descname">set_filter</tt><big>(</big><em>style</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.set_filter" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_filter</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.set_filter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2749,7 +2868,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.polygon.set_filter">
-<tt class="descname">set_filter</tt><big>(</big><em>style</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.set_filter" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_filter</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.set_filter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3288,7 +3407,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.polyline.set_filter">
-<tt class="descname">set_filter</tt><big>(</big><em>style</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.set_filter" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_filter</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.set_filter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3502,9 +3621,49 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.shape.rect.getBottomLeft">
+<tt class="descname">getBottomLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.rect.getBottomLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the lower left point of the rect. 
+Requires the coordinates, width, height to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.rect.getBottomRight">
+<tt class="descname">getBottomRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.rect.getBottomRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the lower right point of the rect. 
+Requires the coordinates, width, height to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.rect.getEdgePoints">
+<tt class="descname">getEdgePoints</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.rect.getEdgePoints" title="Permalink to this definition">¶</a></dt>
+<dd>Returns a list with the coordinates of the points at the edge of the rectangle as tuples.
+e.g.[(x1,y1),(x2,y2)]
+The sorting is counterclockwise starting with the lower left corner.
+Coordinates must be numbers or an exception will be thrown.</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.shape.rect.getElementAt">
 <tt class="descname">getElementAt</tt><big>(</big><em>pos</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.getElementAt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.rect.getInnerEdgePoints">
+<tt class="descname">getInnerEdgePoints</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.rect.getInnerEdgePoints" title="Permalink to this definition">¶</a></dt>
+<dd>Returns a list with the coordinates of the points at the inner edge of a rounded rectangle as tuples.
+e.g.[(x1,y1),(x2,y2)]
+The sorting is counterclockwise starting with the lower left corner.
+Coordinates must be numbers or an exception will be thrown.</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.rect.getTopLeft">
+<tt class="descname">getTopLeft</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.rect.getTopLeft" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the upper left point of the rect. 
+Requires the coordinates, width, height to be numbers</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.rect.getTopRight">
+<tt class="descname">getTopRight</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.shape.rect.getTopRight" title="Permalink to this definition">¶</a></dt>
+<dd>Retrieves a tuple with the x,y coordinates of the upper right point of the rect. 
+Requires the coordinates, width, height to be numbers</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.rect.getXML">
@@ -3780,6 +3939,11 @@ This function can be used for debugging purposes. It is also used by getXML in S
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.shape.rect.moveToPoint">
+<tt class="descname">moveToPoint</tt><big>(</big><em>(x</em>, <em>y)</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.moveToPoint" title="Permalink to this definition">¶</a></dt>
+<dd>Moves the rect to the point x,y</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.shape.rect.quote_attrib">
 <tt class="descname">quote_attrib</tt><big>(</big><em>inStr</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.quote_attrib" title="Permalink to this definition">¶</a></dt>
 <dd>Transforms characters between xml notation and python notation.</dd></dl>
@@ -3852,7 +4016,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.rect.set_filter">
-<tt class="descname">set_filter</tt><big>(</big><em>style</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.set_filter" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_filter</tt><big>(</big><em>filter</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.set_filter" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
