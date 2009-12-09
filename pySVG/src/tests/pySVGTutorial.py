@@ -113,7 +113,6 @@ def RadialGradient():
     mySVG.save('./testoutput/9_RadialGradient.svg')
 
 def Grouping():
-    oh = ShapeBuilder()
     s = svg()
   
     #testing container
