@@ -12,6 +12,45 @@ from pysvg.style import *
 from pysvg.text import *
 from pysvg.builders import *
 
+class MyDropShadow(filter):    
+    def __init__(self):
+        filter.__init__(self)
+        self.set_x('-0.25')
+        self.set_y('-0.25')
+        self.set_width(3)
+        self.set_height(3)
+        self.set_id('MyDropShadow')
+        self.myGauss = feGaussianBlur()
+        self.myGauss.set_id('DropShadowGauss')
+        self.myGauss.set_stdDeviation(1.0)
+        self.myGauss.set_in('SourceAlpha')
+        self.myGauss.set_result('blur')
+        self.addElement(self.myGauss)
+        self.feColorMatrix = feColorMatrix()
+        self.feColorMatrix.set_id('DropShadowColorMatrix')
+        self.feColorMatrix.set_result('bluralpha')
+        self.feColorMatrix.set_type('matrix')
+        self.feColorMatrix.set_values('1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.500000 0 ')
+        self.addElement(self.feColorMatrix)
+        self.feOffset = feOffset()
+        self.feOffset.set_id('DropShadowOffset')
+        self.feOffset.set_dx(1.0)
+        self.feOffset.set_dy(1.0)
+        self.feOffset.set_in('bluralpha')
+        self.feOffset.set_result('offsetBlur')
+        self.addElement(self.feOffset)
+        self.feMerge = feMerge()
+        self.feMerge.set_id('DropShadowMerge')
+        self.addElement(self.feMerge)
+        self.firstFeMergeNode = feMergeNode()
+        self.feMerge.addElement(self.firstFeMergeNode)
+        self.firstFeMergeNode.set_id('DropShadowMergeNode1')
+        self.firstFeMergeNode.set_in('offsetBlur')
+        self.secondFeMergeNode = feMergeNode()
+        self.feMerge.addElement(self.secondFeMergeNode)
+        self.secondFeMergeNode.set_id('DropShadowMergeNode2')
+        self.secondFeMergeNode.set_in('SourceGraphic')
+
 
 def Image():
   s = svg()
@@ -105,6 +144,10 @@ def Grouping():
 def ComplexShapes():
   oh=ShapeBuilder()
   mySVG=svg("test")
+  d = defs()
+  d.addElement(MyDropShadow())
+  mySVG.addElement(d)
+
   pl=oh.createPolyline(points="50,375 150,375 150,325 250,325 250,375 350,375 350,250 450,250 450,375 \
 550,375 550,175 650,175 650,375 750,375 750,100 850,100 850,375 950,375 \
 950,25 1050,25 1050,375 1150,375 ",strokewidth=10, stroke='blue')
@@ -112,6 +155,7 @@ def ComplexShapes():
   
   pointsAsTuples=[(350,75),(379,161),(469,161),(397,215),(423,301),(350,250),(277,301),(303,215),(231,161),(321,161)]
   pg=oh.createPolygon(points=oh.convertTupleArrayToPoints(pointsAsTuples),strokewidth=10, stroke='blue', fill='red')
+  pg.set_filter('url(#MyDropShadow)')
   mySVG.addElement(pg)
  
   sh=StyleBuilder()
