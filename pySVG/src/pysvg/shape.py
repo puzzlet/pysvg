@@ -5,9 +5,8 @@
 For licensing information please refer to license.txt
 '''
 from attributes import *
-from core import *
+from core import BaseElement, BaseShape, PointAttrib, DimensionAttrib, PointToAttrib
 
-  
         
 class rect(BaseShape, PointAttrib, DimensionAttrib):
     """
@@ -31,6 +30,70 @@ class rect(BaseShape, PointAttrib, DimensionAttrib):
         self._attributes['ry']=ry
     def get_ry(self):
         return self._attributes.get('ry')
+    
+    #extra methods. Methods do rely on number values in the attributes. You might get an exception else!
+    def getEdgePoints(self):
+        """
+        Returns a list with the coordinates of the points at the edge of the rectangle as tuples.
+        e.g.[(x1,y1),(x2,y2)]
+        The sorting is counterclockwise starting with the lower left corner.
+        Coordinates must be numbers or an exception will be thrown.
+        """
+        result = [(float(self.get_x()),float(self.get_y()))]
+        result.append((float(self.get_x())+float(self.get_width()),float(self.get_y())))
+        result.append((float(self.get_x())+float(self.get_width()),float(self.get_y())+float(self.get_height())))
+        result.append((float(self.get_x()),float(self.get_y())+float(self.get_height())))
+        return result
+        
+    def getInnerEdgePoints(self):
+        """
+        Returns a list with the coordinates of the points at the inner edge of a rounded rectangle as tuples.
+        e.g.[(x1,y1),(x2,y2)]
+        The sorting is counterclockwise starting with the lower left corner.
+        Coordinates must be numbers or an exception will be thrown.
+        """
+        result = []
+        result.append((float(self.get_x()) + float(self.get_rx()), float(self.get_y()) + float(self.get_ry())))
+        result.append((float(self.get_x()) + float(self.get_width()) - float(self.get_rx()), float(self.get_y()) + float(self.get_ry())))
+        result.append((float(self.get_x()) + float(self.get_width()) - float(self.get_rx()), float(self.get_y()) + float(self.get_height()) - float(self.get_ry())))
+        result.append((float(self.get_x()) + float(self.get_rx()), float(self.get_y()) + float(self.get_height()) - float(self.get_ry())))
+        return result
+    
+    def getBottomLeft(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the lower left point of the rect. 
+        Requires the coordinates, width, height to be numbers
+        """
+        return (float(self.get_x()), float(self.get_y()))
+    
+    def getBottomRight(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the lower right point of the rect. 
+        Requires the coordinates, width, height to be numbers
+        """
+        return (float(self.get_x()) + float(self.get_width()), float(self.get_y()))
+
+    def getTopLeft(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the upper left point of the rect. 
+        Requires the coordinates, width, height to be numbers
+        """
+        return (float(self.get_x()), float(self.get_y())+ float(self.get_height()))
+    
+    def getTopRight(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the upper right point of the rect. 
+        Requires the coordinates, width, height to be numbers
+        """
+        return (float(self.get_x()) + float(self.get_width()), float(self.get_y()) + float(self.get_height()))
+    
+    def moveToPoint(self, (x,y)):
+        """
+        Moves the rect to the point x,y
+        """
+        self.set_x(float(self.get_x()) + float(x))
+        self.set_y(float(self.get_y()) + float(y))
+
 
 class circle(BaseShape):
     """
@@ -56,6 +119,60 @@ class circle(BaseShape):
         self._attributes['r']=r
     def get_r(self):
         return self._attributes.get('r')
+    
+    #extra methods. Methods do rely on number values in the attributes. You might get an exception else!
+    def getDiameter(self):
+        """
+        Retrieves the diameter of the circle. Requires the radius to be a number
+        """
+        return 2 * float(self.get_r())
+
+    def getWidth(self):
+        """
+        Retrieves the width of the circle. Requires the radius to be a number
+        """
+        return self.getDiameter()
+
+    def getHeight(self):
+        """
+        Retrieves the height of the circle. Requires the radius to be a number
+        """
+        return self.getDiameter()
+
+    def getBottomLeft(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the lower left point of the circle. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) - float(self.get_r()), float(self.get_cy()) - float(self.get_r()))
+    
+    def getBottomRight(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the lower right point of the circle. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) + float(self.get_r()), float(self.get_cy()) - float(self.get_r()))
+
+    def getTopLeft(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the upper left point of the circle. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) - float(self.get_r()), float(self.get_cy()) + float(self.get_r()))
+    
+    def getTopRight(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the upper right point of the circle. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) + float(self.get_r()), float(self.get_cy()) + float(self.get_r()))
+    
+    def moveToPoint(self, (x,y)):
+        """
+        Moves the circle to the point x,y
+        """
+        self.set_cx(float(self.get_cx()) + float(x))
+        self.set_cy(float(self.get_cy()) + float(y))
 
 class ellipse(BaseShape):
     """
@@ -88,6 +205,41 @@ class ellipse(BaseShape):
     def get_ry(self):
         return self._attributes.get('ry')
 
+    #extra methods. Methods do rely on number values in the attributes. You might get an exception else!
+    def getWidth(self):
+        return abs(2 * float(self.get_rx()))
+
+    def getHeight(self):
+        return abs(2 * float(self.get_ry()))
+
+    def getBottomLeft(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the lower left point of the ellipse. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) - float(self.get_rx()), float(self.get_cy()) - float(self.get_ry()))
+    
+    def getBottomRight(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the lower right point of the ellipse. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) + float(self.get_rx()), float(self.get_cy()) - float(self.get_ry()))
+
+    def getTopLeft(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the upper left point of the ellipse. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) - float(self.get_rx()), float(self.get_cy()) + float(self.get_ry()))
+    
+    def getTopRight(self):
+        """
+        Retrieves a tuple with the x,y coordinates of the upper right point of the ellipse. 
+        Requires the radius and the coordinates to be numbers
+        """
+        return (float(self.get_cx()) + float(self.get_rx()), float(self.get_cy()) + float(self.get_ry()))
+    
 class line(BaseShape, PointToAttrib):
     """
     Class representing the line element of an svg doc.
@@ -132,7 +284,110 @@ class line(BaseShape, PointToAttrib):
     def get_y2(self):
         return self._attributes.get('y2')
 
+    #extra methods. Methods do rely on number values in the attributes. You might get an exception else!
+    def getWidth(self):
+        """
+        Retrieves the width of the line. This is always a positive number.
+        Coordinates must be numbers.
+        """
+        return abs(float(self.get_x1()) - float(self.get_x2()))
+
+    def getHeight(self):
+        """
+        Retrieves the height of the line. This is always a positive number.
+        Coordinates must be numbers.
+        """
+        return abs(float(self.get_y1()) - float(self.get_y2()))
+
+    def getBottomLeft(self):
+        """
+        Retrieves the the bottom left coordinate of the line as tuple.
+        Coordinates must be numbers.
+        """
+        x1 = float(self.get_x1())
+        x2 = float(self.get_x2())
+        y1 = float(self.get_y1())
+        y2 = float(self.get_y2())
+        if x1 < x2:
+            if y1 < y2:
+                return (x1, y1)
+            else:
+                return (x1, y2)
+        else:
+            if y1 < y2:
+                return (x2, y1)
+            else:
+                return (x2, y2)
+
+    def getBottomRight(self):
+        """
+        Retrieves the the bottom right coordinate of the line as tuple.
+        Coordinates must be numbers.
+        """
+        x1 = float(self.get_x1())
+        x2 = float(self.get_x2())
+        y1 = float(self.get_y1())
+        y2 = float(self.get_y2())
+        if x1 < x2:
+            if y1 < y2:
+                return (x2, y1)
+            else:
+                return (x2, y2)
+        else:
+            if y1 < y2:
+                return (x1, y1)
+            else:
+                return (x1, y2)
+
+    def getTopRight(self):
+        """
+        Retrieves the the top right coordinate of the line as tuple.
+        Coordinates must be numbers.
+        """
+        x1 = float(self.get_x1())
+        x2 = float(self.get_x2())
+        y1 = float(self.get_y1())
+        y2 = float(self.get_y2())
+        if x1 < x2:
+            if y1 < y2:
+                return (x2, y2)
+            else:
+                return (x2, y1)
+        else:
+            if y1 < y2:
+                return (x1, y2)
+            else:
+                return (x1, y1)
+            
+    def getTopLeft(self):
+        """
+        Retrieves the the top left coordinate of the line as tuple.
+        Coordinates must be numbers.
+        """
+        x1 = float(self.get_x1())
+        x2 = float(self.get_x2())
+        y1 = float(self.get_y1())
+        y2 = float(self.get_y2())
+        if x1 < x2:
+            if y1 < y2:
+                return (x1, y2)
+            else:
+                return (x1, y1)
+        else:
+            if y1 < y2:
+                return (x2, y2)
+            else:
+                return (x2, y1)
     
+    def moveToPoint(self, (x,y)):
+        """
+        Moves the line to the point x,y
+        """
+        self.set_x1(float(self.get_x1()) + float(x))
+        self.set_x2(float(self.get_x2()) + float(x))
+        self.set_y1(float(self.get_y1()) + float(y))
+        self.set_y2(float(self.get_y2()) + float(y))
+        
 class path(BaseShape, ExternalAttrib, MarkerAttrib):
     """
     Class representing the path element of an svg doc.
