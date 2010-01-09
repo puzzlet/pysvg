@@ -3,6 +3,7 @@
 
 from pysvg.structure import *
 from pysvg.builders import *
+from pysvg.gradient import pattern
 
 #actions not working
 def createText(content, x,y, actions=None):
@@ -227,11 +228,7 @@ def getRadialGradient():
     return rg
     
 """
-  <!-- Muster -->
-  <rect x="400" y="520" width="150" height="50" style="fill: url(#muster1)"/>
-  
-
-  <!-- Animation -->
+   <!-- Animation -->
   <rect x="600" y="360" width="0" height="20" style="fill: #F00; fill-opacity: 0.6">
     <animate attributeType="XML" attributeName="width" begin="0s" dur="10s" fill="freeze" from="0" to="180"/>
   </rect>
@@ -258,15 +255,46 @@ def createImageAndLink():
     elements.append(myHyperlink)
     return elements
 
+def createDefs():
+    d = defs()
+    
+    """
+    <pattern id="muster1" height="20" width="20" patternUnits="userSpaceOnUse" y="0" x="0"  >
+    <rect style="fill: #00C" height="10" width="10" y="0" x="0"  />
+    </pattern>
+    """
+  
+    p = pattern(0,0,20,20,"userSpaceOnUse")
+    p.set_id("muster1")
+    
+    r = rect(0, 0, 10, 10)
+    r.set_style("fill: #00C")
+    p.addElement(r)
+    d.addElement(p)
+    return d
+   
+
+def createPattern():
+    """
+    <!--  Muster  -->
+    <rect style="fill: url(#muster1)" height="50" width="150" y="520" x="400"  />
+    """
+    r = rect(400, 520, 150, 50)
+    r.set_style("fill: url(#muster1)")
+    return r
+  
+    
 def main():
   s=svg(height="100%", width="100%")
   s.set_viewBox("0 0 950 630")
+  s.addElement(createDefs())
   for element in createMainBorderAndTexts():
     s.addElement(element)
   for element in createShapes():
     s.addElement(element)
   for element in createImageAndLink():
     s.addElement(element)
+  s.addElement(createPattern())
   print s.getXML()
   s.save('./testoutput/testDefaultpySVGScreen.svg')
 if __name__ == '__main__': 
