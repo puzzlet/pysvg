@@ -119,6 +119,7 @@ class Turtle(object):
         """ Raises the pen. Any movement will not draw lines till pen is lowered again.
         """
         self._penDown = False
+        self._addPolylineToElements()
     
     def penDown(self):
         """ Lowers the pen down again. A new polyline will be created for drawing.

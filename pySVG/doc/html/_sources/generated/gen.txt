@@ -15,3 +15,4 @@
    generated\pysvg.structure
    generated\pysvg.style
    generated\pysvg.text
+   generated\pysvg.turtle
