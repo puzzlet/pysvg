@@ -118,13 +118,15 @@ class Turtle(object):
     def penUp(self):
         """ Raises the pen. Any movement will not draw lines till pen is lowered again.
         """
-        self._penDown = False
-        self._addPolylineToElements()
+        if self._penDown==True:
+            self._penDown = False
+            self._addPolylineToElements()
     
     def penDown(self):
         """ Lowers the pen down again. A new polyline will be created for drawing.
         Old polylines will be stored in the stack
         """
+        #if self._penDown==False:
         self._penDown = True
         self._addPolylineToElements()
     
@@ -142,6 +144,16 @@ class Turtle(object):
         """ Retrieve current position of the turtle.(Vector)
         """
         return self._position
+    
+    def getOrientation(self):
+        """ Retrieve current orientation of the turtle.(Vector)
+        """
+        return self._orient
+    
+    def setOrientation(self, vec):
+        """ Sets the orientation of the turtle.(Vector)
+        """
+        self._orient=vec
     
     def _move(self, distance):
         """ Moves the turtle by distance in the direction it is facing. 
