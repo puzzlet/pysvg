@@ -4,7 +4,7 @@
 (C) 2008, 2009 Kerim Mansour
 For licensing information please refer to license.txt
 '''
-from attributes import *
+from attributes import CoreAttrib, ConditionalAttrib, StyleAttrib, GraphicalEventsAttrib, PaintAttrib, OpacityAttrib, GraphicsAttrib, CursorAttrib, FilterAttrib, MaskAttrib, ClipAttrib
 
 
 class TextContent:

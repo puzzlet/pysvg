@@ -5,7 +5,7 @@
 For licensing information please refer to license.txt
 '''
 from attributes import *
-from core import *
+from core import BaseElement
 
   
         

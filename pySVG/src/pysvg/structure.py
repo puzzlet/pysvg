@@ -7,7 +7,7 @@ This module includes the elements found in http://www.w3.org/TR/SVG/struct.html
 For licensing information please refer to license.txt
 '''
 from attributes import *
-from core import *
+from core import BaseElement, PointAttrib, DimensionAttrib
 
   
         
