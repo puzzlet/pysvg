@@ -186,3 +186,21 @@ class switch(BaseElement, CoreAttrib, ConditionalAttrib, StyleAttrib, Presentati
         self._attributes['transform']=transform
     def get_transform(self):
         return self._attributes.get('transform') 
+
+class clipPath(BaseElement, CoreAttrib, ConditionalAttrib, StyleAttrib, ExternalAttrib, PresentationAttributes_All, GraphicalEventsAttrib):
+    """
+    Class representing the clipPath element of an svg doc.
+    """
+    def __init__(self, ):
+        BaseElement.__init__(self,'clipPath')
+    
+    def set_transform(self, transform):
+        self._attributes['transform']=transform
+    def get_transform(self):
+        return self._attributes.get('transform') 
+    
+    def set_clipPathUnits(self, clipPathUnits):
+        self._attributes['clipPathUnits']=clipPathUnits
+        
+    def get_clipPathUnits(self):
+        return self._attributes['clipPathUnits']
