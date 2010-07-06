@@ -40,7 +40,7 @@ class feComponentTransfer(BaseElement, CoreAttrib, FilterColorAttrib, FilterPrim
     """
     Class representing the feComponentTransfer element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self):
         BaseElement.__init__(self,'feComponentTransfer')
         
 
@@ -129,8 +129,17 @@ class feConvolveMatrix(feComponentTransfer):
     """
     Class representing the feConvolveMatrix element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, order=None, kernelMatrix=None, divisor=None, bias=None, targetX=None, targetY=None, edgeMode=None, kernelUnitLength=None, preserveAlpha=None ):
         BaseElement.__init__(self,'feConvolveMatrix')
+        self.set_order(order)
+        self.set_kernelMatrix(kernelMatrix)
+        self.set_divisor(divisor)
+        self.set_bias(bias)
+        self.set_targetX(targetX)
+        self.set_targetY(targetY)
+        self.set_edgeMode(edgeMode)
+        self.set_kernelUnitLength(kernelUnitLength)
+        self.set_preserveAlpha(preserveAlpha)
     
     def set_order(self, order):
         self._attributes['order']=order
@@ -181,8 +190,11 @@ class feDiffuseLighting(feComponentTransfer, StyleAttrib, PaintAttrib, Presentat
     """
     Class representing the feDiffuseLighting element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, surfaceScale=None, diffuseConstant=None, kernelUnitLength=None ):
         BaseElement.__init__(self,'feDiffuseLighting')
+        self.set_surfaceScale(surfaceScale)
+        self.set_diffuseConstant(diffuseConstant)
+        self.set_kernelUnitLength(kernelUnitLength)
     
     def set_surfaceScale(self, surfaceScale):
         self._attributes['surfaceScale']=surfaceScale
@@ -203,8 +215,12 @@ class feDisplacementMap(feComponentTransfer):
     """
     Class representing the feDisplacementMap element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, in2=None, scale=None,  xChannelSelector=None, yChannelSelector=None):
         BaseElement.__init__(self,'feDisplacementMap')
+        self.set_in2(in2)
+        self.set_scale(scale)
+        self.set_xChannelSelector(xChannelSelector)
+        self.set_yChannelSelector(yChannelSelector)
     
     def set_in2(self, in2):
         self._attributes['in2']=in2
@@ -230,15 +246,26 @@ class feFlood(feComponentTransfer, StyleAttrib, PaintAttrib, PresentationAttribu
     """
     Class representing the feFlood element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self,  x=None, y=None, width=None, height=None, flood_color=None, flood_opacity=None):
         BaseElement.__init__(self,'feFlood')
+        self.set_x(x)
+        self.set_y(y)
+        self.set_height(height)
+        self.set_width(width)
+        self.set_flood_color(flood_color)
+        self.set_flood_opacity(flood_opacity)
     
 class feGaussianBlur(feComponentTransfer):
     """
     Class representing the feGaussianBlur element of an svg doc.
     """
-    def __init__(self, stdDeviation=None):
+    def __init__(self, inValue=None, x=None, y=None, width=None, height=None, stdDeviation=None):
         BaseElement.__init__(self,'feGaussianBlur')
+        self.set_x(x)
+        self.set_y(y)
+        self.set_height(height)
+        self.set_width(width)
+        self.set_in(inValue)
         self.set_stdDeviation(stdDeviation)
         
     def set_stdDeviation(self, stdDeviation):
@@ -250,35 +277,47 @@ class feImage(BaseElement, CoreAttrib, XLinkAttrib, FilterColorAttrib, FilterPri
     """
     Class representing the feImage element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, xlink_href=None, x=None, y=None, width=None, height=None, result=None):
         BaseElement.__init__(self,'feImage')
+        self.set_xlink_href(xlink_href)
+        self.set_x(x)
+        self.set_y(y)
+        self.set_height(height)
+        self.set_width(width)
+        self.set_result(result)
 
 class feMerge(BaseElement, CoreAttrib):
     """
     Class representing the feMerge element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, x=None, y=None, width=None, height=None):
         BaseElement.__init__(self,'feMerge')
- 
-    def set_in(self, inValue):
-        self._attributes['in']=inValue
-    def get_in(self):
-        return self._attributes.get('in')
-
+        self.set_x(x)
+        self.set_y(y)
+        self.set_height(height)
+        self.set_width(width)
+       
 class feMergeNode(BaseElement, CoreAttrib, FilterColorAttrib, FilterPrimitiveWithInAttrib):
     """
     Class representing the feMergeNode element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, inValue=None):
         BaseElement.__init__(self,'feMergeNode')
+        self.set_in(inValue)
 
 class feMorphology(feComponentTransfer):
     """
     Class representing the feMorphology element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, x=None, y=None, width=None, height=None, operator=None, radius=None):
         BaseElement.__init__(self,'feMorphology')
-    
+        self.set_x(x)
+        self.set_y(y)
+        self.set_height(height)
+        self.set_width(width)
+        self.set_operator(operator)
+        self.set_radius(radius)
+        
     def set_operator(self, operator):
         self._attributes['operator']=operator
     def get_operator(self):
@@ -293,8 +332,11 @@ class feOffset(feComponentTransfer, DeltaPointAttrib):
     """
     Class representing the feOffset element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, inValue=None, dx=None, dy=None):
         BaseElement.__init__(self,'feOffset')
+        self.set_in(inValue)
+        self.set_dx(dx)
+        self.set_dy(dy)
 
 class feSpecularLighting(feComponentTransfer, StyleAttrib, PaintAttrib, PresentationAttributes_LightingEffects):
     """
