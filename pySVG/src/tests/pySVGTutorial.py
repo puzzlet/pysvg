@@ -228,7 +228,7 @@ def TextFeatures():
     s.addElement(t1)
     s.addElement(t2)
   
-    r = rect(350, 250, 100, 100)
+    r = rect(350, 250, 100, 100, id="myRect")
     r.set_fill("green")
     s.addElement(r)
   

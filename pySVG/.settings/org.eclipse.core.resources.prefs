@@ -1,4 +1,4 @@
-#Sat Feb 13 08:37:32 CET 2010
+#Tue Jul 20 09:44:17 CEST 2010
 eclipse.preferences.version=1
 encoding//conf/conf.py=utf-8
 encoding//src/pysvg/animate.py=iso-8859-1
@@ -16,6 +16,7 @@ encoding//src/pysvg/style.py=iso-8859-1
 encoding//src/pysvg/text.py=iso-8859-1
 encoding//src/tests/pySVGLogo.py=iso-8859-1
 encoding//src/tests/pySVGTutorial.py=iso-8859-1
+encoding//src/tests/testClipPath.py=iso-8859-1
 encoding//src/tests/testDefaultpySVGScreen.py=iso-8859-1
 encoding//src/tests/testIterations.py=iso-8859-1
 encoding//src/tests/testSpiral.py=iso-8859-1

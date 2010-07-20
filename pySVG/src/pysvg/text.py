@@ -25,8 +25,9 @@ class glyphRef(BaseElement, CoreAttrib, ExternalAttrib, StyleAttrib, FontAttrib,
     """
     Class representing the glyphRef element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, **kwargs):
         BaseElement.__init__(self,'glyphRef')
+        self.setKWARGS(**kwargs)
     
     def set_glyphRef(self, glyphRef):
         self._attributes['glyphRef']=glyphRef

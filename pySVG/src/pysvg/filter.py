@@ -286,7 +286,7 @@ class feImage(BaseElement, CoreAttrib, XLinkAttrib, FilterColorAttrib, FilterPri
         self.set_width(width)
         self.set_result(result)
 
-class feMerge(BaseElement, CoreAttrib):
+class feMerge(BaseElement, CoreAttrib, FilterPrimitiveAttrib):
     """
     Class representing the feMerge element of an svg doc.
     """

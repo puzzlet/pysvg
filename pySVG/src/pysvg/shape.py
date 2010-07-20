@@ -12,7 +12,7 @@ class rect(BaseShape, PointAttrib, DimensionAttrib):
     """
     Class representing the rect element of an svg doc.
     """
-    def __init__(self, x=None, y=None, width=None, height=None, rx=None, ry=None):
+    def __init__(self, x=None, y=None, width=None, height=None, rx=None, ry=None, **kwargs):
         BaseElement.__init__(self,'rect')
         self.set_x(x)
         self.set_y(y)
@@ -20,6 +20,7 @@ class rect(BaseShape, PointAttrib, DimensionAttrib):
         self.set_width(width)
         self.set_rx(rx)
         self.set_ry(ry)
+        self.setKWARGS(**kwargs)
         
     def set_rx(self, rx):
         self._attributes['rx']=rx
@@ -99,11 +100,12 @@ class circle(BaseShape):
     """
     Class representing the circle element of an svg doc.
     """
-    def __init__(self, cx=None,cy=None,r=None):
+    def __init__(self, cx=None,cy=None,r=None, **kwargs):
         BaseElement.__init__(self,'circle')
         self.set_cx(cx)
         self.set_cy(cy)
         self.set_r(r)
+        self.setKWARGS(**kwargs)
     
     def set_cx(self, cx):
         self._attributes['cx']=cx
@@ -178,12 +180,13 @@ class ellipse(BaseShape):
     """
     Class representing the ellipse element of an svg doc.
     """
-    def __init__(self, cx=None,cy=None,rx=None,ry=None):
+    def __init__(self, cx=None,cy=None,rx=None,ry=None, **kwargs):
         BaseElement.__init__(self,'ellipse')
         self.set_cx(cx)
         self.set_cy(cy)
         self.set_rx(rx)
         self.set_ry(ry)
+        self.setKWARGS(**kwargs)
         
     def set_cx(self, cx):
         self._attributes['cx']=cx
@@ -246,7 +249,7 @@ class line(BaseShape, PointToAttrib):
     Note that this element is NOT painted VISIBLY by default UNLESS you provide
     a style including STROKE and STROKE-WIDTH
     """
-    def __init__(self, X1=None, Y1=None, X2=None, Y2=None):
+    def __init__(self, X1=None, Y1=None, X2=None, Y2=None, **kwargs):
         """
         Creates a line
         @type  X1: string or int
@@ -263,6 +266,7 @@ class line(BaseShape, PointToAttrib):
         self.set_y1(Y1)
         self.set_x2(X2)
         self.set_y2(Y2)
+        self.setKWARGS(**kwargs)
         
     def set_x1(self, x1):
         self._attributes['x1']=x1
@@ -392,13 +396,14 @@ class path(BaseShape, ExternalAttrib, MarkerAttrib):
     """
     Class representing the path element of an svg doc.
     """
-    def __init__(self, pathData="",pathLength=None,style=None, focusable=None):
+    def __init__(self, pathData="",pathLength=None, style=None, focusable=None, **kwargs):
         BaseElement.__init__(self,'path')
         if pathData!='' and not pathData.endswith(' '):
             pathData+=' '
         self.set_d(pathData)
         if style!=None:
             self.set_style(style)
+        self.setKWARGS(**kwargs)
 
     def set_d(self, d):
         self._attributes['d']=d
@@ -456,9 +461,10 @@ class polyline(BaseShape):
     """
     Class representing the polyline element of an svg doc.
     """
-    def __init__(self, points=None):
+    def __init__(self, points=None, **kwargs):
         BaseElement.__init__(self,'polyline')
         self.set_points(points)
+        self.setKWARGS(**kwargs)
         
     def set_points(self, points):
         self._attributes['points']=points
@@ -469,6 +475,7 @@ class polygon(polyline):
     """
     Class representing the polygon element of an svg doc.
     """
-    def __init__(self, points=None):
+    def __init__(self, points=None, **kwargs):
         BaseElement.__init__(self,'polygon')
         self.set_points(points)
+        self.setKWARGS(**kwargs)

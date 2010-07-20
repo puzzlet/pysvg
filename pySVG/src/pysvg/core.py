@@ -78,6 +78,20 @@ class BaseElement:
     def getAttribute(self, attribute_name):
         return self._attributes.get(attribute_name)
 
+    def setKWARGS(self, **kwargs):
+        """ 
+        Used to set all attributes given in a **kwargs parameter.
+        Might throw an Exception if attribute was not found.
+        #TODO: check if we should fix this using "setAttribute"
+        """
+        for key in kwargs.keys():
+            #try:
+            f = getattr(self,'set_' + key)
+            f(kwargs[key])
+            #except:
+            #    print('attribute not found via setter ')
+            #    self.setAttribute(self, key, kwargs[key])
+            
     def wrap_xml(self, xml):
         """
         Method that provides a standard svg header string for a file
