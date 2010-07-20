@@ -61,12 +61,14 @@ pysvg.text.altGlyph.set_style method generated/pysvg.text.html
 pysvg.animate.set.get_shape_rendering method generated/pysvg.animate.html
 pysvg.structure.use.get_visibility method generated/pysvg.structure.html
 pysvg.structure.title.quote_attrib method generated/pysvg.structure.html
+pysvg.animate.animateTransform.set_fill_rule method generated/pysvg.animate.html
 pysvg.filter.feConvolveMatrix.get_preserveAlpha method generated/pysvg.filter.html
 pysvg.core.BaseShape.get_requiredFeatures method generated/pysvg.core.html
 pysvg.animate.animateColor.get_fill_rule method generated/pysvg.animate.html
 pysvg.shape.polygon.get_class method generated/pysvg.shape.html
 pysvg.structure.defs.get_shape_rendering method generated/pysvg.structure.html
 pysvg.filter.feImage.set_xml_lang method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_font_stretch method generated/pysvg.structure.html
 pysvg.filter.filter.get_text_decoration method generated/pysvg.filter.html
 pysvg.text.text.get_font_style method generated/pysvg.text.html
 pysvg.structure.defs.set_font_size method generated/pysvg.structure.html
@@ -91,6 +93,7 @@ pysvg.structure.svg.get_font_family method generated/pysvg.structure.html
 pysvg.structure.image.get_color_rendering method generated/pysvg.structure.html
 pysvg.animate.animateMotion.get_by method generated/pysvg.animate.html
 pysvg.shape.polygon.get_stroke_linecap method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_clip method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_All.set_stroke_miterlimit method generated/pysvg.attributes.html
 pysvg.linking.a.set_letter_spacing method generated/pysvg.linking.html
 pysvg.gradient.linearGradient.get_xml_lang method generated/pysvg.gradient.html
@@ -143,7 +146,9 @@ pysvg.gradient.radialGradient.addElement method generated/pysvg.gradient.html
 pysvg.shape.line.set_stroke method generated/pysvg.shape.html
 pysvg.animate.animateColor.set_xml_space method generated/pysvg.animate.html
 pysvg.filter.filter.set_stop_color method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_stroke_opacity method generated/pysvg.structure.html
 pysvg.builders.StyleBuilder.setViewPortFill method generated/pysvg.builders.html
+pysvg.structure.clipPath.get_color_interpolation method generated/pysvg.structure.html
 pysvg.structure.g.__init__ method generated/pysvg.structure.html
 pysvg.gradient.pattern.set_font_variant method generated/pysvg.gradient.html
 pysvg.structure.symbol.get_xml_base method generated/pysvg.structure.html
@@ -201,7 +206,7 @@ pysvg.animate.set.get_color method generated/pysvg.animate.html
 pysvg.filter.feMorphology.setAttribute method generated/pysvg.filter.html
 pysvg.text.tspan.get_stroke_width method generated/pysvg.text.html
 pysvg.gradient.linearGradient.set_xlink_actuate method generated/pysvg.gradient.html
-pysvg.text.glyphRef.set_font_variant method generated/pysvg.text.html
+pysvg.structure.clipPath.get_stroke_width method generated/pysvg.structure.html
 pysvg.structure.g.set_flood_color method generated/pysvg.structure.html
 pysvg.filter.feFlood.set_id method generated/pysvg.filter.html
 pysvg.filter.feFlood.set_in method generated/pysvg.filter.html
@@ -266,12 +271,13 @@ pysvg.shape.ellipse.set_cx method generated/pysvg.shape.html
 pysvg.shape.ellipse.set_cy method generated/pysvg.shape.html
 pysvg.structure.symbol.set_preserveAspectRatio method generated/pysvg.structure.html
 pysvg.linking.a.set_overflow method generated/pysvg.linking.html
-pysvg.shape.polyline.set_xml_base method generated/pysvg.shape.html
+pysvg.filter.feImage.get_xlink_arcrole method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.set_stroke_dashoffset method generated/pysvg.gradient.html
 pysvg.filter.feFuncA.quote_attrib method generated/pysvg.filter.html
 pysvg.shape.polygon.set_systemLanguage method generated/pysvg.shape.html
 pysvg.shape.polygon.set_onmouseup method generated/pysvg.shape.html
 pysvg.filter.feConvolveMatrix.getElementAt method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_color method generated/pysvg.structure.html
 pysvg.filter.filter.get_opacity method generated/pysvg.filter.html
 pysvg.structure.svg.get_contentScriptType method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_Graphics.get_filter method generated/pysvg.attributes.html
@@ -281,6 +287,7 @@ pysvg.filter.feComposite.set_width method generated/pysvg.filter.html
 pysvg.structure.symbol.get_fill_rule method generated/pysvg.structure.html
 pysvg.animate.animate.get_onend method generated/pysvg.animate.html
 pysvg.animate.animateTransform.get_onbegin method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_glyph_orientation_horizontal method generated/pysvg.structure.html
 pysvg.linking.a.set_onload method generated/pysvg.linking.html
 pysvg.text.tspan.set_clip_rule method generated/pysvg.text.html
 pysvg.structure.svg.get_onmouseup method generated/pysvg.structure.html
@@ -301,6 +308,7 @@ pysvg.structure.svg.set_viewBox method generated/pysvg.structure.html
 pysvg.core.BaseShape.wrap_xml method generated/pysvg.core.html
 pysvg.text.altGlyph.get_stroke_linecap method generated/pysvg.text.html
 pysvg.filter.fePointLight.get_xml_lang method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_display method generated/pysvg.structure.html
 pysvg.structure.use.get_xlink_show method generated/pysvg.structure.html
 pysvg.animate.animateTransform.set_clip_rule method generated/pysvg.animate.html
 pysvg.structure.title.getXML method generated/pysvg.structure.html
@@ -350,10 +358,11 @@ pysvg.animate.animateMotion.get_color_rendering method generated/pysvg.animate.h
 pysvg.filter.filter.get_font_family method generated/pysvg.filter.html
 pysvg.animate.animateTransform.set_stroke_width method generated/pysvg.animate.html
 pysvg.structure.switch.get_font_size_adjust method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_filter method generated/pysvg.structure.html
 pysvg.attributes.MaskAttrib.get_mask method generated/pysvg.attributes.html
 pysvg.animate.animate.set_onmouseover method generated/pysvg.animate.html
 pysvg.filter.feTurbulence.get_height method generated/pysvg.filter.html
-pysvg.gradient.stop.get_style method generated/pysvg.gradient.html
+pysvg.structure.clipPath.set_class method generated/pysvg.structure.html
 pysvg.shape.ellipse.get_onclick method generated/pysvg.shape.html
 pysvg.filter.feTurbulence.get_result method generated/pysvg.filter.html
 pysvg.filter.feTile.set_height method generated/pysvg.filter.html
@@ -366,7 +375,7 @@ pysvg.attributes.DocumentEventsAttrib.get_onresize method generated/pysvg.attrib
 pysvg.linking.a.set_stroke method generated/pysvg.linking.html
 pysvg.animate.animateColor.get_stroke_width method generated/pysvg.animate.html
 pysvg.attributes.PresentationAttributes_All.set_stroke_linejoin method generated/pysvg.attributes.html
-pysvg.gradient.radialGradient.set_stroke method generated/pysvg.gradient.html
+pysvg.structure.symbol.get_font_variant method generated/pysvg.structure.html
 pysvg.structure.svg.get_pointer_events method generated/pysvg.structure.html
 pysvg.shape.polygon.get_stroke_width method generated/pysvg.shape.html
 pysvg.linking.a.addElement method generated/pysvg.linking.html
@@ -388,7 +397,7 @@ pysvg.shape.circle.set_onclick method generated/pysvg.shape.html
 pysvg.shape.path.appendCloseCurve method generated/pysvg.shape.html
 pysvg.structure.desc.quote_attrib method generated/pysvg.structure.html
 pysvg.builders.StyleBuilder.setStopColor method generated/pysvg.builders.html
-pysvg.structure.symbol.get_id method generated/pysvg.structure.html
+pysvg.filter.feImage.get_color_profile method generated/pysvg.filter.html
 pysvg.filter.feTile.set_id method generated/pysvg.filter.html
 pysvg.filter.feFuncB.set_intercept method generated/pysvg.filter.html
 pysvg.shape.line.get_stroke_width method generated/pysvg.shape.html
@@ -397,6 +406,7 @@ pysvg.style.style.get_xlink_arcrole method generated/pysvg.style.html
 pysvg.filter.filter.set_id method generated/pysvg.filter.html
 pysvg.filter.feOffset.save method generated/pysvg.filter.html
 pysvg.structure.g.get_class method generated/pysvg.structure.html
+pysvg.structure.clipPath.__init__ method generated/pysvg.structure.html
 pysvg.structure.symbol.set_flood_color method generated/pysvg.structure.html
 pysvg.structure.use.set_onmouseout method generated/pysvg.structure.html
 pysvg.text.text.get_filter method generated/pysvg.text.html
@@ -407,6 +417,7 @@ pysvg.linking.a.set_color_rendering method generated/pysvg.linking.html
 pysvg.builders.ShapeBuilder class generated/pysvg.builders.html
 pysvg.structure.svg.set_color_interpolation method generated/pysvg.structure.html
 pysvg.filter.feFuncG.set_amplitude method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_text_decoration method generated/pysvg.structure.html
 pysvg.filter.filter.set_xlink_actuate method generated/pysvg.filter.html
 pysvg.text.text.get_dx method generated/pysvg.text.html
 pysvg.text.text.get_dy method generated/pysvg.text.html
@@ -443,8 +454,11 @@ pysvg.filter.feFlood.get_xml_lang method generated/pysvg.filter.html
 pysvg.filter.feConvolveMatrix.set_width method generated/pysvg.filter.html
 pysvg.attributes.GraphicsAttrib.get_text_rendering method generated/pysvg.attributes.html
 pysvg.structure.switch.set_stop_color method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_onfocusout method generated/pysvg.structure.html
 pysvg.gradient.radialGradient.set_fill_rule method generated/pysvg.gradient.html
 pysvg.structure.svg.set_systemLanguage method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_xml_space method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_visibility method generated/pysvg.structure.html
 pysvg.gradient.radialGradient.set_stroke_linecap method generated/pysvg.gradient.html
 pysvg.animate.animate.set_end method generated/pysvg.animate.html
 pysvg.gradient.linearGradient.set_color method generated/pysvg.gradient.html
@@ -531,6 +545,7 @@ pysvg.shape.line.set_stroke_opacity method generated/pysvg.shape.html
 pysvg.attributes.XLinkAttrib.get_xlink_role method generated/pysvg.attributes.html
 pysvg.animate.animate.set_systemLanguage method generated/pysvg.animate.html
 pysvg.animate.animate.get_xlink_title method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_color_rendering method generated/pysvg.structure.html
 pysvg.shape.polyline.set_color_interpolation method generated/pysvg.shape.html
 pysvg.text.tspan.set_unicode_bidi method generated/pysvg.text.html
 pysvg.filter.feFuncB.get_slope method generated/pysvg.filter.html
@@ -567,7 +582,7 @@ pysvg.structure.svg.get_writing_mode method generated/pysvg.structure.html
 pysvg.shape.rect.get_mask method generated/pysvg.shape.html
 pysvg.structure.desc.addElement method generated/pysvg.structure.html
 pysvg.shape.circle.get_filter method generated/pysvg.shape.html
-pysvg.shape.line.set_image_rendering method generated/pysvg.shape.html
+pysvg.structure.switch.get_onmouseover method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_stroke_linecap method generated/pysvg.animate.html
 pysvg.structure.title.getAttribute method generated/pysvg.structure.html
 pysvg.filter.feColorMatrix.get_color_interpolation_filters method generated/pysvg.filter.html
@@ -621,6 +636,7 @@ pysvg.shape.line.get_x2 method generated/pysvg.shape.html
 pysvg.shape.rect.set_onfocusin method generated/pysvg.shape.html
 pysvg.animate.set.set_externalResourcesRequired method generated/pysvg.animate.html
 pysvg.structure.g.get_filter method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_flood_color method generated/pysvg.structure.html
 pysvg.structure.defs.get_requiredFeatures method generated/pysvg.structure.html
 pysvg.filter.feTile.set_xml_base method generated/pysvg.filter.html
 pysvg.filter.feFuncG.set_id method generated/pysvg.filter.html
@@ -708,6 +724,7 @@ pysvg.filter.feConvolveMatrix.set_kernelUnitLength method generated/pysvg.filter
 pysvg.animate.set.get_end method generated/pysvg.animate.html
 pysvg.structure.symbol.set_stroke_linecap method generated/pysvg.structure.html
 pysvg.filter.filter.get_stroke_miterlimit method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_font_size method generated/pysvg.structure.html
 pysvg.structure.switch.get_fill method generated/pysvg.structure.html
 pysvg.animate.animateColor.get_fill method generated/pysvg.animate.html
 pysvg.structure.use.get_stroke_dasharray method generated/pysvg.structure.html
@@ -729,6 +746,7 @@ pysvg.animate.set.set_clip_rule method generated/pysvg.animate.html
 pysvg.filter.feImage.get_direction method generated/pysvg.filter.html
 pysvg.linking.a.get_enable_background method generated/pysvg.linking.html
 pysvg.filter.feSpecularLighting.quote_attrib method generated/pysvg.filter.html
+pysvg.gradient.pattern.get_font_style method generated/pysvg.gradient.html
 pysvg.text.text.set_onmouseup method generated/pysvg.text.html
 pysvg.core.RotateAttrib.set_rotate method generated/pysvg.core.html
 pysvg.animate.animateTransform.get_display method generated/pysvg.animate.html
@@ -789,14 +807,15 @@ pysvg.structure.svg.get_onclick method generated/pysvg.structure.html
 pysvg.text.text.get_text_rendering method generated/pysvg.text.html
 pysvg.structure.use.get_onmousemove method generated/pysvg.structure.html
 pysvg.linking.a.get_onmouseout method generated/pysvg.linking.html
-pysvg.structure.symbol.appendTextContent method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_xml_space method generated/pysvg.structure.html
+pysvg.filter.filter.set_xlink_href method generated/pysvg.filter.html
 pysvg.structure.svg.set_stroke_width method generated/pysvg.structure.html
 pysvg.text.textPath.get_word_spacing method generated/pysvg.text.html
 pysvg.text.altGlyph.get_shape_rendering method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_FillStroke.set_stroke method generated/pysvg.attributes.html
 pysvg.text.textPath.get_fill_opacity method generated/pysvg.text.html
 pysvg.filter.feFlood.get_height method generated/pysvg.filter.html
-pysvg.structure.title.setAttribute method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_display method generated/pysvg.structure.html
 pysvg.shape.circle.getAttribute method generated/pysvg.shape.html
 pysvg.filter.feImage.get_externalResourcesRequired method generated/pysvg.filter.html
 pysvg.text.tspan.getAttribute method generated/pysvg.text.html
@@ -816,6 +835,7 @@ pysvg.gradient.linearGradient.set_xml_base method generated/pysvg.gradient.html
 pysvg.shape.polyline.get_onmouseover method generated/pysvg.shape.html
 pysvg.shape.line.get_fill_rule method generated/pysvg.shape.html
 pysvg.filter.feMerge.setAttribute method generated/pysvg.filter.html
+pysvg.structure.clipPath.setAttribute method generated/pysvg.structure.html
 pysvg.linking.a.get_font_family method generated/pysvg.linking.html
 pysvg.animate.AnimationAttrib.set_xlink_role method generated/pysvg.animate.html
 pysvg.text.textPath.get_requiredFeatures method generated/pysvg.text.html
@@ -873,13 +893,16 @@ pysvg.filter.feImage.set_marker_end method generated/pysvg.filter.html
 pysvg.filter.feFuncG.getAttribute method generated/pysvg.filter.html
 pysvg.animate.set.get_stroke_linejoin method generated/pysvg.animate.html
 pysvg.text.tref.set_kerning method generated/pysvg.text.html
+pysvg.structure.clipPath.set_onmousedown method generated/pysvg.structure.html
 pysvg.linking.a.get_glyph_orientation_horizontal method generated/pysvg.linking.html
 pysvg.structure.symbol.get_stop_color method generated/pysvg.structure.html
 pysvg.text.text.set_requiredExtensions method generated/pysvg.text.html
 pysvg.attributes.ClipAttrib.set_clip_path method generated/pysvg.attributes.html
 pysvg.filter.feFlood.get_result method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_onmousedown method generated/pysvg.structure.html
 pysvg.animate.mpath.set_mask method generated/pysvg.animate.html
 pysvg.attributes.StyleAttrib.get_class method generated/pysvg.attributes.html
+pysvg.structure.clipPath.set_visibility method generated/pysvg.structure.html
 pysvg.animate.animate.get_onmouseup method generated/pysvg.animate.html
 pysvg.linking.a.get_stop_color method generated/pysvg.linking.html
 pysvg.structure.use.get_font_family method generated/pysvg.structure.html
@@ -978,6 +1001,7 @@ pysvg.animate.animateColor.get_id method generated/pysvg.animate.html
 pysvg.filter.feTile.get_in method generated/pysvg.filter.html
 pysvg.style.style.addElement method generated/pysvg.style.html
 pysvg.filter.feTile.get_id method generated/pysvg.filter.html
+pysvg.animate.animate.get_repeatCount method generated/pysvg.animate.html
 pysvg.filter.feFlood.set_flood_color method generated/pysvg.filter.html
 pysvg.animate.animateMotion.set_filter method generated/pysvg.animate.html
 pysvg.text.text.set_stroke_linecap method generated/pysvg.text.html
@@ -1016,8 +1040,10 @@ pysvg.gradient.pattern.get_x method generated/pysvg.gradient.html
 pysvg.gradient.pattern.get_y method generated/pysvg.gradient.html
 pysvg.filter.feColorMatrix.setAttribute method generated/pysvg.filter.html
 pysvg.animate.animateColor class generated/pysvg.animate.html
+pysvg.structure.clipPath.get_xml_lang method generated/pysvg.structure.html
 pysvg.linking.a.get_clip method generated/pysvg.linking.html
 pysvg.animate.animateColor.get_fill_opacity method generated/pysvg.animate.html
+pysvg.structure.clipPath.quote_attrib method generated/pysvg.structure.html
 pysvg.structure.svg.get_alignment_baseline method generated/pysvg.structure.html
 pysvg.style.style.set_media method generated/pysvg.style.html
 pysvg.attributes.PresentationAttributes_All.get_font_family method generated/pysvg.attributes.html
@@ -1051,15 +1077,16 @@ pysvg.animate.mpath.set_onmouseover method generated/pysvg.animate.html
 pysvg.animate.mpath.get_onmousedown method generated/pysvg.animate.html
 pysvg.structure.image.set_stroke_width method generated/pysvg.structure.html
 pysvg.shape.rect.getTopRight method generated/pysvg.shape.html
-pysvg.filter.feBlend.set_width method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_fill method generated/pysvg.structure.html
 pysvg.shape.rect.set_rx method generated/pysvg.shape.html
 pysvg.shape.rect.set_ry method generated/pysvg.shape.html
 pysvg.animate.set.get_max method generated/pysvg.animate.html
+pysvg.turtle.Turtle.getOrientation method generated/pysvg.turtle.html
 pysvg.shape.line.set_cursor method generated/pysvg.shape.html
 pysvg.linking.view.get_viewTarget method generated/pysvg.linking.html
 pysvg.text.tspan.set_font_size method generated/pysvg.text.html
 pysvg.linking.a.get_filter method generated/pysvg.linking.html
-pysvg.structure.symbol.get_xml_space method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_stop_opacity method generated/pysvg.structure.html
 pysvg.filter.feImage.set_image_rendering method generated/pysvg.filter.html
 pysvg.structure.g.set_onfocusout method generated/pysvg.structure.html
 pysvg.structure.svg.get_font_size method generated/pysvg.structure.html
@@ -1082,7 +1109,7 @@ pysvg.shape.circle.get_onmousemove method generated/pysvg.shape.html
 pysvg.linking.a.set_onfocusin method generated/pysvg.linking.html
 pysvg.gradient.pattern.set_stop_color method generated/pysvg.gradient.html
 pysvg.filter.feDistantLight.insertElementAt method generated/pysvg.filter.html
-pysvg.structure.symbol.get_onmousemove method generated/pysvg.structure.html
+pysvg.filter.feConvolveMatrix.get_edgeMode method generated/pysvg.filter.html
 pysvg.animate.animateMotion.set_id method generated/pysvg.animate.html
 pysvg.shape.rect.getElementAt method generated/pysvg.shape.html
 pysvg.filter.feFlood.set_stroke_width method generated/pysvg.filter.html
@@ -1105,6 +1132,7 @@ pysvg.animate.animate.get_xml_space method generated/pysvg.animate.html
 pysvg.filter.feComposite.quote_attrib method generated/pysvg.filter.html
 pysvg.filter.feComposite.get_in method generated/pysvg.filter.html
 pysvg.attributes.PresentationAttributes_feFlood class generated/pysvg.attributes.html
+pysvg.structure.clipPath.get_flood_opacity method generated/pysvg.structure.html
 pysvg.animate.set.get_onfocusout method generated/pysvg.animate.html
 pysvg.shape.rect.getInnerEdgePoints method generated/pysvg.shape.html
 pysvg.structure.defs.get_class method generated/pysvg.structure.html
@@ -1130,13 +1158,14 @@ pysvg.filter.feFuncG.get_tableValues method generated/pysvg.filter.html
 pysvg.animate.animateColor.set_id method generated/pysvg.animate.html
 pysvg.filter.feMorphology.get_x method generated/pysvg.filter.html
 pysvg.animate.animateColor.get_color_interpolation method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_font_size_adjust method generated/pysvg.structure.html
 pysvg.shape.path.appendVerticalLineToPath method generated/pysvg.shape.html
 pysvg.animate.set.get_opacity method generated/pysvg.animate.html
 pysvg.structure.image.get_xlink_show method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_restart method generated/pysvg.animate.html
 pysvg.animate.animateColor.get_shape_rendering method generated/pysvg.animate.html
 pysvg.animate.animateMotion.set_xml_base method generated/pysvg.animate.html
-pysvg.gradient.pattern.get_overflow method generated/pysvg.gradient.html
+pysvg.filter.filter.set_clip_path method generated/pysvg.filter.html
 pysvg.structure.use.set_systemLanguage method generated/pysvg.structure.html
 pysvg.animate.animate.set_requiredFeatures method generated/pysvg.animate.html
 pysvg.linking.a.set_requiredExtensions method generated/pysvg.linking.html
@@ -1156,14 +1185,14 @@ pysvg.script.script.set_xlink_actuate method generated/pysvg.script.html
 pysvg.structure.switch.set_requiredFeatures method generated/pysvg.structure.html
 pysvg.filter.feFlood.get_stroke_dasharray method generated/pysvg.filter.html
 pysvg.shape.rect.set_pointer_events method generated/pysvg.shape.html
-pysvg.text.tspan.get_fill method generated/pysvg.text.html
+pysvg.structure.clipPath.set_stroke method generated/pysvg.structure.html
 pysvg.core.BaseElement.insertElementAt method generated/pysvg.core.html
 pysvg.filter.feDiffuseLighting.get_height method generated/pysvg.filter.html
 pysvg.core.BaseElement class generated/pysvg.core.html
 pysvg.text.tspan.get_y method generated/pysvg.text.html
 pysvg.text.tspan.get_x method generated/pysvg.text.html
 pysvg.gradient.radialGradient.get_color_interpolation method generated/pysvg.gradient.html
-pysvg.structure.metadata class generated/pysvg.structure.html
+pysvg.animate.animate.set_stroke_linecap method generated/pysvg.animate.html
 pysvg.shape.ellipse.set_clip_path method generated/pysvg.shape.html
 pysvg.structure.defs.set_mask method generated/pysvg.structure.html
 pysvg.text.altGlyphItem.getElementAt method generated/pysvg.text.html
@@ -1185,6 +1214,7 @@ pysvg.structure.g.set_clip_path method generated/pysvg.structure.html
 pysvg.gradient.pattern.set_stroke_width method generated/pysvg.gradient.html
 pysvg.text.tref.set_opacity method generated/pysvg.text.html
 pysvg.structure.symbol.getAttribute method generated/pysvg.structure.html
+pysvg.turtle.Turtle.setOrientation method generated/pysvg.turtle.html
 pysvg.shape.ellipse.get_pointer_events method generated/pysvg.shape.html
 pysvg.filter.feConvolveMatrix.get_kernelUnitLength method generated/pysvg.filter.html
 pysvg.shape.polyline.getAttribute method generated/pysvg.shape.html
@@ -1262,10 +1292,10 @@ pysvg.filter.feImage.set_marker_mid method generated/pysvg.filter.html
 pysvg.style.style.set_xlink_actuate method generated/pysvg.style.html
 pysvg.animate.animateColor.getElementAt method generated/pysvg.animate.html
 pysvg.structure.symbol.wrap_xml method generated/pysvg.structure.html
-pysvg.shape.circle.get_id method generated/pysvg.shape.html
 pysvg.filter.feImage.set_flood_opacity method generated/pysvg.filter.html
 pysvg.filter.feMerge.set_xml_space method generated/pysvg.filter.html
 pysvg.text.tref.get_fill method generated/pysvg.text.html
+pysvg.structure.clipPath.getXML method generated/pysvg.structure.html
 pysvg.animate.animateTransform.set_externalResourcesRequired method generated/pysvg.animate.html
 pysvg.text.textPath.set_word_spacing method generated/pysvg.text.html
 pysvg.structure.use.get_word_spacing method generated/pysvg.structure.html
@@ -1294,6 +1324,7 @@ pysvg.animate.animateTransform.get_opacity method generated/pysvg.animate.html
 pysvg.filter.filter.set_font_size method generated/pysvg.filter.html
 pysvg.gradient.pattern.get_color_rendering method generated/pysvg.gradient.html
 pysvg.core.BaseShape.set_onmousemove method generated/pysvg.core.html
+pysvg.structure.clipPath.set_onload method generated/pysvg.structure.html
 pysvg.filter.feFuncR.set_exponent method generated/pysvg.filter.html
 pysvg.animate.animateColor.get_onfocusin method generated/pysvg.animate.html
 pysvg.core.RotateAttrib.get_rotate method generated/pysvg.core.html
@@ -1310,6 +1341,7 @@ pysvg.filter.feBlend.get_y method generated/pysvg.filter.html
 pysvg.filter.filter.set_glyph_orientation_vertical method generated/pysvg.filter.html
 pysvg.linking.view.set_zoomAndPan method generated/pysvg.linking.html
 pysvg.text.tspan.get_class method generated/pysvg.text.html
+pysvg.structure.clipPath.get_image_rendering method generated/pysvg.structure.html
 pysvg.text.textPath.get_stroke_linecap method generated/pysvg.text.html
 pysvg.structure.g.set_text_anchor method generated/pysvg.structure.html
 pysvg.structure.svg.get_fill method generated/pysvg.structure.html
@@ -1340,12 +1372,12 @@ pysvg.structure.defs.__init__ method generated/pysvg.structure.html
 pysvg.filter.feDiffuseLighting.set_width method generated/pysvg.filter.html
 pysvg.structure.g.set_stroke_linecap method generated/pysvg.structure.html
 pysvg.text.tspan.get_font_size method generated/pysvg.text.html
-pysvg.filter.feImage.set_clip_rule method generated/pysvg.filter.html
+pysvg.structure.symbol.get_color_interpolation_filters method generated/pysvg.structure.html
 pysvg.text.tref.get_xlink_title method generated/pysvg.text.html
 pysvg.structure.switch.get_alignment_baseline method generated/pysvg.structure.html
 pysvg.filter.feImage.getAttribute method generated/pysvg.filter.html
 pysvg.filter.feImage.get_text_anchor method generated/pysvg.filter.html
-pysvg.shape.ellipse.set_xml_base method generated/pysvg.shape.html
+pysvg.structure.defs.set_baseline_shift method generated/pysvg.structure.html
 pysvg.text.textPath.get_mask method generated/pysvg.text.html
 pysvg.filter.feTile.get_result method generated/pysvg.filter.html
 pysvg.linking.view.get_viewBox method generated/pysvg.linking.html
@@ -1373,6 +1405,7 @@ pysvg.gradient.stop.get_stroke method generated/pysvg.gradient.html
 pysvg.animate.animateMotion.set_xlink_title method generated/pysvg.animate.html
 pysvg.structure.svg.set_display method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_Color.get_color_interpolation method generated/pysvg.attributes.html
+pysvg.structure.clipPath.set_stop_color method generated/pysvg.structure.html
 pysvg.text.textPath.get_xml_space method generated/pysvg.text.html
 pysvg.gradient.radialGradient.get_xml_space method generated/pysvg.gradient.html
 pysvg.linking.a.set_mask method generated/pysvg.linking.html
@@ -1395,7 +1428,7 @@ pysvg.structure.use.set_cursor method generated/pysvg.structure.html
 pysvg.gradient.pattern.set_kerning method generated/pysvg.gradient.html
 pysvg.builders.StyleBuilder.setTextAnchor method generated/pysvg.builders.html
 pysvg.linking.a.get_target method generated/pysvg.linking.html
-pysvg.structure.symbol.get_color_interpolation_filters method generated/pysvg.structure.html
+pysvg.filter.feImage.set_clip_rule method generated/pysvg.filter.html
 pysvg.animate.mpath.get_stroke_dasharray method generated/pysvg.animate.html
 pysvg.shape.path.set_onfocusin method generated/pysvg.shape.html
 pysvg.animate.animateMotion.get_filter method generated/pysvg.animate.html
@@ -1410,6 +1443,7 @@ pysvg.shape.rect.getTopLeft method generated/pysvg.shape.html
 pysvg.text.altGlyphDef.getElementAt method generated/pysvg.text.html
 pysvg.shape.rect.set_onload method generated/pysvg.shape.html
 pysvg.structure.svg.set_word_spacing method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_word_spacing method generated/pysvg.structure.html
 pysvg.structure.defs.get_stroke_width method generated/pysvg.structure.html
 pysvg.filter.feSpecularLighting.set_stroke_width method generated/pysvg.filter.html
 pysvg.core.BaseShape.set_fill_opacity method generated/pysvg.core.html
@@ -1458,6 +1492,7 @@ pysvg.structure.svg.set_xlink_arcrole method generated/pysvg.structure.html
 pysvg.animate.set.get_onactivate method generated/pysvg.animate.html
 pysvg.structure.defs.get_color_rendering method generated/pysvg.structure.html
 pysvg.structure.defs.get_stroke_dasharray method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_xml_base method generated/pysvg.structure.html
 pysvg.structure.defs.set_opacity method generated/pysvg.structure.html
 pysvg.text.textPath.get_image_rendering method generated/pysvg.text.html
 pysvg.filter.feTurbulence.get_stitchTiles method generated/pysvg.filter.html
@@ -1493,6 +1528,8 @@ pysvg.animate.animateColor.set_dur method generated/pysvg.animate.html
 pysvg.text.textPath.get_font_style method generated/pysvg.text.html
 pysvg.shape.path.get_systemLanguage method generated/pysvg.shape.html
 pysvg.shape.path.set_marker_end method generated/pysvg.shape.html
+pysvg.style.style.get_xlink_href method generated/pysvg.style.html
+pysvg.structure.clipPath.set_font_size method generated/pysvg.structure.html
 pysvg.structure.image.set_onmousedown method generated/pysvg.structure.html
 pysvg.structure.use.get_onmouseover method generated/pysvg.structure.html
 pysvg.gradient.stop.get_color_rendering method generated/pysvg.gradient.html
@@ -1511,7 +1548,6 @@ pysvg.core.BaseShape.set_clip_rule method generated/pysvg.core.html
 pysvg.filter.filter.get_xml_base method generated/pysvg.filter.html
 pysvg.structure.image.set_display method generated/pysvg.structure.html
 pysvg.gradient.pattern.get_fill method generated/pysvg.gradient.html
-pysvg.animate.set.set_class method generated/pysvg.animate.html
 pysvg.animate.animateMotion.set_onmousedown method generated/pysvg.animate.html
 pysvg.attributes.StyleAttrib.set_class method generated/pysvg.attributes.html
 pysvg.text.altGlyph.set_rotate method generated/pysvg.text.html
@@ -1581,6 +1617,7 @@ pysvg.structure.symbol.get_glyph_orientation_horizontal method generated/pysvg.s
 pysvg.shape.circle.get_onmouseover method generated/pysvg.shape.html
 pysvg.filter.feTurbulence.set_xml_base method generated/pysvg.filter.html
 pysvg.structure.switch.get_xml_base method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_marker_start method generated/pysvg.structure.html
 pysvg.structure.use.get_stroke_width method generated/pysvg.structure.html
 pysvg.filter.feMorphology.getAttribute method generated/pysvg.filter.html
 pysvg.filter.feMorphology.get_xml_base method generated/pysvg.filter.html
@@ -1634,7 +1671,7 @@ pysvg.structure.image.set_stroke_opacity method generated/pysvg.structure.html
 pysvg.structure.switch.save method generated/pysvg.structure.html
 pysvg.filter.feFlood.get_stroke_linejoin method generated/pysvg.filter.html
 pysvg.shape.line.set_systemLanguage method generated/pysvg.shape.html
-pysvg.structure.svg.set_width method generated/pysvg.structure.html
+pysvg.filter.feBlend.wrap_xml method generated/pysvg.filter.html
 pysvg.structure.switch.get_letter_spacing method generated/pysvg.structure.html
 pysvg.gradient.pattern.get_opacity method generated/pysvg.gradient.html
 pysvg.filter.feComposite.insertElementAt method generated/pysvg.filter.html
@@ -1654,6 +1691,7 @@ pysvg.filter.fePointLight.set_xml_lang method generated/pysvg.filter.html
 pysvg.structure.image.set_xml_space method generated/pysvg.structure.html
 pysvg.structure.svg.insertElementAt method generated/pysvg.structure.html
 pysvg.structure.svg.set_color_rendering method generated/pysvg.structure.html
+pysvg.filter.feFlood.set_color_interpolation_filters method generated/pysvg.filter.html
 pysvg.filter.feFuncA.get_xml_base method generated/pysvg.filter.html
 pysvg.structure.symbol.set_visibility method generated/pysvg.structure.html
 pysvg.shape.rect.set_stroke_dashoffset method generated/pysvg.shape.html
@@ -1678,6 +1716,7 @@ pysvg.filter.feBlend.appendTextContent method generated/pysvg.filter.html
 pysvg.shape.polygon.set_pointer_events method generated/pysvg.shape.html
 pysvg.animate.animateMotion.set_keyTimes method generated/pysvg.animate.html
 pysvg.filter.feOffset.set_height method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_requiredFeatures method generated/pysvg.structure.html
 pysvg.structure.use.set_glyph_orientation_horizontal method generated/pysvg.structure.html
 pysvg.structure.switch.set_externalResourcesRequired method generated/pysvg.structure.html
 pysvg.structure.use.get_xml_lang method generated/pysvg.structure.html
@@ -1691,7 +1730,7 @@ pysvg.style.style.set_xml_lang method generated/pysvg.style.html
 pysvg.core.RotateAttrib class generated/pysvg.core.html
 pysvg.structure.use.get_text_decoration method generated/pysvg.structure.html
 pysvg.structure.svg.get_font_size_adjust method generated/pysvg.structure.html
-pysvg.style.style.get_xlink_href method generated/pysvg.style.html
+pysvg.structure.clipPath.wrap_xml method generated/pysvg.structure.html
 pysvg.structure.symbol.get_stroke_linecap method generated/pysvg.structure.html
 pysvg.text.tref.set_dy method generated/pysvg.text.html
 pysvg.text.textPath.get_onclick method generated/pysvg.text.html
@@ -1789,7 +1828,7 @@ pysvg.attributes.PresentationAttributes_All.get_marker_start method generated/py
 pysvg.structure.defs.set_style method generated/pysvg.structure.html
 pysvg.animate.animateMotion.get_restart method generated/pysvg.animate.html
 pysvg.filter.feConvolveMatrix.__init__ method generated/pysvg.filter.html
-pysvg.text.textPath.set_visibility method generated/pysvg.text.html
+pysvg.structure.clipPath.set_onmouseout method generated/pysvg.structure.html
 pysvg.gradient.radialGradient.get_xlink_role method generated/pysvg.gradient.html
 pysvg.core.BaseShape.getAttribute method generated/pysvg.core.html
 pysvg.attributes.PresentationAttributes_Gradients.set_stop_color method generated/pysvg.attributes.html
@@ -1829,6 +1868,7 @@ pysvg.attributes.PresentationAttributes_FilterPrimitives.set_color_interpolation
 pysvg.structure.defs.get_direction method generated/pysvg.structure.html
 pysvg.text.text.get_xml_space method generated/pysvg.text.html
 pysvg.filter.filter.get_style method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_stroke_dasharray method generated/pysvg.structure.html
 pysvg.structure.g.set_stroke_linejoin method generated/pysvg.structure.html
 pysvg.linking.view.set_xml_space method generated/pysvg.linking.html
 pysvg.filter.feConvolveMatrix.set_height method generated/pysvg.filter.html
@@ -1850,6 +1890,7 @@ pysvg.script.script.set_id method generated/pysvg.script.html
 pysvg.filter.feFuncB.set_xml_base method generated/pysvg.filter.html
 pysvg.structure.g.get_requiredExtensions method generated/pysvg.structure.html
 pysvg.builders.TransformBuilder.__init__ method generated/pysvg.builders.html
+pysvg.structure.clipPath.get_stop_opacity method generated/pysvg.structure.html
 pysvg.shape.line.set_onfocusout method generated/pysvg.shape.html
 pysvg.shape.polyline.get_clip_path method generated/pysvg.shape.html
 pysvg.structure.symbol.set_display method generated/pysvg.structure.html
@@ -1870,6 +1911,7 @@ pysvg.animate.animate.insertElementAt method generated/pysvg.animate.html
 pysvg.animate.animateColor.set_stroke_dashoffset method generated/pysvg.animate.html
 pysvg.shape.line.set_fill_opacity method generated/pysvg.shape.html
 pysvg.structure.image.set_stroke_miterlimit method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_onmouseup method generated/pysvg.structure.html
 pysvg.structure.use.quote_attrib method generated/pysvg.structure.html
 pysvg.structure.svg.set_style method generated/pysvg.structure.html
 pysvg.animate.mpath.get_xlink_arcrole method generated/pysvg.animate.html
@@ -1912,6 +1954,7 @@ pysvg.linking.a.set_onmousedown method generated/pysvg.linking.html
 pysvg.linking.a.get_onmouseover method generated/pysvg.linking.html
 pysvg.filter.feImage.get_color_rendering method generated/pysvg.filter.html
 pysvg.shape.ellipse.set_transform method generated/pysvg.shape.html
+pysvg.filter.feMergeNode class generated/pysvg.filter.html
 pysvg.structure.switch.get_marker_start method generated/pysvg.structure.html
 pysvg.filter.filter.set_xml_lang method generated/pysvg.filter.html
 pysvg.text.altGlyph.set_xlink_role method generated/pysvg.text.html
@@ -1954,7 +1997,7 @@ pysvg.animate.animate.set_transform method generated/pysvg.animate.html
 pysvg.filter.feFuncR.__init__ method generated/pysvg.filter.html
 pysvg.attributes.PaintAttrib.set_stroke_dasharray method generated/pysvg.attributes.html
 pysvg.structure.switch.set_font_family method generated/pysvg.structure.html
-pysvg.structure.defs.get_xml_space method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_direction method generated/pysvg.structure.html
 pysvg.filter.feFlood.set_flood_opacity method generated/pysvg.filter.html
 pysvg.attributes.PresentationAttributes_Images.get_color_profile method generated/pysvg.attributes.html
 pysvg.animate.animateMotion.set_onend method generated/pysvg.animate.html
@@ -1963,7 +2006,7 @@ pysvg.gradient.pattern.get_xlink_href method generated/pysvg.gradient.html
 pysvg.shape.polygon.set_stroke method generated/pysvg.shape.html
 pysvg.attributes.PaintAttrib.set_stroke_miterlimit method generated/pysvg.attributes.html
 pysvg.text.tspan.get_xml_space method generated/pysvg.text.html
-pysvg.builders.StyleBuilder.setStrokeDashArray method generated/pysvg.builders.html
+pysvg.gradient.stop.get_style method generated/pysvg.gradient.html
 pysvg.animate.animateMotion.get_onfocusout method generated/pysvg.animate.html
 pysvg.shape.path.set_stroke_linecap method generated/pysvg.shape.html
 pysvg.structure.defs.get_requiredExtensions method generated/pysvg.structure.html
@@ -1972,7 +2015,7 @@ pysvg.shape.circle.set_filter method generated/pysvg.shape.html
 pysvg.shape.circle.set_fill method generated/pysvg.shape.html
 pysvg.animate.animate.set_onclick method generated/pysvg.animate.html
 pysvg.filter.feImage.set_stroke method generated/pysvg.filter.html
-pysvg.core.BaseShape.get_fill_opacity method generated/pysvg.core.html
+pysvg.structure.clipPath.get_lighting_color method generated/pysvg.structure.html
 pysvg.shape.polygon.setAttribute method generated/pysvg.shape.html
 pysvg.shape.ellipse.get_color_rendering method generated/pysvg.shape.html
 pysvg.animate.AnimationTimingAttrib.get_repeatDur method generated/pysvg.animate.html
@@ -2006,6 +2049,7 @@ pysvg.text.tref.set_systemLanguage method generated/pysvg.text.html
 pysvg.structure.g.set_glyph_orientation_vertical method generated/pysvg.structure.html
 pysvg.shape.ellipse.get_onmouseup method generated/pysvg.shape.html
 pysvg.animate.animateColor.set_onmouseout method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_font_variant method generated/pysvg.structure.html
 pysvg.text.tspan.set_font_variant method generated/pysvg.text.html
 pysvg.animate.animateTransform.get_pointer_events method generated/pysvg.animate.html
 pysvg.filter.filter.get_stroke method generated/pysvg.filter.html
@@ -2056,6 +2100,7 @@ pysvg.linking.a.get_stroke method generated/pysvg.linking.html
 pysvg.attributes.PresentationAttributes_All.get_stroke_linejoin method generated/pysvg.attributes.html
 pysvg.structure.symbol.set_font_size_adjust method generated/pysvg.structure.html
 pysvg.linking.a.get_requiredExtensions method generated/pysvg.linking.html
+pysvg.structure.clipPath.set_clipPathUnits method generated/pysvg.structure.html
 pysvg.structure.use.get_requiredFeatures method generated/pysvg.structure.html
 pysvg.structure.symbol.set_stroke method generated/pysvg.structure.html
 pysvg.shape.polygon.set_fill method generated/pysvg.shape.html
@@ -2121,17 +2166,20 @@ pysvg.shape.circle.set_opacity method generated/pysvg.shape.html
 pysvg.animate.animateTransform.set_class method generated/pysvg.animate.html
 pysvg.core.BaseShape.get_transform method generated/pysvg.core.html
 pysvg.shape.path.set_pointer_events method generated/pysvg.shape.html
+pysvg.text.glyphRef.set_font_variant method generated/pysvg.text.html
 pysvg.structure.use.set_style method generated/pysvg.structure.html
 pysvg.shape.line.set_onmouseover method generated/pysvg.shape.html
 pysvg.shape.polyline.get_fill method generated/pysvg.shape.html
 pysvg.attributes.PresentationAttributes_FillStroke.get_fill method generated/pysvg.attributes.html
 pysvg.animate.animate.set_pointer_events method generated/pysvg.animate.html
 pysvg.animate.animateColor.get_xlink_arcrole method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_alignment_baseline method generated/pysvg.structure.html
 pysvg.text.tspan.set_letter_spacing method generated/pysvg.text.html
 pysvg.text.text.setAttribute method generated/pysvg.text.html
 pysvg.gradient.radialGradient.set_xml_base method generated/pysvg.gradient.html
 pysvg.structure.g.get_kerning method generated/pysvg.structure.html
 pysvg.shape.polygon.get_onclick method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_requiredFeatures method generated/pysvg.structure.html
 pysvg.structure.use.set_baseline_shift method generated/pysvg.structure.html
 pysvg.animate.AnimationAttrib.set_xlink_title method generated/pysvg.animate.html
 pysvg.text.altGlyph.set_glyph_orientation_vertical method generated/pysvg.text.html
@@ -2294,11 +2342,13 @@ pysvg.shape.rect.get_stroke_dashoffset method generated/pysvg.shape.html
 pysvg.animate.animateTransform.set_keySplines method generated/pysvg.animate.html
 pysvg.gradient.pattern.get_fill_opacity method generated/pysvg.gradient.html
 pysvg.shape.polygon.set_onfocusin method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_glyph_orientation_vertical method generated/pysvg.structure.html
 pysvg.structure.svg.get_transform method generated/pysvg.structure.html
 pysvg.filter.feConvolveMatrix.get_divisor method generated/pysvg.filter.html
 pysvg.filter.feMergeNode.get_y method generated/pysvg.filter.html
 pysvg.filter.feMergeNode.get_x method generated/pysvg.filter.html
 pysvg.structure.svg.set_class method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_onclick method generated/pysvg.structure.html
 pysvg.filter.feFuncA.get_exponent method generated/pysvg.filter.html
 pysvg.structure.svg.set_xml_lang method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_xlink_role method generated/pysvg.animate.html
@@ -2311,6 +2361,7 @@ pysvg.attributes.TextContentAttrib.set_kerning method generated/pysvg.attributes
 pysvg.text.glyphRef.get_lengthAdjust method generated/pysvg.text.html
 pysvg.structure.g.get_onmouseover method generated/pysvg.structure.html
 pysvg.animate.animateMotion.get_path method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_flood_opacity method generated/pysvg.structure.html
 pysvg.text.glyphRef.get_y method generated/pysvg.text.html
 pysvg.structure.g.set_text_decoration method generated/pysvg.structure.html
 pysvg.filter.feFlood.get_flood_opacity method generated/pysvg.filter.html
@@ -2336,6 +2387,7 @@ pysvg.structure.use.set_stroke method generated/pysvg.structure.html
 pysvg.filter.feComposite.set_in method generated/pysvg.filter.html
 pysvg.structure.desc class generated/pysvg.structure.html
 pysvg.filter.feFlood.get_id method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_baseline_shift method generated/pysvg.structure.html
 pysvg.text.text.set_alignment_baseline method generated/pysvg.text.html
 pysvg.filter.feFlood.get_in method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.set_fill_rule method generated/pysvg.gradient.html
@@ -2375,6 +2427,7 @@ pysvg.shape.polygon.set_visibility method generated/pysvg.shape.html
 pysvg.animate.animateTransform.get_requiredExtensions method generated/pysvg.animate.html
 pysvg.filter.feFlood.get_stroke_linecap method generated/pysvg.filter.html
 pysvg.filter.feFuncA.set_tableValues method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_cursor method generated/pysvg.structure.html
 pysvg.text.altGlyph.get_font_size_adjust method generated/pysvg.text.html
 pysvg.script.script.set_xml_lang method generated/pysvg.script.html
 pysvg.filter.feDiffuseLighting.get_style method generated/pysvg.filter.html
@@ -2407,11 +2460,13 @@ pysvg.gradient.pattern.get_systemLanguage method generated/pysvg.gradient.html
 pysvg.attributes.PresentationAttributes_TextContentElements.get_baseline_shift method generated/pysvg.attributes.html
 pysvg.animate.animateColor.set_xlink_title method generated/pysvg.animate.html
 pysvg.filter.feFuncR.set_xml_base method generated/pysvg.filter.html
+pysvg.text.text.get_baseline_shift method generated/pysvg.text.html
 pysvg.structure.g.get_opacity method generated/pysvg.structure.html
 pysvg.core.BaseShape.get_fill_rule method generated/pysvg.core.html
 pysvg.linking.a.set_stroke_dasharray method generated/pysvg.linking.html
 pysvg.shape.rect.set_onmousemove method generated/pysvg.shape.html
 pysvg.text.tref.get_xml_lang method generated/pysvg.text.html
+pysvg.structure.clipPath.get_onclick method generated/pysvg.structure.html
 pysvg.linking.a.get_onmousemove method generated/pysvg.linking.html
 pysvg.filter.feColorMatrix.get_id method generated/pysvg.filter.html
 pysvg.animate.animateMotion.get_accumulate method generated/pysvg.animate.html
@@ -2427,6 +2482,7 @@ pysvg.structure.switch.set_onclick method generated/pysvg.structure.html
 pysvg.structure.use.set_height method generated/pysvg.structure.html
 pysvg.animate.AnimationTimingAttrib.set_repeatCount method generated/pysvg.animate.html
 pysvg.linking.view.set_preserveAspectRatio method generated/pysvg.linking.html
+pysvg.structure.clipPath.get_onmouseover method generated/pysvg.structure.html
 pysvg.animate.animateMotion.get_xlink_role method generated/pysvg.animate.html
 pysvg.gradient.radialGradient.set_stroke_dasharray method generated/pysvg.gradient.html
 pysvg.filter.feBlend.get_xml_lang method generated/pysvg.filter.html
@@ -2459,9 +2515,9 @@ pysvg.animate.mpath.get_systemLanguage method generated/pysvg.animate.html
 pysvg.filter.fePointLight.get_z method generated/pysvg.filter.html
 pysvg.filter.fePointLight.get_x method generated/pysvg.filter.html
 pysvg.filter.fePointLight.get_y method generated/pysvg.filter.html
-pysvg.attributes.PresentationAttributes_All.get_alignment_baseline method generated/pysvg.attributes.html
+pysvg.structure.symbol.get_font_stretch method generated/pysvg.structure.html
 pysvg.linking.a.set_stroke_width method generated/pysvg.linking.html
-pysvg.gradient.pattern.get_font_style method generated/pysvg.gradient.html
+pysvg.structure.clipPath.get_fill_opacity method generated/pysvg.structure.html
 pysvg.text.glyphRef.get_xml_base method generated/pysvg.text.html
 pysvg.text.glyphRef.get_font_weight method generated/pysvg.text.html
 pysvg.animate.animateMotion.set_class method generated/pysvg.animate.html
@@ -2498,6 +2554,7 @@ pysvg.structure.use.set_marker_mid method generated/pysvg.structure.html
 pysvg.structure.use.get_color_profile method generated/pysvg.structure.html
 pysvg.animate.animate class generated/pysvg.animate.html
 pysvg.structure.image.set_height method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_clip_rule method generated/pysvg.structure.html
 pysvg.text.text.get_shape_rendering method generated/pysvg.text.html
 pysvg.text.textPath.get_filter method generated/pysvg.text.html
 pysvg.filter.fePointLight.get_id method generated/pysvg.filter.html
@@ -2528,10 +2585,11 @@ pysvg.attributes.PresentationAttributes_All.get_font_style method generated/pysv
 pysvg.animate.mpath.get_stroke_opacity method generated/pysvg.animate.html
 pysvg.shape.ellipse.getHeight method generated/pysvg.shape.html
 pysvg.structure.g.set_alignment_baseline method generated/pysvg.structure.html
-pysvg.filter.filter.set_clip_path method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_externalResourcesRequired method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_stroke_miterlimit method generated/pysvg.structure.html
 pysvg.filter.feDiffuseLighting.get_stroke_miterlimit method generated/pysvg.filter.html
 pysvg.shape.circle.set_shape_rendering method generated/pysvg.shape.html
-pysvg.animate.animate.set_stroke_linecap method generated/pysvg.animate.html
+pysvg.structure.metadata class generated/pysvg.structure.html
 pysvg.shape.ellipse.get_requiredFeatures method generated/pysvg.shape.html
 pysvg.filter.feDistantLight.get_xml_space method generated/pysvg.filter.html
 pysvg.structure.switch.set_systemLanguage method generated/pysvg.structure.html
@@ -2540,10 +2598,11 @@ pysvg.animate.animateTransform.get_attributeName method generated/pysvg.animate.
 pysvg.filter.feTile.getAttribute method generated/pysvg.filter.html
 pysvg.filter.filter.get_font_size method generated/pysvg.filter.html
 pysvg.linking.a.set_transform method generated/pysvg.linking.html
-pysvg.structure.switch.set_visibility method generated/pysvg.structure.html
+pysvg.shape.circle.get_id method generated/pysvg.shape.html
 pysvg.gradient.radialGradient.set_xlink_actuate method generated/pysvg.gradient.html
 pysvg.filter.filter.get_stop_opacity method generated/pysvg.filter.html
 pysvg.builders.TransformBuilder.setRotation method generated/pysvg.builders.html
+pysvg.structure.clipPath.set_image_rendering method generated/pysvg.structure.html
 pysvg.shape.rect.get_pointer_events method generated/pysvg.shape.html
 pysvg.shape.polygon.set_stroke_miterlimit method generated/pysvg.shape.html
 pysvg.filter.feOffset.set_color_interpolation_filters method generated/pysvg.filter.html
@@ -2595,6 +2654,7 @@ pysvg.text.textPath.get_color method generated/pysvg.text.html
 pysvg.shape.rect.set_filter method generated/pysvg.shape.html
 pysvg.attributes.ConditionalAttrib.get_systemLanguage method generated/pysvg.attributes.html
 pysvg.attributes.GraphicalEventsAttrib.get_onclick method generated/pysvg.attributes.html
+pysvg.structure.clipPath.set_onmousemove method generated/pysvg.structure.html
 pysvg.filter.feDiffuseLighting.set_stroke_width method generated/pysvg.filter.html
 pysvg.shape.path.set_stroke_miterlimit method generated/pysvg.shape.html
 pysvg.shape.polygon.get_shape_rendering method generated/pysvg.shape.html
@@ -2602,7 +2662,7 @@ pysvg.animate.animateTransform.get_stroke_dasharray method generated/pysvg.anima
 pysvg.animate.animateMotion.get_pointer_events method generated/pysvg.animate.html
 pysvg.attributes.PresentationAttributes_All.set_image_rendering method generated/pysvg.attributes.html
 pysvg.text.tref.set_glyph_orientation_horizontal method generated/pysvg.text.html
-pysvg.filter.feBlend.wrap_xml method generated/pysvg.filter.html
+pysvg.structure.svg.set_width method generated/pysvg.structure.html
 pysvg.structure.use.set_pointer_events method generated/pysvg.structure.html
 pysvg.filter.feConvolveMatrix.set_xml_lang method generated/pysvg.filter.html
 pysvg.animate.animateMotion.get_onactivate method generated/pysvg.animate.html
@@ -2627,7 +2687,7 @@ pysvg.text.textPath.set_xlink_arcrole method generated/pysvg.text.html
 pysvg.animate.animateTransform.get_xlink_type method generated/pysvg.animate.html
 pysvg.attributes.TextContentAttrib.set_text_decoration method generated/pysvg.attributes.html
 pysvg.structure.defs.set_pointer_events method generated/pysvg.structure.html
-pysvg.filter.feConvolveMatrix.set_y method generated/pysvg.filter.html
+pysvg.structure.symbol.get_direction method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_FontSpecification.get_font_size_adjust method generated/pysvg.attributes.html
 pysvg.animate.animate.get_xlink_arcrole method generated/pysvg.animate.html
 pysvg.structure.svg.set_glyph_orientation_horizontal method generated/pysvg.structure.html
@@ -2644,7 +2704,9 @@ pysvg.text.textPath.set_method method generated/pysvg.text.html
 pysvg.filter.feImage.set_style method generated/pysvg.filter.html
 pysvg.text.altGlyph.insertElementAt method generated/pysvg.text.html
 pysvg.filter.feImage.get_stop_opacity method generated/pysvg.filter.html
+pysvg.text.tspan.set_opacity method generated/pysvg.text.html
 pysvg.shape.line.get_color_rendering method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_font_weight method generated/pysvg.structure.html
 pysvg.attributes.GraphicalEventsAttrib.get_onmousedown method generated/pysvg.attributes.html
 pysvg.shape.polygon.set_image_rendering method generated/pysvg.shape.html
 pysvg.gradient.pattern.set_xml_lang method generated/pysvg.gradient.html
@@ -2670,11 +2732,13 @@ pysvg.structure.use.get_font_size method generated/pysvg.structure.html
 pysvg.shape.circle.get_color method generated/pysvg.shape.html
 pysvg.shape.line.insertElementAt method generated/pysvg.shape.html
 pysvg.filter.feFuncA.set_offset method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_font_weight method generated/pysvg.structure.html
 pysvg.structure.svg.get_baseProfile method generated/pysvg.structure.html
 pysvg.structure.symbol.set_marker_mid method generated/pysvg.structure.html
 pysvg.filter.filter.appendTextContent method generated/pysvg.filter.html
 pysvg.structure.image.get_onmouseup method generated/pysvg.structure.html
 pysvg.animate.AnimationTimingAttrib.set_begin method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_kerning method generated/pysvg.structure.html
 pysvg.animate.animateColor.set_stroke method generated/pysvg.animate.html
 pysvg.text.tref.set_y method generated/pysvg.text.html
 pysvg.text.tref.set_x method generated/pysvg.text.html
@@ -2713,7 +2777,9 @@ pysvg.structure.symbol.set_onfocusin method generated/pysvg.structure.html
 pysvg.shape.ellipse.set_fill_rule method generated/pysvg.shape.html
 pysvg.text.altGlyph.set_stroke_dasharray method generated/pysvg.text.html
 pysvg.gradient.pattern.get_stroke_width method generated/pysvg.gradient.html
+pysvg.structure.clipPath.get_text_rendering method generated/pysvg.structure.html
 pysvg.filter.feFuncG.set_slope method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_onactivate method generated/pysvg.structure.html
 pysvg.filter.feGaussianBlur.get_id method generated/pysvg.filter.html
 pysvg.filter.feGaussianBlur.get_in method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.set_xml_space method generated/pysvg.gradient.html
@@ -2726,6 +2792,8 @@ pysvg.structure.svg.get_marker_mid method generated/pysvg.structure.html
 pysvg.structure.image.appendTextContent method generated/pysvg.structure.html
 pysvg.structure.switch.getXML method generated/pysvg.structure.html
 pysvg.structure.image.get_xlink_title method generated/pysvg.structure.html
+pysvg.text.altGlyphDef.wrap_xml method generated/pysvg.text.html
+pysvg.structure.clipPath.get_stroke_miterlimit method generated/pysvg.structure.html
 pysvg.animate.animateTransform.set_onmousemove method generated/pysvg.animate.html
 pysvg.structure.defs.set_cursor method generated/pysvg.structure.html
 pysvg.structure.symbol.get_clip_path method generated/pysvg.structure.html
@@ -2767,6 +2835,7 @@ pysvg.attributes.PresentationAttributes_FontSpecification class generated/pysvg.
 pysvg.builders.StyleBuilder.setSolidColor method generated/pysvg.builders.html
 pysvg.gradient.stop.get_id method generated/pysvg.gradient.html
 pysvg.structure.metadata.set_xml_lang method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_marker_start method generated/pysvg.structure.html
 pysvg.text.text.get_rotate method generated/pysvg.text.html
 pysvg.filter.feSpotLight.get_specularExponent method generated/pysvg.filter.html
 pysvg.attributes.PresentationAttributes_Color.set_color_interpolation method generated/pysvg.attributes.html
@@ -2810,6 +2879,7 @@ pysvg.filter.feSpecularLighting.set_in method generated/pysvg.filter.html
 pysvg.filter.feSpecularLighting.set_id method generated/pysvg.filter.html
 pysvg.text.tspan.save method generated/pysvg.text.html
 pysvg.structure.svg.set_onmousemove method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_baseline_shift method generated/pysvg.structure.html
 pysvg.shape.ellipse.get_transform method generated/pysvg.shape.html
 pysvg.attributes.PresentationAttributes_All.set_shape_rendering method generated/pysvg.attributes.html
 pysvg.attributes.ExternalAttrib class generated/pysvg.attributes.html
@@ -2834,6 +2904,7 @@ pysvg.core.DeltaPointAttrib class generated/pysvg.core.html
 pysvg.filter.feImage.set_shape_rendering method generated/pysvg.filter.html
 pysvg.structure.g.set_clip method generated/pysvg.structure.html
 pysvg.filter.filter.get_filterUnits method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_systemLanguage method generated/pysvg.structure.html
 pysvg.animate.AnimationTimingAttrib.get_end method generated/pysvg.animate.html
 pysvg.structure.symbol.set_mask method generated/pysvg.structure.html
 pysvg.structure.g.getXML method generated/pysvg.structure.html
@@ -2899,6 +2970,7 @@ pysvg.shape.ellipse.get_stroke_width method generated/pysvg.shape.html
 pysvg.shape.polyline.get_opacity method generated/pysvg.shape.html
 pysvg.text.textPath.get_id method generated/pysvg.text.html
 pysvg.shape.rect.get_text_rendering method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_onmouseup method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_All.get_text_anchor method generated/pysvg.attributes.html
 pysvg.filter.feSpecularLighting.__init__ method generated/pysvg.filter.html
 pysvg.gradient.pattern.get_class method generated/pysvg.gradient.html
@@ -2918,6 +2990,7 @@ pysvg.shape.rect.__init__ method generated/pysvg.shape.html
 pysvg.style.style.save method generated/pysvg.style.html
 pysvg.shape.polygon.get_clip_path method generated/pysvg.shape.html
 pysvg.structure.g.get_color_interpolation method generated/pysvg.structure.html
+pysvg.structure.clipPath.addElement method generated/pysvg.structure.html
 pysvg.shape.ellipse.get_fill_opacity method generated/pysvg.shape.html
 pysvg.animate.animateTransform.get_end method generated/pysvg.animate.html
 pysvg.text.altGlyph.set_shape_rendering method generated/pysvg.text.html
@@ -2977,6 +3050,7 @@ pysvg.structure.desc.get_xml_base method generated/pysvg.structure.html
 pysvg.shape.path.get_marker_end method generated/pysvg.shape.html
 pysvg.shape.path.get_requiredFeatures method generated/pysvg.shape.html
 pysvg.filter.feImage.get_font_variant method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_color_interpolation_filters method generated/pysvg.structure.html
 pysvg.structure.image.__init__ method generated/pysvg.structure.html
 pysvg.structure.svg.get_shape_rendering method generated/pysvg.structure.html
 pysvg.shape.rect.get_transform method generated/pysvg.shape.html
@@ -3004,6 +3078,7 @@ pysvg.linking.a.getAttribute method generated/pysvg.linking.html
 pysvg.structure.svg.set_direction method generated/pysvg.structure.html
 pysvg.shape.circle.get_cursor method generated/pysvg.shape.html
 pysvg.gradient.radialGradient.get_stroke_width method generated/pysvg.gradient.html
+pysvg.structure.clipPath.get_color_interpolation_filters method generated/pysvg.structure.html
 pysvg.filter.feImage.get_stroke_dashoffset method generated/pysvg.filter.html
 pysvg.structure.defs.set_stroke_dashoffset method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_color_rendering method generated/pysvg.animate.html
@@ -3053,7 +3128,7 @@ pysvg.filter.feGaussianBlur.get_xml_base method generated/pysvg.filter.html
 pysvg.animate.set.set_clip_path method generated/pysvg.animate.html
 pysvg.shape.rect.set_stroke_opacity method generated/pysvg.shape.html
 pysvg.text.tref.get_requiredExtensions method generated/pysvg.text.html
-pysvg.filter.feFuncR.set_slope method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_onmouseover method generated/pysvg.structure.html
 pysvg.structure.use.get_glyph_orientation_vertical method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_All.set_font_size_adjust method generated/pysvg.attributes.html
 pysvg.attributes.PresentationAttributes_All.get_stroke method generated/pysvg.attributes.html
@@ -3063,7 +3138,7 @@ pysvg.gradient.pattern.get_mask method generated/pysvg.gradient.html
 pysvg.structure.use.getXML method generated/pysvg.structure.html
 pysvg.text.textPath.get_clip_rule method generated/pysvg.text.html
 pysvg.linking.a.set_kerning method generated/pysvg.linking.html
-pysvg.shape.polygon.get_cursor method generated/pysvg.shape.html
+pysvg.structure.clipPath.appendTextContent method generated/pysvg.structure.html
 pysvg.shape.path.get_stroke_miterlimit method generated/pysvg.shape.html
 pysvg.structure.image.get_stroke_miterlimit method generated/pysvg.structure.html
 pysvg.shape.line.set_color method generated/pysvg.shape.html
@@ -3149,10 +3224,11 @@ pysvg.animate.set.set_begin method generated/pysvg.animate.html
 pysvg.filter.feOffset.set_id method generated/pysvg.filter.html
 pysvg.text.altGlyph.get_clip_rule method generated/pysvg.text.html
 pysvg.filter.feColorMatrix.set_in method generated/pysvg.filter.html
-pysvg.structure.symbol.set_enable_background method generated/pysvg.structure.html
+pysvg.structure.switch.__init__ method generated/pysvg.structure.html
 pysvg.filter.feOffset.set_in method generated/pysvg.filter.html
 pysvg.structure.defs.get_flood_opacity method generated/pysvg.structure.html
 pysvg.structure.switch.get_stroke_dashoffset method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_fill_opacity method generated/pysvg.structure.html
 pysvg.animate.animateMotion.get_max method generated/pysvg.animate.html
 pysvg.linking.a.set_flood_color method generated/pysvg.linking.html
 pysvg.attributes.PresentationAttributes_All.get_writing_mode method generated/pysvg.attributes.html
@@ -3164,7 +3240,7 @@ pysvg.filter.feDisplacementMap.quote_attrib method generated/pysvg.filter.html
 pysvg.animate.animateColor.get_color_rendering method generated/pysvg.animate.html
 pysvg.structure.image.get_color_interpolation method generated/pysvg.structure.html
 pysvg.text.text.set_stroke_miterlimit method generated/pysvg.text.html
-pysvg.structure.switch.get_onmouseover method generated/pysvg.structure.html
+pysvg.shape.line.set_image_rendering method generated/pysvg.shape.html
 pysvg.text.tref.set_alignment_baseline method generated/pysvg.text.html
 pysvg.text.tspan.get_unicode_bidi method generated/pysvg.text.html
 pysvg.shape.rect.set_onclick method generated/pysvg.shape.html
@@ -3179,11 +3255,12 @@ pysvg.filter.filter.get_word_spacing method generated/pysvg.filter.html
 pysvg.filter.feSpecularLighting.set_stroke_miterlimit method generated/pysvg.filter.html
 pysvg.filter.feSpotLight.appendTextContent method generated/pysvg.filter.html
 pysvg.animate.animate.get_fill_rule method generated/pysvg.animate.html
-pysvg.style.style.get_title method generated/pysvg.style.html
+pysvg.structure.clipPath.set_clip_rule method generated/pysvg.structure.html
 pysvg.structure.defs.get_clip method generated/pysvg.structure.html
 pysvg.structure.desc.__init__ method generated/pysvg.structure.html
 pysvg.structure.symbol.get_writing_mode method generated/pysvg.structure.html
 pysvg.shape.line.set_filter method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_font_family method generated/pysvg.structure.html
 pysvg.shape.polyline.set_class method generated/pysvg.shape.html
 pysvg.structure.svg.set_x method generated/pysvg.structure.html
 pysvg.structure.svg.set_y method generated/pysvg.structure.html
@@ -3196,6 +3273,7 @@ pysvg.animate.animate.get_xml_base method generated/pysvg.animate.html
 pysvg.structure.defs.set_stroke method generated/pysvg.structure.html
 pysvg.attributes.PaintAttrib.get_color_rendering method generated/pysvg.attributes.html
 pysvg.text.tref.set_font_family method generated/pysvg.text.html
+pysvg.structure.clipPath.set_dominant_baseline method generated/pysvg.structure.html
 pysvg.filter.feMergeNode.get_xml_space method generated/pysvg.filter.html
 pysvg.text.text.set_lengthAdjust method generated/pysvg.text.html
 pysvg.attributes.FontAttrib.get_font_family method generated/pysvg.attributes.html
@@ -3226,8 +3304,10 @@ pysvg.text.altGlyph.get_filter method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_TextContentElements.get_dominant_baseline method generated/pysvg.attributes.html
 pysvg.structure.metadata.getAttribute method generated/pysvg.structure.html
 pysvg.text.textPath.set_stroke_linejoin method generated/pysvg.text.html
+pysvg.structure.clipPath.set_stroke_dashoffset method generated/pysvg.structure.html
 pysvg.structure.switch.get_enable_background method generated/pysvg.structure.html
-pysvg.animate.set.get_repeatCount method generated/pysvg.animate.html
+pysvg.gradient.linearGradient.get_class method generated/pysvg.gradient.html
+pysvg.structure.clipPath.set_fill_rule method generated/pysvg.structure.html
 pysvg.animate.AnimationAttrib.set_xlink_actuate method generated/pysvg.animate.html
 pysvg.structure.desc.insertElementAt method generated/pysvg.structure.html
 pysvg.structure.switch.get_xml_space method generated/pysvg.structure.html
@@ -3281,7 +3361,7 @@ pysvg.filter.filter.getAttribute method generated/pysvg.filter.html
 pysvg.filter.feTile.addElement method generated/pysvg.filter.html
 pysvg.text.tspan.set_filter method generated/pysvg.text.html
 pysvg.filter.feComponentTransfer.get_color_interpolation_filters method generated/pysvg.filter.html
-pysvg.shape.line.get_display method generated/pysvg.shape.html
+pysvg.structure.symbol.get_color_interpolation method generated/pysvg.structure.html
 pysvg.shape.line.set_stroke_linecap method generated/pysvg.shape.html
 pysvg.animate.animateMotion.set_keyPoints method generated/pysvg.animate.html
 pysvg.animate.animateTransform.set_stroke method generated/pysvg.animate.html
@@ -3341,6 +3421,7 @@ pysvg.filter.feFuncB.wrap_xml method generated/pysvg.filter.html
 pysvg.shape.circle.set_cy method generated/pysvg.shape.html
 pysvg.shape.circle.set_cx method generated/pysvg.shape.html
 pysvg.text.altGlyph.set_word_spacing method generated/pysvg.text.html
+pysvg.structure.clipPath.set_text_rendering method generated/pysvg.structure.html
 pysvg.attributes.TextAttrib.set_writing_mode method generated/pysvg.attributes.html
 pysvg.animate.mpath.set_xlink_href method generated/pysvg.animate.html
 pysvg.animate.animate.getXML method generated/pysvg.animate.html
@@ -3363,12 +3444,14 @@ pysvg.structure.use.get_kerning method generated/pysvg.structure.html
 pysvg.gradient.stop.get_offset method generated/pysvg.gradient.html
 pysvg.linking.view.save method generated/pysvg.linking.html
 pysvg.animate.animateColor.set_restart method generated/pysvg.animate.html
+pysvg.structure.defs.get_xml_space method generated/pysvg.structure.html
 pysvg.text.tspan.set_systemLanguage method generated/pysvg.text.html
 pysvg.animate.animate.set_max method generated/pysvg.animate.html
 pysvg.shape.ellipse.set_xml_lang method generated/pysvg.shape.html
 pysvg.style.style.set_xlink_type method generated/pysvg.style.html
 pysvg.linking.a.set_fill_rule method generated/pysvg.linking.html
 pysvg.attributes.PresentationAttributes_All.get_fill method generated/pysvg.attributes.html
+pysvg.structure.clipPath.set_stroke_linecap method generated/pysvg.structure.html
 pysvg.text.textPath.get_fill_rule method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_All.get_color_profile method generated/pysvg.attributes.html
 pysvg.shape.path.set_externalResourcesRequired method generated/pysvg.shape.html
@@ -3381,7 +3464,7 @@ pysvg.structure.use.set_onmousemove method generated/pysvg.structure.html
 pysvg.filter.feMorphology.get_xml_lang method generated/pysvg.filter.html
 pysvg.structure.svg.set_contentStyleType method generated/pysvg.structure.html
 pysvg.animate.animateColor.save method generated/pysvg.animate.html
-pysvg.structure.switch.set_transform method generated/pysvg.structure.html
+pysvg.gradient.pattern.getElementAt method generated/pysvg.gradient.html
 pysvg.filter.feImage.get_enable_background method generated/pysvg.filter.html
 pysvg.shape.rect.set_color method generated/pysvg.shape.html
 pysvg.structure.svg.set_onmouseup method generated/pysvg.structure.html
@@ -3419,7 +3502,7 @@ pysvg.animate.animateMotion.get_stroke_opacity method generated/pysvg.animate.ht
 pysvg.filter.feConvolveMatrix.get_width method generated/pysvg.filter.html
 pysvg.animate.animateMotion.wrap_xml method generated/pysvg.animate.html
 pysvg.shape.polyline.get_requiredFeatures method generated/pysvg.shape.html
-pysvg.structure.symbol.get_mask method generated/pysvg.structure.html
+pysvg.shape.polygon.set_color_rendering method generated/pysvg.shape.html
 pysvg.text.text.set_font_size_adjust method generated/pysvg.text.html
 pysvg.filter.feImage.get_cursor method generated/pysvg.filter.html
 pysvg.shape.polygon.set_onmouseover method generated/pysvg.shape.html
@@ -3482,6 +3565,7 @@ pysvg.animate.animateColor.set_text_rendering method generated/pysvg.animate.htm
 pysvg.filter.feDiffuseLighting.__init__ method generated/pysvg.filter.html
 pysvg.filter.feDisplacementMap.set_color_interpolation_filters method generated/pysvg.filter.html
 pysvg.filter.feTile.setAttribute method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_clip method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_All.set_cursor method generated/pysvg.attributes.html
 pysvg.text.altGlyphItem class generated/pysvg.text.html
 pysvg.animate.animateMotion.set_color_interpolation method generated/pysvg.animate.html
@@ -3529,6 +3613,8 @@ pysvg.filter.feImage.setAttribute method generated/pysvg.filter.html
 pysvg.text.tspan.set_lengthAdjust method generated/pysvg.text.html
 pysvg.structure.image.set_stroke_linecap method generated/pysvg.structure.html
 pysvg.structure.switch.get_kerning method generated/pysvg.structure.html
+pysvg.structure.symbol.get_id method generated/pysvg.structure.html
+pysvg.text.textPath.set_visibility method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_All.set_flood_color method generated/pysvg.attributes.html
 pysvg.structure.title.get_style method generated/pysvg.structure.html
 pysvg.animate.set.set_onclick method generated/pysvg.animate.html
@@ -3565,6 +3651,7 @@ pysvg.animate.animateTransform.set_filter method generated/pysvg.animate.html
 pysvg.animate.set.get_xml_base method generated/pysvg.animate.html
 pysvg.structure.svg.set_onactivate method generated/pysvg.structure.html
 pysvg.filter.feFuncR.get_intercept method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_font_style method generated/pysvg.structure.html
 pysvg.linking.a.get_fill_rule method generated/pysvg.linking.html
 pysvg.gradient.radialGradient.set_color method generated/pysvg.gradient.html
 pysvg.script.script.get_xlink_show method generated/pysvg.script.html
@@ -3589,10 +3676,12 @@ pysvg.shape.path.set_onmousemove method generated/pysvg.shape.html
 pysvg.structure.defs.set_overflow method generated/pysvg.structure.html
 pysvg.text.textPath.set_xlink_type method generated/pysvg.text.html
 pysvg.animate.animate.set_display method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_xml_base method generated/pysvg.structure.html
 pysvg.structure.defs.get_onmousedown method generated/pysvg.structure.html
 pysvg.structure.svg.get_color_profile method generated/pysvg.structure.html
 pysvg.text.textPath.set_id method generated/pysvg.text.html
 pysvg.animate.set.get_fill method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_stroke_linejoin method generated/pysvg.structure.html
 pysvg.filter.feComposite.get_result method generated/pysvg.filter.html
 pysvg.shape.rect.get_stroke_dasharray method generated/pysvg.shape.html
 pysvg.filter.feTurbulence.get_id method generated/pysvg.filter.html
@@ -3601,6 +3690,7 @@ pysvg.structure.defs.get_transform method generated/pysvg.structure.html
 pysvg.script.script.get_xml_base method generated/pysvg.script.html
 pysvg.structure.image.get_xml_lang method generated/pysvg.structure.html
 pysvg.text.textPath.wrap_xml method generated/pysvg.text.html
+pysvg.structure.clipPath.get_marker_mid method generated/pysvg.structure.html
 pysvg.structure.symbol.get_clip_rule method generated/pysvg.structure.html
 pysvg.filter.feTurbulence.setAttribute method generated/pysvg.filter.html
 pysvg.structure.defs.set_shape_rendering method generated/pysvg.structure.html
@@ -3616,6 +3706,7 @@ pysvg.text.altGlyph.get_x method generated/pysvg.text.html
 pysvg.attributes.GraphicalEventsAttrib.get_onload method generated/pysvg.attributes.html
 pysvg.linking.view.wrap_xml method generated/pysvg.linking.html
 pysvg.attributes.PresentationAttributes_FillStroke.set_fill method generated/pysvg.attributes.html
+pysvg.structure.clipPath.get_clipPathUnits method generated/pysvg.structure.html
 pysvg.animate.mpath.set_onmousedown method generated/pysvg.animate.html
 pysvg.filter.feGaussianBlur.insertElementAt method generated/pysvg.filter.html
 pysvg.structure.g.get_onmouseout method generated/pysvg.structure.html
@@ -3694,6 +3785,7 @@ pysvg.filter.feColorMatrix.set_type method generated/pysvg.filter.html
 pysvg.text.glyphRef.set_stroke_width method generated/pysvg.text.html
 pysvg.filter.feBlend.get_xml_base method generated/pysvg.filter.html
 pysvg.filter.filter.get_font_style method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_requiredExtensions method generated/pysvg.structure.html
 pysvg.shape.line.wrap_xml method generated/pysvg.shape.html
 pysvg.core.BaseShape.get_id method generated/pysvg.core.html
 pysvg.shape.polyline.get_filter method generated/pysvg.shape.html
@@ -3704,9 +3796,11 @@ pysvg.structure.defs.wrap_xml method generated/pysvg.structure.html
 pysvg.structure.title.set_xml_lang method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_Viewports.set_clip method generated/pysvg.attributes.html
 pysvg.structure.image.set_onmouseout method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_overflow method generated/pysvg.structure.html
 pysvg.animate.animate.get_style method generated/pysvg.animate.html
 pysvg.text.glyphRef.get_xlink_title method generated/pysvg.text.html
 pysvg.shape.rect.set_onmouseout method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_stop_color method generated/pysvg.structure.html
 pysvg.text.textPath.get_opacity method generated/pysvg.text.html
 pysvg.text.tspan.set_stroke method generated/pysvg.text.html
 pysvg.filter.feDiffuseLighting.get_fill_rule method generated/pysvg.filter.html
@@ -3752,6 +3846,7 @@ pysvg.shape.circle.get_onmouseout method generated/pysvg.shape.html
 pysvg.attributes.PaintAttrib.set_fill method generated/pysvg.attributes.html
 pysvg.structure.defs.set_lighting_color method generated/pysvg.structure.html
 pysvg.shape.polyline.set_display method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_marker_end method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_systemLanguage method generated/pysvg.animate.html
 pysvg.shape.path.set_stroke_linejoin method generated/pysvg.shape.html
 pysvg.structure.symbol.set_xml_base method generated/pysvg.structure.html
@@ -3780,6 +3875,7 @@ pysvg.animate.animateColor.set_image_rendering method generated/pysvg.animate.ht
 pysvg.structure.svg.set_baseline_shift method generated/pysvg.structure.html
 pysvg.text.text.get_onmouseout method generated/pysvg.text.html
 pysvg.shape.circle.get_stroke_dasharray method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_marker_end method generated/pysvg.structure.html
 pysvg.text.altGlyph.set_onmousemove method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_Gradients.get_stop_opacity method generated/pysvg.attributes.html
 pysvg.text.glyphRef.get_color method generated/pysvg.text.html
@@ -3801,6 +3897,7 @@ pysvg.gradient.linearGradient.get_color_rendering method generated/pysvg.gradien
 pysvg.text.tref.set_onfocusin method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_All.set_baseline_shift method generated/pysvg.attributes.html
 pysvg.animate.animateTransform.get_xml_lang method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_stroke_opacity method generated/pysvg.structure.html
 pysvg.core.BaseElement.addElement method generated/pysvg.core.html
 pysvg.structure.svg.get_baseline_shift method generated/pysvg.structure.html
 pysvg.text.text.set_display method generated/pysvg.text.html
@@ -3812,6 +3909,8 @@ pysvg.text.altGlyph.get_lengthAdjust method generated/pysvg.text.html
 pysvg.filter.filter.set_stroke_opacity method generated/pysvg.filter.html
 pysvg.text.tspan.set_alignment_baseline method generated/pysvg.text.html
 pysvg.gradient.linearGradient.get_xlink_type method generated/pysvg.gradient.html
+pysvg.text.text.__init__ method generated/pysvg.text.html
+pysvg.structure.clipPath.set_text_anchor method generated/pysvg.structure.html
 pysvg.shape.rect.set_xml_space method generated/pysvg.shape.html
 pysvg.animate.animateColor.get_transform method generated/pysvg.animate.html
 pysvg.script.script.set_xlink_show method generated/pysvg.script.html
@@ -3906,11 +4005,13 @@ pysvg.linking.view.get_xml_lang method generated/pysvg.linking.html
 pysvg.text.altGlyph.set_clip_path method generated/pysvg.text.html
 pysvg.animate.set.set_onend method generated/pysvg.animate.html
 pysvg.shape.path.get_text_rendering method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_text_decoration method generated/pysvg.structure.html
 pysvg.shape.rect.get_style method generated/pysvg.shape.html
 pysvg.structure.svg.getAttribute method generated/pysvg.structure.html
 pysvg.animate.mpath.set_onmouseout method generated/pysvg.animate.html
 pysvg.text.altGlyph.set_class method generated/pysvg.text.html
 pysvg.core.BaseShape.set_requiredFeatures method generated/pysvg.core.html
+pysvg.structure.clipPath.set_opacity method generated/pysvg.structure.html
 pysvg.filter.feFuncB.get_type method generated/pysvg.filter.html
 pysvg.text.altGlyphItem.get_xml_space method generated/pysvg.text.html
 pysvg.animate.animateTransform.set_onmouseup method generated/pysvg.animate.html
@@ -3941,6 +4042,7 @@ pysvg.animate.set.getElementAt method generated/pysvg.animate.html
 pysvg.shape.line.set_onload method generated/pysvg.shape.html
 pysvg.text.tspan.get_onmousemove method generated/pysvg.text.html
 pysvg.style.style.get_media method generated/pysvg.style.html
+pysvg.structure.clipPath.get_unicode_bidi method generated/pysvg.structure.html
 pysvg.linking.view.get_id method generated/pysvg.linking.html
 pysvg.gradient.radialGradient.get_spreadMethod method generated/pysvg.gradient.html
 pysvg.text.text.addElement method generated/pysvg.text.html
@@ -3993,7 +4095,6 @@ pysvg.animate.animate.get_additive method generated/pysvg.animate.html
 pysvg.structure.use.get_direction method generated/pysvg.structure.html
 pysvg.shape.ellipse.getXML method generated/pysvg.shape.html
 pysvg.structure.svg.get_direction method generated/pysvg.structure.html
-pysvg.filter.feGaussianBlur.get_height method generated/pysvg.filter.html
 pysvg.structure.g.set_clip_rule method generated/pysvg.structure.html
 pysvg.filter.feFuncG.save method generated/pysvg.filter.html
 pysvg.gradient.stop.get_fill_rule method generated/pysvg.gradient.html
@@ -4047,7 +4148,7 @@ pysvg.shape.path.get_stroke_linecap method generated/pysvg.shape.html
 pysvg.attributes.PresentationAttributes_Viewports.get_overflow method generated/pysvg.attributes.html
 pysvg.turtle.Turtle.penUp method generated/pysvg.turtle.html
 pysvg.gradient.pattern.get_marker_end method generated/pysvg.gradient.html
-pysvg.text.text.__init__ method generated/pysvg.text.html
+pysvg.structure.clipPath.get_onactivate method generated/pysvg.structure.html
 pysvg.linking.a.set_color method generated/pysvg.linking.html
 pysvg.linking.a.get_alignment_baseline method generated/pysvg.linking.html
 pysvg.structure.defs.get_opacity method generated/pysvg.structure.html
@@ -4118,7 +4219,6 @@ pysvg.shape.ellipse.get_stroke method generated/pysvg.shape.html
 pysvg.linking.a.set_display method generated/pysvg.linking.html
 pysvg.linking.a.set_font_stretch method generated/pysvg.linking.html
 pysvg.filter.filter.set_font_style method generated/pysvg.filter.html
-pysvg.filter.feImage.get_color_profile method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.get_x2 method generated/pysvg.gradient.html
 pysvg.attributes.GraphicsAttrib.set_pointer_events method generated/pysvg.attributes.html
 pysvg.filter.feOffset.wrap_xml method generated/pysvg.filter.html
@@ -4200,7 +4300,6 @@ pysvg.filter.feTile.appendTextContent method generated/pysvg.filter.html
 pysvg.filter.feMerge.set_id method generated/pysvg.filter.html
 pysvg.structure.defs.set_glyph_orientation_vertical method generated/pysvg.structure.html
 pysvg.structure.defs.set_stop_color method generated/pysvg.structure.html
-pysvg.filter.feMerge.set_in method generated/pysvg.filter.html
 pysvg.shape.rect.set_y method generated/pysvg.shape.html
 pysvg.shape.rect.set_x method generated/pysvg.shape.html
 pysvg.animate.animateTransform.get_begin method generated/pysvg.animate.html
@@ -4213,12 +4312,15 @@ pysvg.animate.mpath.get_visibility method generated/pysvg.animate.html
 pysvg.shape.polygon.get_systemLanguage method generated/pysvg.shape.html
 pysvg.linking.a.set_onmouseover method generated/pysvg.linking.html
 pysvg.animate.animate.get_onfocusout method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_font_style method generated/pysvg.structure.html
 pysvg.animate.animateMotion.set_image_rendering method generated/pysvg.animate.html
 pysvg.gradient.pattern.set_requiredExtensions method generated/pysvg.gradient.html
 pysvg.animate.animateTransform.get_fill_rule method generated/pysvg.animate.html
 pysvg.animate.AnimationAdditionAttrib.set_additive method generated/pysvg.animate.html
 pysvg.attributes.PresentationAttributes_All.set_clip method generated/pysvg.attributes.html
 pysvg.structure.svg.set_stroke_miterlimit method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_marker_mid method generated/pysvg.structure.html
+pysvg.structure.symbol.set_fill_opacity method generated/pysvg.structure.html
 pysvg.filter.feSpecularLighting.get_specularExponent method generated/pysvg.filter.html
 pysvg.shape.rect.getBottomLeft method generated/pysvg.shape.html
 pysvg.text.text.set_writing_mode method generated/pysvg.text.html
@@ -4232,6 +4334,7 @@ pysvg.animate.animateTransform.get_stroke_miterlimit method generated/pysvg.anim
 pysvg.animate.mpath.get_fill_opacity method generated/pysvg.animate.html
 pysvg.gradient.pattern.get_clip method generated/pysvg.gradient.html
 pysvg.linking.a.get_color_rendering method generated/pysvg.linking.html
+pysvg.structure.clipPath.set_flood_color method generated/pysvg.structure.html
 pysvg.gradient.stop.set_color_interpolation method generated/pysvg.gradient.html
 pysvg.animate.mpath.get_onload method generated/pysvg.animate.html
 pysvg.animate.animate.set_min method generated/pysvg.animate.html
@@ -4244,6 +4347,7 @@ pysvg.attributes.PresentationAttributes_Color.set_color method generated/pysvg.a
 pysvg.filter.feFuncR.appendTextContent method generated/pysvg.filter.html
 pysvg.structure.switch.get_onload method generated/pysvg.structure.html
 pysvg.text.glyphRef.set_font_size method generated/pysvg.text.html
+pysvg.text.tspan.get_fill method generated/pysvg.text.html
 pysvg.text.textPath.get_requiredExtensions method generated/pysvg.text.html
 pysvg.attributes.MarkerAttrib.get_marker_start method generated/pysvg.attributes.html
 pysvg.text.tref.set_rotate method generated/pysvg.text.html
@@ -4265,6 +4369,8 @@ pysvg.shape.circle.get_r method generated/pysvg.shape.html
 pysvg.animate.set.get_onmousedown method generated/pysvg.animate.html
 pysvg.core.PointToAttrib class generated/pysvg.core.html
 pysvg.animate.animate.get_color method generated/pysvg.animate.html
+pysvg.filter.feFuncR.set_slope method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_pointer_events method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_feFlood.set_flood_opacity method generated/pysvg.attributes.html
 pysvg.structure.image.get_cursor method generated/pysvg.structure.html
 pysvg.linking.a.set_font_variant method generated/pysvg.linking.html
@@ -4303,6 +4409,7 @@ pysvg.structure.use.getAttribute method generated/pysvg.structure.html
 pysvg.core.BaseElement.wrap_xml method generated/pysvg.core.html
 pysvg.shape.path.set_color method generated/pysvg.shape.html
 pysvg.core.TextContent.__init__ method generated/pysvg.core.html
+pysvg.structure.symbol.set_color_interpolation_filters method generated/pysvg.structure.html
 pysvg.filter.filter.get_marker_end method generated/pysvg.filter.html
 pysvg.attributes.PresentationAttributes_Graphics.set_clip_path method generated/pysvg.attributes.html
 pysvg.attributes.TextContentAttrib.get_text_decoration method generated/pysvg.attributes.html
@@ -4311,6 +4418,7 @@ pysvg.animate.AnimationValueAttrib.set_from method generated/pysvg.animate.html
 pysvg.shape.rect.get_onmouseover method generated/pysvg.shape.html
 pysvg.shape.rect.set_onmousedown method generated/pysvg.shape.html
 pysvg.attributes.CoreAttrib.get_xml_lang method generated/pysvg.attributes.html
+pysvg.shape.polygon.get_cursor method generated/pysvg.shape.html
 pysvg.structure.defs.set_onmouseup method generated/pysvg.structure.html
 pysvg.structure.svg.get_requiredFeatures method generated/pysvg.structure.html
 pysvg.structure.symbol.get_marker_end method generated/pysvg.structure.html
@@ -4372,7 +4480,7 @@ pysvg.filter.feColorMatrix.get_type method generated/pysvg.filter.html
 pysvg.structure.g.get_stroke_linecap method generated/pysvg.structure.html
 pysvg.attributes.TextContentAttrib.get_baseline_shift method generated/pysvg.attributes.html
 pysvg.linking.a.get_onmousedown method generated/pysvg.linking.html
-pysvg.linking.a.get_clip_path method generated/pysvg.linking.html
+pysvg.structure.switch.set_text_rendering method generated/pysvg.structure.html
 pysvg.gradient.pattern.get_cursor method generated/pysvg.gradient.html
 pysvg.gradient.pattern.save method generated/pysvg.gradient.html
 pysvg.structure.svg.get_onmouseout method generated/pysvg.structure.html
@@ -4385,6 +4493,7 @@ pysvg.filter.feMerge.appendTextContent method generated/pysvg.filter.html
 pysvg.text.tref.get_letter_spacing method generated/pysvg.text.html
 pysvg.linking.a.get_stroke_dashoffset method generated/pysvg.linking.html
 pysvg.filter.feImage.set_stroke_width method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_letter_spacing method generated/pysvg.structure.html
 pysvg.animate.animateMotion.get_onmousemove method generated/pysvg.animate.html
 pysvg.text.text.set_filter method generated/pysvg.text.html
 pysvg.attributes.DocumentEventsAttrib.get_onerror method generated/pysvg.attributes.html
@@ -4401,6 +4510,7 @@ pysvg.structure.switch.set_marker_mid method generated/pysvg.structure.html
 pysvg.text.tref class generated/pysvg.text.html
 pysvg.filter.feOffset.get_xml_space method generated/pysvg.filter.html
 pysvg.structure.defs.set_stroke_opacity method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_stroke_dashoffset method generated/pysvg.structure.html
 pysvg.linking.a.get_unicode_bidi method generated/pysvg.linking.html
 pysvg.text.altGlyph.get_dx method generated/pysvg.text.html
 pysvg.text.altGlyph.get_dy method generated/pysvg.text.html
@@ -4452,9 +4562,9 @@ pysvg.linking.a.get_onfocusout method generated/pysvg.linking.html
 pysvg.filter.feDiffuseLighting.get_color_interpolation_filters method generated/pysvg.filter.html
 pysvg.filter.feConvolveMatrix.getXML method generated/pysvg.filter.html
 pysvg.filter.feColorMatrix.get_xml_space method generated/pysvg.filter.html
-pysvg.filter.filter.set_xlink_href method generated/pysvg.filter.html
+pysvg.structure.symbol.appendTextContent method generated/pysvg.structure.html
 pysvg.animate.set.set_pointer_events method generated/pysvg.animate.html
-pysvg.structure.symbol.set_color_interpolation_filters method generated/pysvg.structure.html
+pysvg.animate.set.set_class method generated/pysvg.animate.html
 pysvg.filter.feOffset.set_y method generated/pysvg.filter.html
 pysvg.filter.feOffset.set_x method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.__init__ method generated/pysvg.gradient.html
@@ -4475,6 +4585,7 @@ pysvg.animate.animate.getElementAt method generated/pysvg.animate.html
 pysvg.filter.feSpotLight.getAttribute method generated/pysvg.filter.html
 pysvg.shape.line.get_cursor method generated/pysvg.shape.html
 pysvg.text.altGlyphDef.getAttribute method generated/pysvg.text.html
+pysvg.structure.clipPath.get_requiredExtensions method generated/pysvg.structure.html
 pysvg.gradient.stop.get_color method generated/pysvg.gradient.html
 pysvg.filter.feMorphology.get_result method generated/pysvg.filter.html
 pysvg.text.textPath.set_cursor method generated/pysvg.text.html
@@ -4503,6 +4614,7 @@ pysvg.text.altGlyph.get_color_interpolation method generated/pysvg.text.html
 pysvg.structure.use.get_stroke_linecap method generated/pysvg.structure.html
 pysvg.shape.circle.get_class method generated/pysvg.shape.html
 pysvg.shape.ellipse.set_mask method generated/pysvg.shape.html
+pysvg.structure.title.setAttribute method generated/pysvg.structure.html
 pysvg.shape.path.set_pathLength method generated/pysvg.shape.html
 pysvg.gradient.pattern.get_glyph_orientation_horizontal method generated/pysvg.gradient.html
 pysvg.gradient.pattern.get_color_profile method generated/pysvg.gradient.html
@@ -4516,6 +4628,7 @@ pysvg.text.text.set_dy method generated/pysvg.text.html
 pysvg.text.tref.get_text_rendering method generated/pysvg.text.html
 pysvg.gradient.radialGradient.get_gradientUnits method generated/pysvg.gradient.html
 pysvg.shape.circle.set_text_rendering method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_transform method generated/pysvg.structure.html
 pysvg.shape.ellipse.set_onactivate method generated/pysvg.shape.html
 pysvg.filter.feComponentTransfer.get_width method generated/pysvg.filter.html
 pysvg.structure.switch.set_color_rendering method generated/pysvg.structure.html
@@ -4523,8 +4636,9 @@ pysvg.animate.animateMotion.get_xlink_type method generated/pysvg.animate.html
 pysvg.gradient.radialGradient.set_externalResourcesRequired method generated/pysvg.gradient.html
 pysvg.animate.animateColor.get_xlink_role method generated/pysvg.animate.html
 pysvg.structure.title.set_id method generated/pysvg.structure.html
+pysvg.core.BaseShape.get_fill_opacity method generated/pysvg.core.html
 pysvg.structure.svg.get_stroke_linejoin method generated/pysvg.structure.html
-pysvg.animate.animateTransform.set_fill_rule method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_onfocusin method generated/pysvg.structure.html
 pysvg.attributes.XLinkAttrib.set_xlink_type method generated/pysvg.attributes.html
 pysvg.structure.defs.get_onload method generated/pysvg.structure.html
 pysvg.structure.switch.get_font_style method generated/pysvg.structure.html
@@ -4560,6 +4674,7 @@ pysvg.filter.feImage.set_visibility method generated/pysvg.filter.html
 pysvg.structure.symbol.set_stroke_dasharray method generated/pysvg.structure.html
 pysvg.gradient.linearGradient.get_stroke method generated/pysvg.gradient.html
 pysvg.filter.filter.set_stroke method generated/pysvg.filter.html
+pysvg.structure.switch.set_filter method generated/pysvg.structure.html
 pysvg.structure.svg.set_stop_color method generated/pysvg.structure.html
 pysvg.filter.feDistantLight.quote_attrib method generated/pysvg.filter.html
 pysvg.attributes.GraphicalEventsAttrib.set_onmouseup method generated/pysvg.attributes.html
@@ -4596,6 +4711,7 @@ pysvg.shape.polyline.set_onclick method generated/pysvg.shape.html
 pysvg.attributes.PresentationAttributes_FontSpecification.set_font_variant method generated/pysvg.attributes.html
 pysvg.structure.defs.set_alignment_baseline method generated/pysvg.structure.html
 pysvg.linking.a.getElementAt method generated/pysvg.linking.html
+pysvg.structure.clipPath.get_overflow method generated/pysvg.structure.html
 pysvg.shape.line.getAttribute method generated/pysvg.shape.html
 pysvg.filter.feImage.get_width method generated/pysvg.filter.html
 pysvg.text.tspan.set_stroke_linecap method generated/pysvg.text.html
@@ -4623,6 +4739,7 @@ pysvg.shape.circle.getBottomLeft method generated/pysvg.shape.html
 pysvg.text.text.get_pointer_events method generated/pysvg.text.html
 pysvg.filter.feSpecularLighting.get_fill_rule method generated/pysvg.filter.html
 pysvg.structure.g.get_font_family method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_enable_background method generated/pysvg.structure.html
 pysvg.structure.use.get_glyph_orientation_horizontal method generated/pysvg.structure.html
 pysvg.filter.feGaussianBlur.get_width method generated/pysvg.filter.html
 pysvg.animate.mpath.get_transform method generated/pysvg.animate.html
@@ -4671,6 +4788,7 @@ pysvg.structure.image.setAttribute method generated/pysvg.structure.html
 pysvg.text.textPath.get_xml_lang method generated/pysvg.text.html
 pysvg.gradient.linearGradient.get_xlink_actuate method generated/pysvg.gradient.html
 pysvg.animate.animate.set_onfocusout method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_shape_rendering method generated/pysvg.structure.html
 pysvg.text.textPath.set_onactivate method generated/pysvg.text.html
 pysvg.shape.line.__init__ method generated/pysvg.shape.html
 pysvg.text.textPath.set_kerning method generated/pysvg.text.html
@@ -4680,8 +4798,9 @@ pysvg.text.glyphRef.set_xml_space method generated/pysvg.text.html
 pysvg.filter.feImage.get_clip_rule method generated/pysvg.filter.html
 pysvg.shape.ellipse.set_color_interpolation method generated/pysvg.shape.html
 pysvg.structure.g.get_font_weight method generated/pysvg.structure.html
-pysvg.animate.animate.get_repeatCount method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_writing_mode method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_FilterPrimitives class generated/pysvg.attributes.html
+pysvg.structure.clipPath.set_mask method generated/pysvg.structure.html
 pysvg.gradient.pattern.get_writing_mode method generated/pysvg.gradient.html
 pysvg.filter.feBlend.set_xml_base method generated/pysvg.filter.html
 pysvg.structure.image.get_y method generated/pysvg.structure.html
@@ -4689,6 +4808,7 @@ pysvg.structure.image.get_x method generated/pysvg.structure.html
 pysvg.structure.symbol.get_unicode_bidi method generated/pysvg.structure.html
 pysvg.animate.animateColor.set_max method generated/pysvg.animate.html
 pysvg.filter.feTurbulence class generated/pysvg.filter.html
+pysvg.structure.clipPath.get_dominant_baseline method generated/pysvg.structure.html
 pysvg.structure.defs.get_clip_rule method generated/pysvg.structure.html
 pysvg.structure.defs.get_flood_color method generated/pysvg.structure.html
 pysvg.structure.symbol.get_font_size method generated/pysvg.structure.html
@@ -4729,6 +4849,7 @@ pysvg.gradient.radialGradient.set_fx method generated/pysvg.gradient.html
 pysvg.text.textPath.set_stroke_linecap method generated/pysvg.text.html
 pysvg.shape.circle.set_pointer_events method generated/pysvg.shape.html
 pysvg.text.tspan.get_font_size_adjust method generated/pysvg.text.html
+pysvg.structure.clipPath.get_transform method generated/pysvg.structure.html
 pysvg.shape.circle.set_onfocusin method generated/pysvg.shape.html
 pysvg.animate.mpath.set_onmouseup method generated/pysvg.animate.html
 pysvg.attributes.PresentationAttributes_All.get_stop_opacity method generated/pysvg.attributes.html
@@ -4747,7 +4868,7 @@ pysvg.structure.use.set_text_decoration method generated/pysvg.structure.html
 pysvg.text.altGlyphItem.getAttribute method generated/pysvg.text.html
 pysvg.animate.set.get_stroke method generated/pysvg.animate.html
 pysvg.filter.feFlood.set_result method generated/pysvg.filter.html
-pysvg.structure.defs.set_baseline_shift method generated/pysvg.structure.html
+pysvg.shape.ellipse.set_xml_base method generated/pysvg.shape.html
 pysvg.text.altGlyph.set_onfocusout method generated/pysvg.text.html
 pysvg.animate.animateColor.set_clip_rule method generated/pysvg.animate.html
 pysvg.text.altGlyph.get_image_rendering method generated/pysvg.text.html
@@ -4771,6 +4892,7 @@ pysvg.filter.feComponentTransfer.get_in method generated/pysvg.filter.html
 pysvg.shape.rect.set_requiredExtensions method generated/pysvg.shape.html
 pysvg.gradient.linearGradient.get_stroke_miterlimit method generated/pysvg.gradient.html
 pysvg.structure.defs.set_fill method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_class method generated/pysvg.structure.html
 pysvg.gradient.stop.__init__ method generated/pysvg.gradient.html
 pysvg.text.altGlyph.get_stroke_dashoffset method generated/pysvg.text.html
 pysvg.shape.path.get_onfocusin method generated/pysvg.shape.html
@@ -4786,6 +4908,7 @@ pysvg.filter.filter.set_stroke_width method generated/pysvg.filter.html
 pysvg.attributes.XLinkAttrib.get_xlink_actuate method generated/pysvg.attributes.html
 pysvg.shape.polygon.get_onmousedown method generated/pysvg.shape.html
 pysvg.gradient.pattern.get_kerning method generated/pysvg.gradient.html
+pysvg.structure.clipPath.get_fill method generated/pysvg.structure.html
 pysvg.filter.feGaussianBlur.getXML method generated/pysvg.filter.html
 pysvg.animate.mpath.setAttribute method generated/pysvg.animate.html
 pysvg.shape.circle.get_text_rendering method generated/pysvg.shape.html
@@ -4804,6 +4927,7 @@ pysvg.attributes.TextContentAttrib.set_word_spacing method generated/pysvg.attri
 pysvg.text.tspan.get_display method generated/pysvg.text.html
 pysvg.structure.svg.set_onscroll method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_FillStroke.set_stroke_dasharray method generated/pysvg.attributes.html
+pysvg.structure.clipPath.set_font_size_adjust method generated/pysvg.structure.html
 pysvg.structure.svg.get_xmlns_xlink method generated/pysvg.structure.html
 pysvg.shape.ellipse.set_color_rendering method generated/pysvg.shape.html
 pysvg.filter.filter.set_class method generated/pysvg.filter.html
@@ -4819,16 +4943,20 @@ pysvg.shape.rect.get_onmousemove method generated/pysvg.shape.html
 pysvg.filter.feDiffuseLighting.set_xml_lang method generated/pysvg.filter.html
 pysvg.animate.mpath.set_style method generated/pysvg.animate.html
 pysvg.animate.mpath.get_onmouseout method generated/pysvg.animate.html
-pysvg.structure.switch.__init__ method generated/pysvg.structure.html
+pysvg.structure.symbol.set_enable_background method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_letter_spacing method generated/pysvg.structure.html
 pysvg.structure.symbol.set_font_stretch method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_mask method generated/pysvg.structure.html
 pysvg.linking.a.save method generated/pysvg.linking.html
 pysvg.structure.svg.set_fill_rule method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_pointer_events method generated/pysvg.structure.html
 pysvg.script.script.getXML method generated/pysvg.script.html
 pysvg.structure.g.get_glyph_orientation_vertical method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_lighting_color method generated/pysvg.structure.html
 pysvg.filter.feTile.get_xml_space method generated/pysvg.filter.html
 pysvg.structure.svg.set_onabort method generated/pysvg.structure.html
 pysvg.structure.switch.get_stroke method generated/pysvg.structure.html
-pysvg.filter.feMergeNode class generated/pysvg.filter.html
+pysvg.structure.clipPath.get_enable_background method generated/pysvg.structure.html
 pysvg.text.glyphRef.get_stroke_miterlimit method generated/pysvg.text.html
 pysvg.animate.animateMotion.get_calcMode method generated/pysvg.animate.html
 pysvg.text.glyphRef.get_glyphRef method generated/pysvg.text.html
@@ -4848,6 +4976,7 @@ pysvg.animate.animateMotion.get_systemLanguage method generated/pysvg.animate.ht
 pysvg.structure.switch.set_text_anchor method generated/pysvg.structure.html
 pysvg.text.tspan.get_image_rendering method generated/pysvg.text.html
 pysvg.filter.feFlood.addElement method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_style method generated/pysvg.structure.html
 pysvg.filter.feFuncA.set_amplitude method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.get_xlink_role method generated/pysvg.gradient.html
 pysvg.animate.animateTransform.get_image_rendering method generated/pysvg.animate.html
@@ -4880,6 +5009,7 @@ pysvg.linking.a.get_xlink_type method generated/pysvg.linking.html
 pysvg.animate.mpath.get_onclick method generated/pysvg.animate.html
 pysvg.filter.filter.get_font_size_adjust method generated/pysvg.filter.html
 pysvg.filter.feTurbulence.addElement method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_fill_rule method generated/pysvg.structure.html
 pysvg.shape.rect.set_fill method generated/pysvg.shape.html
 pysvg.filter.feOffset.set_dx method generated/pysvg.filter.html
 pysvg.filter.feOffset.set_dy method generated/pysvg.filter.html
@@ -4905,6 +5035,7 @@ pysvg.filter.feDiffuseLighting.get_y method generated/pysvg.filter.html
 pysvg.filter.feDiffuseLighting.get_x method generated/pysvg.filter.html
 pysvg.shape.circle.set_visibility method generated/pysvg.shape.html
 pysvg.gradient.linearGradient.set_style method generated/pysvg.gradient.html
+pysvg.structure.clipPath.set_stroke_dasharray method generated/pysvg.structure.html
 pysvg.filter.feImage.get_xml_space method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.set_xlink_role method generated/pysvg.gradient.html
 pysvg.attributes.PresentationAttributes_Graphics.get_clip_rule method generated/pysvg.attributes.html
@@ -4929,10 +5060,11 @@ pysvg.animate.animateTransform.set_restart method generated/pysvg.animate.html
 pysvg.shape.path.set_xml_lang method generated/pysvg.shape.html
 pysvg.structure.switch.set_kerning method generated/pysvg.structure.html
 pysvg.structure.use.set_image_rendering method generated/pysvg.structure.html
-pysvg.gradient.linearGradient.get_class method generated/pysvg.gradient.html
+pysvg.structure.clipPath.set_font_stretch method generated/pysvg.structure.html
 pysvg.structure.symbol.set_filter method generated/pysvg.structure.html
 pysvg.text.altGlyph.set_display method generated/pysvg.text.html
 pysvg.text.altGlyph.set_kerning method generated/pysvg.text.html
+pysvg.structure.clipPath.get_kerning method generated/pysvg.structure.html
 pysvg.filter.feImage.get_unicode_bidi method generated/pysvg.filter.html
 pysvg.shape.polygon.set_stroke_dasharray method generated/pysvg.shape.html
 pysvg.animate.animateMotion.get_fill_opacity method generated/pysvg.animate.html
@@ -4942,6 +5074,7 @@ pysvg.shape.line.get_onmouseup method generated/pysvg.shape.html
 pysvg.filter.feTurbulence.getXML method generated/pysvg.filter.html
 pysvg.shape.polygon.set_requiredFeatures method generated/pysvg.shape.html
 pysvg.linking.a.set_xml_base method generated/pysvg.linking.html
+pysvg.structure.clipPath.get_word_spacing method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_Graphics.get_image_rendering method generated/pysvg.attributes.html
 pysvg.linking.a.insertElementAt method generated/pysvg.linking.html
 pysvg.core.BaseShape.set_xml_lang method generated/pysvg.core.html
@@ -4950,19 +5083,21 @@ pysvg.structure.switch.get_requiredFeatures method generated/pysvg.structure.htm
 pysvg.text.tspan.get_pointer_events method generated/pysvg.text.html
 pysvg.animate.animateMotion.get_clip_path method generated/pysvg.animate.html
 pysvg.animate.animateMotion.set_color method generated/pysvg.animate.html
+pysvg.structure.clipPath.getAttribute method generated/pysvg.structure.html
 pysvg.filter.feFuncA.setAttribute method generated/pysvg.filter.html
 pysvg.filter.feSpecularLighting.set_color_interpolation_filters method generated/pysvg.filter.html
 pysvg.filter.filter.__init__ method generated/pysvg.filter.html
 pysvg.core.BaseShape.insertElementAt method generated/pysvg.core.html
 pysvg.text.text.set_direction method generated/pysvg.text.html
 pysvg.structure.g.get_letter_spacing method generated/pysvg.structure.html
-pysvg.text.altGlyphDef.wrap_xml method generated/pysvg.text.html
+pysvg.style.style.get_title method generated/pysvg.style.html
 pysvg.shape.polygon.get_onmouseout method generated/pysvg.shape.html
 pysvg.gradient.pattern.set_glyph_orientation_vertical method generated/pysvg.gradient.html
 pysvg.structure.switch.get_baseline_shift method generated/pysvg.structure.html
 pysvg.filter.feFuncA.set_intercept method generated/pysvg.filter.html
 pysvg.filter.feDiffuseLighting.set_color_interpolation method generated/pysvg.filter.html
 pysvg.structure.g.get_onmousemove method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_glyph_orientation_vertical method generated/pysvg.structure.html
 pysvg.structure.defs.getXML method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_Graphics.get_opacity method generated/pysvg.attributes.html
 pysvg.animate.animate.set_xml_base method generated/pysvg.animate.html
@@ -5033,7 +5168,7 @@ pysvg.filter.feDisplacementMap.set_result method generated/pysvg.filter.html
 pysvg.animate.set.get_transform method generated/pysvg.animate.html
 pysvg.structure.symbol.set_clip method generated/pysvg.structure.html
 pysvg.animate.animateColor.get_xlink_title method generated/pysvg.animate.html
-pysvg.structure.symbol.get_color_interpolation method generated/pysvg.structure.html
+pysvg.shape.line.get_display method generated/pysvg.shape.html
 pysvg.shape.polygon.get_filter method generated/pysvg.shape.html
 pysvg.shape.circle.get_xml_lang method generated/pysvg.shape.html
 pysvg.structure.use.get_requiredExtensions method generated/pysvg.structure.html
@@ -5077,6 +5212,7 @@ pysvg.text.tref.set_onfocusout method generated/pysvg.text.html
 pysvg.structure.svg.set_xmlns_xlink method generated/pysvg.structure.html
 pysvg.core.DeltaPointAttrib.get_dy method generated/pysvg.core.html
 pysvg.core.BaseShape.set_id method generated/pysvg.core.html
+pysvg.structure.clipPath.get_style method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_onactivate method generated/pysvg.animate.html
 pysvg.structure.use.get_stroke_linejoin method generated/pysvg.structure.html
 pysvg.filter.feImage.get_image_rendering method generated/pysvg.filter.html
@@ -5176,6 +5312,7 @@ pysvg.attributes.PresentationAttributes_All.set_color_interpolation_filters meth
 pysvg.gradient.pattern.set_fill method generated/pysvg.gradient.html
 pysvg.attributes.PresentationAttributes_Marker.get_marker_end method generated/pysvg.attributes.html
 pysvg.animate.mpath.get_stroke_linejoin method generated/pysvg.animate.html
+pysvg.structure.clipPath.get_color_profile method generated/pysvg.structure.html
 pysvg.filter.feMergeNode.get_id method generated/pysvg.filter.html
 pysvg.filter.feMergeNode.set_id method generated/pysvg.filter.html
 pysvg.shape.line.get_stroke_opacity method generated/pysvg.shape.html
@@ -5230,6 +5367,7 @@ pysvg.shape.path.set_fill_opacity method generated/pysvg.shape.html
 pysvg.shape.ellipse.set_onmouseover method generated/pysvg.shape.html
 pysvg.linking.a.set_style method generated/pysvg.linking.html
 pysvg.filter.feFlood.get_style method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_glyph_orientation_horizontal method generated/pysvg.structure.html
 pysvg.animate.mpath.set_stroke_linejoin method generated/pysvg.animate.html
 pysvg.attributes.PaintAttrib.get_stroke_miterlimit method generated/pysvg.attributes.html
 pysvg.filter.feFlood class generated/pysvg.filter.html
@@ -5253,7 +5391,8 @@ pysvg.structure.svg.set_onzoom method generated/pysvg.structure.html
 pysvg.attributes.TextContentAttrib class generated/pysvg.attributes.html
 pysvg.filter.feFuncA.get_xml_space method generated/pysvg.filter.html
 pysvg.structure.defs.set_color_profile method generated/pysvg.structure.html
-pysvg.structure.switch.set_filter method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_onfocusin method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_font_family method generated/pysvg.structure.html
 pysvg.filter.feComposite.getAttribute method generated/pysvg.filter.html
 pysvg.text.text.set_stroke_dasharray method generated/pysvg.text.html
 pysvg.text.text.get_dominant_baseline method generated/pysvg.text.html
@@ -5273,6 +5412,7 @@ pysvg.structure.use.set_writing_mode method generated/pysvg.structure.html
 pysvg.structure.switch.set_class method generated/pysvg.structure.html
 pysvg.structure.use.get_fill method generated/pysvg.structure.html
 pysvg.text.tref.get_color_interpolation method generated/pysvg.text.html
+pysvg.animate.set.get_repeatCount method generated/pysvg.animate.html
 pysvg.shape.line.get_onactivate method generated/pysvg.shape.html
 pysvg.animate.set.set_filter method generated/pysvg.animate.html
 pysvg.linking.a.set_font_size_adjust method generated/pysvg.linking.html
@@ -5490,6 +5630,7 @@ pysvg.structure.switch.set_stroke_dasharray method generated/pysvg.structure.htm
 pysvg.filter.feSpecularLighting.set_color_rendering method generated/pysvg.filter.html
 pysvg.linking.view.get_xml_base method generated/pysvg.linking.html
 pysvg.shape.polyline.set_clip_rule method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_onload method generated/pysvg.structure.html
 pysvg.shape.ellipse class generated/pysvg.shape.html
 pysvg.structure.switch.get_font_stretch method generated/pysvg.structure.html
 pysvg.text.tspan.get_onload method generated/pysvg.text.html
@@ -5553,6 +5694,7 @@ pysvg.animate.AnimationValueAttrib.get_keyTimes method generated/pysvg.animate.h
 pysvg.animate.animateTransform.set_end method generated/pysvg.animate.html
 pysvg.attributes.GraphicalEventsAttrib.get_onmouseup method generated/pysvg.attributes.html
 pysvg.filter.feSpecularLighting.set_fill method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_shape_rendering method generated/pysvg.structure.html
 pysvg.text.textPath.set_color_interpolation method generated/pysvg.text.html
 pysvg.text.altGlyph.set_requiredFeatures method generated/pysvg.text.html
 pysvg.text.text.get_clip_path method generated/pysvg.text.html
@@ -5560,6 +5702,7 @@ pysvg.text.glyphRef.get_stroke_width method generated/pysvg.text.html
 pysvg.shape.path.set_marker_start method generated/pysvg.shape.html
 pysvg.gradient.radialGradient.get_style method generated/pysvg.gradient.html
 pysvg.shape.line.get_clip_path method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_direction method generated/pysvg.structure.html
 pysvg.text.altGlyphItem.wrap_xml method generated/pysvg.text.html
 pysvg.filter.feGaussianBlur.set_xml_space method generated/pysvg.filter.html
 pysvg.filter.feDiffuseLighting.set_surfaceScale method generated/pysvg.filter.html
@@ -5680,7 +5823,7 @@ pysvg.text.textPath.get_text_decoration method generated/pysvg.text.html
 pysvg.text.tref.set_font_size method generated/pysvg.text.html
 pysvg.text.text.get_onmouseup method generated/pysvg.text.html
 pysvg.animate.animateTransform.set_min method generated/pysvg.animate.html
-pysvg.filter.feImage.get_xlink_arcrole method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_color_profile method generated/pysvg.structure.html
 pysvg.filter.feColorMatrix.__init__ method generated/pysvg.filter.html
 pysvg.filter.filter.set_text_rendering method generated/pysvg.filter.html
 pysvg.filter.feTile.set_xml_lang method generated/pysvg.filter.html
@@ -5692,7 +5835,7 @@ pysvg.gradient.stop.get_stop_opacity method generated/pysvg.gradient.html
 pysvg.linking.a.get_display method generated/pysvg.linking.html
 pysvg.animate.mpath.addElement method generated/pysvg.animate.html
 pysvg.structure.symbol.get_dominant_baseline method generated/pysvg.structure.html
-pysvg.structure.symbol.get_font_variant method generated/pysvg.structure.html
+pysvg.gradient.radialGradient.set_stroke method generated/pysvg.gradient.html
 pysvg.text.textPath.set_clip_rule method generated/pysvg.text.html
 pysvg.filter.feMergeNode.set_width method generated/pysvg.filter.html
 pysvg.attributes.GraphicalEventsAttrib.set_onload method generated/pysvg.attributes.html
@@ -5709,9 +5852,11 @@ pysvg.structure.svg.get_cursor method generated/pysvg.structure.html
 pysvg.animate.animateColor.get_stroke_dasharray method generated/pysvg.animate.html
 pysvg.animate.animateColor.get_onmousemove method generated/pysvg.animate.html
 pysvg.filter.feMergeNode.wrap_xml method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_xml_lang method generated/pysvg.structure.html
 pysvg.gradient.linearGradient.get_xlink_show method generated/pysvg.gradient.html
 pysvg.core.TextContent.getXML method generated/pysvg.core.html
 pysvg.filter.feComposite.get_color_interpolation_filters method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_cursor method generated/pysvg.structure.html
 pysvg.filter.feImage.save method generated/pysvg.filter.html
 pysvg.filter.feTurbulence.get_xml_lang method generated/pysvg.filter.html
 pysvg.animate.animateColor.get_xlink_href method generated/pysvg.animate.html
@@ -5785,6 +5930,7 @@ pysvg.text.altGlyphDef.__init__ method generated/pysvg.text.html
 pysvg.core.BaseShape.get_stroke_width method generated/pysvg.core.html
 pysvg.animate.animateColor.set_stroke_linejoin method generated/pysvg.animate.html
 pysvg.style.style.get_id method generated/pysvg.style.html
+pysvg.shape.polyline.set_xml_base method generated/pysvg.shape.html
 pysvg.shape.polygon.set_stroke_dashoffset method generated/pysvg.shape.html
 pysvg.linking.a.set_stroke_miterlimit method generated/pysvg.linking.html
 pysvg.filter.feTile.get_x method generated/pysvg.filter.html
@@ -5825,6 +5971,7 @@ pysvg.animate.AnimationAttrib.get_xlink_actuate method generated/pysvg.animate.h
 pysvg.animate.animateTransform.set_attributeType method generated/pysvg.animate.html
 pysvg.animate.animate.get_image_rendering method generated/pysvg.animate.html
 pysvg.filter.feSpecularLighting.get_color_interpolation_filters method generated/pysvg.filter.html
+pysvg.structure.clipPath class generated/pysvg.structure.html
 pysvg.gradient.radialGradient.insertElementAt method generated/pysvg.gradient.html
 pysvg.structure.g.get_cursor method generated/pysvg.structure.html
 pysvg.attributes.FontAttrib.get_font_variant method generated/pysvg.attributes.html
@@ -5882,6 +6029,7 @@ pysvg.shape.ellipse.get_systemLanguage method generated/pysvg.shape.html
 pysvg.text.glyphRef.set_x method generated/pysvg.text.html
 pysvg.animate.animateTransform.set_mask method generated/pysvg.animate.html
 pysvg.filter.feColorMatrix.set_height method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_text_anchor method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_TextContentElements.set_glyph_orientation_vertical method generated/pysvg.attributes.html
 pysvg.filter.feDiffuseLighting.get_fill method generated/pysvg.filter.html
 pysvg.filter.feComponentTransfer.set_color_interpolation_filters method generated/pysvg.filter.html
@@ -5894,6 +6042,7 @@ pysvg.structure.switch.set_font_size method generated/pysvg.structure.html
 pysvg.core.BaseShape.set_clip_path method generated/pysvg.core.html
 pysvg.shape.rect.get_clip_path method generated/pysvg.shape.html
 pysvg.gradient.radialGradient.get_xlink_type method generated/pysvg.gradient.html
+pysvg.structure.clipPath.getElementAt method generated/pysvg.structure.html
 pysvg.structure.use.get_onactivate method generated/pysvg.structure.html
 pysvg.structure.defs.set_stroke_linejoin method generated/pysvg.structure.html
 pysvg.structure.defs.set_class method generated/pysvg.structure.html
@@ -5905,7 +6054,7 @@ pysvg.text.altGlyph.set_clip_rule method generated/pysvg.text.html
 pysvg.animate.set.get_cursor method generated/pysvg.animate.html
 pysvg.filter.feFlood.get_xml_space method generated/pysvg.filter.html
 pysvg.gradient.pattern.set_flood_opacity method generated/pysvg.gradient.html
-pysvg.filter.feFlood.set_color_interpolation_filters method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_opacity method generated/pysvg.structure.html
 pysvg.filter.feDisplacementMap.get_scale method generated/pysvg.filter.html
 pysvg.attributes.PresentationAttributes_FilterPrimitives.get_color_interpolation_filters method generated/pysvg.attributes.html
 pysvg.structure.g.get_direction method generated/pysvg.structure.html
@@ -5929,6 +6078,7 @@ pysvg.structure.g.get_clip_path method generated/pysvg.structure.html
 pysvg.gradient.pattern.set_image_rendering method generated/pysvg.gradient.html
 pysvg.text.tref.setAttribute method generated/pysvg.text.html
 pysvg.shape.polyline.get_xml_base method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_clip_path method generated/pysvg.structure.html
 pysvg.filter.feFuncR.get_id method generated/pysvg.filter.html
 pysvg.structure.defs.get_fill method generated/pysvg.structure.html
 pysvg.filter.feImage.get_color_interpolation method generated/pysvg.filter.html
@@ -5945,6 +6095,7 @@ pysvg.builders.StyleBuilder.setStrokeLineJoin method generated/pysvg.builders.ht
 pysvg.structure.switch.set_onmouseover method generated/pysvg.structure.html
 pysvg.filter.feConvolveMatrix.set_id method generated/pysvg.filter.html
 pysvg.text.glyphRef.set_xlink_href method generated/pysvg.text.html
+pysvg.structure.clipPath.set_writing_mode method generated/pysvg.structure.html
 pysvg.animate.mpath.get_shape_rendering method generated/pysvg.animate.html
 pysvg.filter.feColorMatrix.get_xml_base method generated/pysvg.filter.html
 pysvg.structure.svg.get_lighting_color method generated/pysvg.structure.html
@@ -6001,6 +6152,7 @@ pysvg.filter.filter.set_color_interpolation_filters method generated/pysvg.filte
 pysvg.structure.svg.get_onload method generated/pysvg.structure.html
 pysvg.shape.ellipse.insertElementAt method generated/pysvg.shape.html
 pysvg.animate.set.set_onmousemove method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_font_variant method generated/pysvg.structure.html
 pysvg.gradient.linearGradient.get_y2 method generated/pysvg.gradient.html
 pysvg.animate.animate.set_xlink_actuate method generated/pysvg.animate.html
 pysvg.linking.view.get_target method generated/pysvg.linking.html
@@ -6015,6 +6167,7 @@ pysvg.filter.feColorMatrix.save method generated/pysvg.filter.html
 pysvg.animate.animateTransform class generated/pysvg.animate.html
 pysvg.animate.animateTransform.get_transform method generated/pysvg.animate.html
 pysvg.structure.defs.set_clip method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_stroke_width method generated/pysvg.structure.html
 pysvg.gradient.pattern.set_systemLanguage method generated/pysvg.gradient.html
 pysvg.filter.feImage.get_id method generated/pysvg.filter.html
 pysvg.text.glyphRef.set_color_rendering method generated/pysvg.text.html
@@ -6029,7 +6182,7 @@ pysvg.structure.desc.save method generated/pysvg.structure.html
 pysvg.animate.animate.get_from method generated/pysvg.animate.html
 pysvg.structure.title.__init__ method generated/pysvg.structure.html
 pysvg.gradient.radialGradient.getXML method generated/pysvg.gradient.html
-pysvg.structure.symbol.get_font_stretch method generated/pysvg.structure.html
+pysvg.attributes.PresentationAttributes_All.get_alignment_baseline method generated/pysvg.attributes.html
 pysvg.animate.animateMotion.get_onend method generated/pysvg.animate.html
 pysvg.text.tref.set_unicode_bidi method generated/pysvg.text.html
 pysvg.animate.mpath.set_cursor method generated/pysvg.animate.html
@@ -6042,6 +6195,7 @@ pysvg.text.textPath.get_method method generated/pysvg.text.html
 pysvg.shape.circle.set_onload method generated/pysvg.shape.html
 pysvg.structure.g.set_xml_lang method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_feFlood.get_flood_opacity method generated/pysvg.attributes.html
+pysvg.filter.feBlend.set_width method generated/pysvg.filter.html
 pysvg.animate.animate.get_requiredFeatures method generated/pysvg.animate.html
 pysvg.core.BaseShape.set_color method generated/pysvg.core.html
 pysvg.gradient.pattern.get_color_interpolation method generated/pysvg.gradient.html
@@ -6051,13 +6205,13 @@ pysvg.animate.animate.get_systemLanguage method generated/pysvg.animate.html
 pysvg.filter.feFuncR.getElementAt method generated/pysvg.filter.html
 pysvg.filter.feImage.get_color_interpolation_filters method generated/pysvg.filter.html
 pysvg.attributes.PresentationAttributes_FillStroke.set_stroke_linecap method generated/pysvg.attributes.html
-pysvg.structure.symbol.get_direction method generated/pysvg.structure.html
+pysvg.filter.feConvolveMatrix.set_y method generated/pysvg.filter.html
 pysvg.filter.feConvolveMatrix.set_x method generated/pysvg.filter.html
 pysvg.animate.animate.set_accumulate method generated/pysvg.animate.html
 pysvg.builders.TransformBuilder.setTranslation method generated/pysvg.builders.html
 pysvg.shape.circle.get_onmouseup method generated/pysvg.shape.html
 pysvg.attributes.MarkerAttrib.set_marker_mid method generated/pysvg.attributes.html
-pysvg.text.tspan.set_opacity method generated/pysvg.text.html
+pysvg.structure.clipPath.get_stroke_linecap method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_xlink_actuate method generated/pysvg.animate.html
 pysvg.structure.g.addElement method generated/pysvg.structure.html
 pysvg.structure.svg.get_glyph_orientation_vertical method generated/pysvg.structure.html
@@ -6088,6 +6242,7 @@ pysvg.core.BaseShape.set_systemLanguage method generated/pysvg.core.html
 pysvg.linking.a.appendTextContent method generated/pysvg.linking.html
 pysvg.structure.switch.get_shape_rendering method generated/pysvg.structure.html
 pysvg.text.text.get_onclick method generated/pysvg.text.html
+pysvg.structure.symbol.get_xml_space method generated/pysvg.structure.html
 pysvg.core.BaseShape.set_pointer_events method generated/pysvg.core.html
 pysvg.filter.feColorMatrix.get_result method generated/pysvg.filter.html
 pysvg.filter.filter.get_glyph_orientation_vertical method generated/pysvg.filter.html
@@ -6152,11 +6307,13 @@ pysvg.text.text.set_text_rendering method generated/pysvg.text.html
 pysvg.animate.animateColor.set_xlink_type method generated/pysvg.animate.html
 pysvg.text.text.set_kerning method generated/pysvg.text.html
 pysvg.shape.path.set_onload method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_color_interpolation method generated/pysvg.structure.html
 pysvg.animate.set.set_attributeName method generated/pysvg.animate.html
 pysvg.structure.symbol.set_onfocusout method generated/pysvg.structure.html
 pysvg.filter.feBlend.set_height method generated/pysvg.filter.html
 pysvg.structure.svg.get_onmousedown method generated/pysvg.structure.html
 pysvg.shape.rect.set_onmouseover method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_onmousemove method generated/pysvg.structure.html
 pysvg.shape.rect.get_stroke_opacity method generated/pysvg.shape.html
 pysvg.text.text.wrap_xml method generated/pysvg.text.html
 pysvg.attributes.CoreAttrib.set_xml_lang method generated/pysvg.attributes.html
@@ -6196,8 +6353,10 @@ pysvg.filter.feComponentTransfer.save method generated/pysvg.filter.html
 pysvg.gradient.linearGradient.insertElementAt method generated/pysvg.gradient.html
 pysvg.filter.filter.set_fill_opacity method generated/pysvg.filter.html
 pysvg.animate.animateColor.set_stroke_linecap method generated/pysvg.animate.html
+pysvg.structure.clipPath.set_filter method generated/pysvg.structure.html
 pysvg.shape.line.set_stroke_width method generated/pysvg.shape.html
 pysvg.animate.animateMotion.set_from method generated/pysvg.animate.html
+pysvg.builders.StyleBuilder.setStrokeDashArray method generated/pysvg.builders.html
 pysvg.filter.filter.get_xml_space method generated/pysvg.filter.html
 pysvg.text.glyphRef.set_externalResourcesRequired method generated/pysvg.text.html
 pysvg.filter.feConvolveMatrix.set_xml_base method generated/pysvg.filter.html
@@ -6207,7 +6366,7 @@ pysvg.structure.g.set_stroke_dashoffset method generated/pysvg.structure.html
 pysvg.text.tref.get_onfocusout method generated/pysvg.text.html
 pysvg.filter.fePointLight.wrap_xml method generated/pysvg.filter.html
 pysvg.structure.svg.setAttribute method generated/pysvg.structure.html
-pysvg.gradient.pattern.getElementAt method generated/pysvg.gradient.html
+pysvg.structure.switch.set_transform method generated/pysvg.structure.html
 pysvg.linking.a.set_stroke_linecap method generated/pysvg.linking.html
 pysvg.filter.feConvolveMatrix.get_xml_base method generated/pysvg.filter.html
 pysvg.animate.animate.set_onfocusin method generated/pysvg.animate.html
@@ -6215,7 +6374,7 @@ pysvg.animate.animate.set_image_rendering method generated/pysvg.animate.html
 pysvg.structure.symbol.set_glyph_orientation_horizontal method generated/pysvg.structure.html
 pysvg.structure.g.set_onactivate method generated/pysvg.structure.html
 pysvg.structure.title.get_xml_base method generated/pysvg.structure.html
-pysvg.filter.feConvolveMatrix.get_edgeMode method generated/pysvg.filter.html
+pysvg.structure.symbol.get_onmousemove method generated/pysvg.structure.html
 pysvg.linking.a.set_stop_opacity method generated/pysvg.linking.html
 pysvg.shape.line.get_visibility method generated/pysvg.shape.html
 pysvg.animate.animate.get_mask method generated/pysvg.animate.html
@@ -6240,7 +6399,7 @@ pysvg.structure.switch.set_stroke_opacity method generated/pysvg.structure.html
 pysvg.filter.feMerge.get_id method generated/pysvg.filter.html
 pysvg.animate.animateColor.set_requiredFeatures method generated/pysvg.animate.html
 pysvg.shape.ellipse.get_stroke_linejoin method generated/pysvg.shape.html
-pysvg.filter.feMerge.get_in method generated/pysvg.filter.html
+pysvg.structure.clipPath.get_stroke method generated/pysvg.structure.html
 pysvg.text.text.get_style method generated/pysvg.text.html
 pysvg.attributes.FilterPrimitiveAttrib.get_height method generated/pysvg.attributes.html
 pysvg.gradient.pattern.get_dominant_baseline method generated/pysvg.gradient.html
@@ -6254,6 +6413,7 @@ pysvg.text.textPath.get_textLength method generated/pysvg.text.html
 pysvg.structure.svg.set_color_profile method generated/pysvg.structure.html
 pysvg.shape.polygon.get_requiredExtensions method generated/pysvg.shape.html
 pysvg.structure.image.set_onload method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_alignment_baseline method generated/pysvg.structure.html
 pysvg.animate.animateTransform.get_mask method generated/pysvg.animate.html
 pysvg.core.BaseShape.set_text_rendering method generated/pysvg.core.html
 pysvg.structure.title.set_class method generated/pysvg.structure.html
@@ -6278,6 +6438,7 @@ pysvg.animate.animateTransform.getElementAt method generated/pysvg.animate.html
 pysvg.filter.feImage.get_clip method generated/pysvg.filter.html
 pysvg.linking.a.set_xlink_type method generated/pysvg.linking.html
 pysvg.structure.image.set_opacity method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_systemLanguage method generated/pysvg.structure.html
 pysvg.text.altGlyph.get_xlink_actuate method generated/pysvg.text.html
 pysvg.text.altGlyph.set_baseline_shift method generated/pysvg.text.html
 pysvg.filter.feComponentTransfer.set_width method generated/pysvg.filter.html
@@ -6288,6 +6449,7 @@ pysvg.filter.feSpecularLighting.wrap_xml method generated/pysvg.filter.html
 pysvg.text.tspan.set_mask method generated/pysvg.text.html
 pysvg.animate.AnimationValueAttrib.get_from method generated/pysvg.animate.html
 pysvg.structure.svg.appendTextContent method generated/pysvg.structure.html
+pysvg.structure.clipPath.set_color method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_Marker.set_marker_start method generated/pysvg.attributes.html
 pysvg.animate.animate.get_stroke_miterlimit method generated/pysvg.animate.html
 pysvg.shape.path.get_color method generated/pysvg.shape.html
@@ -6328,7 +6490,7 @@ pysvg.text.text.set_fill method generated/pysvg.text.html
 pysvg.filter.feImage.set_xlink_show method generated/pysvg.filter.html
 pysvg.animate.animateTransform.get_stroke method generated/pysvg.animate.html
 pysvg.style.style.get_xlink_role method generated/pysvg.style.html
-pysvg.structure.symbol.set_fill_opacity method generated/pysvg.structure.html
+pysvg.filter.feGaussianBlur.get_height method generated/pysvg.filter.html
 pysvg.shape.rect.save method generated/pysvg.shape.html
 pysvg.shape.circle.set_onfocusout method generated/pysvg.shape.html
 pysvg.animate.mpath.quote_attrib method generated/pysvg.animate.html
@@ -6342,8 +6504,9 @@ pysvg.animate.animateMotion.set_dur method generated/pysvg.animate.html
 pysvg.shape.polygon.addElement method generated/pysvg.shape.html
 pysvg.shape.path.set_clip_rule method generated/pysvg.shape.html
 pysvg.shape.polyline.__init__ method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_clip_path method generated/pysvg.structure.html
 pysvg.filter.feDisplacementMap.get_height method generated/pysvg.filter.html
-pysvg.text.text.get_baseline_shift method generated/pysvg.text.html
+pysvg.structure.clipPath.get_onfocusout method generated/pysvg.structure.html
 pysvg.core.TextContent.setContent method generated/pysvg.core.html
 pysvg.gradient.pattern.set_patternTransform method generated/pysvg.gradient.html
 pysvg.attributes.MarkerAttrib class generated/pysvg.attributes.html
@@ -6359,7 +6522,7 @@ pysvg.filter.feTurbulence.wrap_xml method generated/pysvg.filter.html
 pysvg.structure.use.get_id method generated/pysvg.structure.html
 pysvg.gradient.radialGradient.get_id method generated/pysvg.gradient.html
 pysvg.filter.feFuncB.get_xml_space method generated/pysvg.filter.html
-pysvg.structure.switch.set_text_rendering method generated/pysvg.structure.html
+pysvg.linking.a.get_clip_path method generated/pysvg.linking.html
 pysvg.animate.animate.get_values method generated/pysvg.animate.html
 pysvg.text.tref.get_onmouseup method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_FillStroke.set_stroke_opacity method generated/pysvg.attributes.html
@@ -6396,6 +6559,7 @@ pysvg.filter.feImage.set_color_profile method generated/pysvg.filter.html
 pysvg.text.textPath.getElementAt method generated/pysvg.text.html
 pysvg.structure.g.get_pointer_events method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_All.get_stroke_linecap method generated/pysvg.attributes.html
+pysvg.structure.clipPath.set_id method generated/pysvg.structure.html
 pysvg.structure.use.set_lighting_color method generated/pysvg.structure.html
 pysvg.gradient.stop class generated/pysvg.gradient.html
 pysvg.structure.desc.wrap_xml method generated/pysvg.structure.html
@@ -6403,6 +6567,7 @@ pysvg.filter.feConvolveMatrix.get_height method generated/pysvg.filter.html
 pysvg.animate.mpath.get_xml_space method generated/pysvg.animate.html
 pysvg.animate.animateColor.set_pointer_events method generated/pysvg.animate.html
 pysvg.shape.polygon.set_cursor method generated/pysvg.shape.html
+pysvg.structure.clipPath.set_externalResourcesRequired method generated/pysvg.structure.html
 pysvg.text.text.set_onactivate method generated/pysvg.text.html
 pysvg.attributes.PresentationAttributes_LightingEffects.set_lighting_color method generated/pysvg.attributes.html
 pysvg.text.tspan.set_text_rendering method generated/pysvg.text.html
@@ -6471,6 +6636,7 @@ pysvg.filter.feSpotLight.set_xml_base method generated/pysvg.filter.html
 pysvg.structure.use.set_glyph_orientation_vertical method generated/pysvg.structure.html
 pysvg.filter.filter.set_word_spacing method generated/pysvg.filter.html
 pysvg.filter.feFuncR.setAttribute method generated/pysvg.filter.html
+pysvg.structure.switch.set_visibility method generated/pysvg.structure.html
 pysvg.shape.path.get_onmousedown method generated/pysvg.shape.html
 pysvg.filter.feConvolveMatrix.getAttribute method generated/pysvg.filter.html
 pysvg.gradient.pattern.set_text_decoration method generated/pysvg.gradient.html
@@ -6508,6 +6674,7 @@ pysvg.attributes.PresentationAttributes_All.set_fill_opacity method generated/py
 pysvg.structure.svg.get_word_spacing method generated/pysvg.structure.html
 pysvg.animate.animate.get_externalResourcesRequired method generated/pysvg.animate.html
 pysvg.text.tspan.set_fill_opacity method generated/pysvg.text.html
+pysvg.structure.clipPath.set_unicode_bidi method generated/pysvg.structure.html
 pysvg.shape.line.quote_attrib method generated/pysvg.shape.html
 pysvg.text.glyphRef.get_x method generated/pysvg.text.html
 pysvg.filter.feFuncR.save method generated/pysvg.filter.html
@@ -6527,8 +6694,9 @@ pysvg.shape.circle.set_color_rendering method generated/pysvg.shape.html
 pysvg.structure.svg.addElement method generated/pysvg.structure.html
 pysvg.gradient.pattern.get_viewBox method generated/pysvg.gradient.html
 pysvg.shape.ellipse.set_onmouseout method generated/pysvg.shape.html
-pysvg.shape.polygon.set_color_rendering method generated/pysvg.shape.html
+pysvg.structure.symbol.get_mask method generated/pysvg.structure.html
 pysvg.gradient.pattern.set_font_size_adjust method generated/pysvg.gradient.html
+pysvg.gradient.pattern.get_overflow method generated/pysvg.gradient.html
 pysvg.text.textPath.get_cursor method generated/pysvg.text.html
 pysvg.attributes.TextContentAttrib.set_unicode_bidi method generated/pysvg.attributes.html
 pysvg.structure.switch.get_font_weight method generated/pysvg.structure.html
@@ -6638,6 +6806,7 @@ pysvg.structure.svg.get_zoomAndPan method generated/pysvg.structure.html
 pysvg.structure.use.set_font_weight method generated/pysvg.structure.html
 pysvg.gradient.pattern.get_shape_rendering method generated/pysvg.gradient.html
 pysvg.text.altGlyph class generated/pysvg.text.html
+pysvg.structure.clipPath.save method generated/pysvg.structure.html
 pysvg.attributes.PresentationAttributes_Graphics.set_text_rendering method generated/pysvg.attributes.html
 pysvg.text.text.set_onmouseover method generated/pysvg.text.html
 pysvg.shape.polyline.get_id method generated/pysvg.shape.html
@@ -6669,6 +6838,7 @@ pysvg.structure.switch.set_onmouseup method generated/pysvg.structure.html
 pysvg.structure.g.get_xml_space method generated/pysvg.structure.html
 pysvg.shape.line.set_pointer_events method generated/pysvg.shape.html
 pysvg.structure.defs.get_onmouseout method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_id method generated/pysvg.structure.html
 pysvg.animate.animate.set_class method generated/pysvg.animate.html
 pysvg.structure.use.addElement method generated/pysvg.structure.html
 pysvg.structure.switch.get_display method generated/pysvg.structure.html
@@ -6697,6 +6867,7 @@ pysvg.filter.feDiffuseLighting.set_y method generated/pysvg.filter.html
 pysvg.filter.feDiffuseLighting.set_x method generated/pysvg.filter.html
 pysvg.structure.defs.set_font_stretch method generated/pysvg.structure.html
 pysvg.text.altGlyph.set_xlink_href method generated/pysvg.text.html
+pysvg.structure.clipPath.insertElementAt method generated/pysvg.structure.html
 pysvg.text.text.set_onload method generated/pysvg.text.html
 pysvg.filter.filter.set_lighting_color method generated/pysvg.filter.html
 pysvg.text.tspan.quote_attrib method generated/pysvg.text.html
@@ -6716,10 +6887,12 @@ pysvg.filter.feConvolveMatrix.get_targetY method generated/pysvg.filter.html
 pysvg.animate.animateColor.get_keyTimes method generated/pysvg.animate.html
 pysvg.gradient.pattern.get_color method generated/pysvg.gradient.html
 pysvg.shape.polygon.get_clip_rule method generated/pysvg.shape.html
+pysvg.structure.clipPath.get_stroke_linejoin method generated/pysvg.structure.html
 pysvg.text.textPath.set_unicode_bidi method generated/pysvg.text.html
 pysvg.structure.symbol.set_style method generated/pysvg.structure.html
 pysvg.filter.feConvolveMatrix.set_preserveAlpha method generated/pysvg.filter.html
 pysvg.structure.g.get_text_anchor method generated/pysvg.structure.html
+pysvg.structure.clipPath.get_onmouseout method generated/pysvg.structure.html
 pysvg.text.tspan.set_dx method generated/pysvg.text.html
 pysvg.filter.feFuncG.get_xml_lang method generated/pysvg.filter.html
 pysvg.animate.animateMotion.set_requiredExtensions method generated/pysvg.animate.html
@@ -6730,4 +6903,5 @@ pysvg.builders.StyleBuilder class generated/pysvg.builders.html
 pysvg.structure.symbol.set_font_style method generated/pysvg.structure.html
 pysvg.filter.feComponentTransfer.set_y method generated/pysvg.filter.html
 pysvg.filter.feComponentTransfer.set_x method generated/pysvg.filter.html
+pysvg.structure.clipPath.set_color_rendering method generated/pysvg.structure.html
 pysvg.structure.use.get_stop_color method generated/pysvg.structure.html

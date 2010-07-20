@@ -17,6 +17,18 @@ Inheritance diagram for ``pysvg.structure``:
 Classes
 -------
 
+:class:`clipPath`
+~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: clipPath
+  :members:
+  :undoc-members:
+  :show-inheritance:
+  :inherited-members:
+
+  .. automethod:: __init__
+
 :class:`defs`
 ~~~~~~~~~~~~~
 
