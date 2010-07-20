@@ -191,8 +191,12 @@ class clipPath(BaseElement, CoreAttrib, ConditionalAttrib, StyleAttrib, External
     """
     Class representing the clipPath element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, id = None, transform=None, clipPathUnits=None):
         BaseElement.__init__(self,'clipPath')
+        self.set_id(id)
+        self.set_transform(transform)
+        self.set_clipPathUnits(clipPathUnits)
+        
     
     def set_transform(self, transform):
         self._attributes['transform']=transform
