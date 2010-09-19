@@ -54,12 +54,12 @@ For licensing information please refer to license.txt</p>
 <h3><a title="pysvg.gradient.linearGradient" class="reference internal" href="#pysvg.gradient.linearGradient"><tt class="xref docutils literal"><span class="pre">linearGradient</span></tt></a><a class="headerlink" href="#lineargradient" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.gradient.linearGradient">
-<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">linearGradient</tt><big>(</big><em>x1=None</em>, <em>y1=None</em>, <em>x2=None</em>, <em>y2=None</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">linearGradient</tt><big>(</big><em>x1=None</em>, <em>y1=None</em>, <em>x2=None</em>, <em>y2=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.XLinkAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.XLinkAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.XLinkAttrib</span></tt></a>, <a title="pysvg.attributes.PaintAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a></p>
 <p>Class representing the linearGradient element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.gradient.linearGradient.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x1=None</em>, <em>y1=None</em>, <em>x2=None</em>, <em>y2=None</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x1=None</em>, <em>y1=None</em>, <em>x2=None</em>, <em>y2=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -267,7 +267,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.gradient.linearGradient.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -275,6 +275,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.gradient.linearGradient.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.gradient.linearGradient.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.gradient.linearGradient.set_class">
@@ -443,7 +450,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.gradient.linearGradient.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.linearGradient.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -453,12 +460,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.gradient.pattern" class="reference internal" href="#pysvg.gradient.pattern"><tt class="xref docutils literal"><span class="pre">pattern</span></tt></a><a class="headerlink" href="#pattern" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.gradient.pattern">
-<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">pattern</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>patternUnits=None</em>, <em>patternContentUnits=None</em>, <em>patternTransform=None</em>, <em>viewBox=None</em>, <em>preserveAspectRatio=None</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">pattern</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>patternUnits=None</em>, <em>patternContentUnits=None</em>, <em>patternTransform=None</em>, <em>viewBox=None</em>, <em>preserveAspectRatio=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.XLinkAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.XLinkAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.XLinkAttrib</span></tt></a>, <a title="pysvg.attributes.ConditionalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.PresentationAttributes_All" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PresentationAttributes_All"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PresentationAttributes_All</span></tt></a>, <a title="pysvg.core.PointAttrib" class="reference external" href="pysvg.core.html#pysvg.core.PointAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.PointAttrib</span></tt></a>, <a title="pysvg.core.DimensionAttrib" class="reference external" href="pysvg.core.html#pysvg.core.DimensionAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.DimensionAttrib</span></tt></a></p>
 <p>Class representing the pattern element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.gradient.pattern.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>patternUnits=None</em>, <em>patternContentUnits=None</em>, <em>patternTransform=None</em>, <em>viewBox=None</em>, <em>preserveAspectRatio=None</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>patternUnits=None</em>, <em>patternContentUnits=None</em>, <em>patternTransform=None</em>, <em>viewBox=None</em>, <em>preserveAspectRatio=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -926,7 +933,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.gradient.pattern.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -934,6 +941,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.gradient.pattern.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.gradient.pattern.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.gradient.pattern.set_alignment_baseline">
@@ -1362,7 +1376,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.gradient.pattern.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.pattern.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1372,12 +1386,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.gradient.radialGradient" class="reference internal" href="#pysvg.gradient.radialGradient"><tt class="xref docutils literal"><span class="pre">radialGradient</span></tt></a><a class="headerlink" href="#radialgradient" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.gradient.radialGradient">
-<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">radialGradient</tt><big>(</big><em>cx='50%'</em>, <em>cy='50%'</em>, <em>r='50%'</em>, <em>fx='50%'</em>, <em>fy='50%'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">radialGradient</tt><big>(</big><em>cx='50%'</em>, <em>cy='50%'</em>, <em>r='50%'</em>, <em>fx='50%'</em>, <em>fy='50%'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.XLinkAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.XLinkAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.XLinkAttrib</span></tt></a>, <a title="pysvg.attributes.PaintAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a></p>
 <p>Class representing the radialGradient element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.gradient.radialGradient.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>cx='50%'</em>, <em>cy='50%'</em>, <em>r='50%'</em>, <em>fx='50%'</em>, <em>fy='50%'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>cx='50%'</em>, <em>cy='50%'</em>, <em>r='50%'</em>, <em>fx='50%'</em>, <em>fy='50%'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1590,7 +1604,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.gradient.radialGradient.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1598,6 +1612,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.gradient.radialGradient.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.gradient.radialGradient.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id5"><span class="problematic" id="id6">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.gradient.radialGradient.set_class">
@@ -1771,7 +1792,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.gradient.radialGradient.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.radialGradient.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1781,12 +1802,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.gradient.stop" class="reference internal" href="#pysvg.gradient.stop"><tt class="xref docutils literal"><span class="pre">stop</span></tt></a><a class="headerlink" href="#stop" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.gradient.stop">
-<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">stop</tt><big>(</big><em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.gradient.</tt><tt class="descname">stop</tt><big>(</big><em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.PaintAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a title="pysvg.attributes.GradientAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.GradientAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.GradientAttrib</span></tt></a></p>
 <p>Class representing the stop element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.gradient.stop.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1934,7 +1955,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.gradient.stop.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1942,6 +1963,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.gradient.stop.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.gradient.stop.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.gradient.stop.set_class">
@@ -2050,7 +2078,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.gradient.stop.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.gradient.stop.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>

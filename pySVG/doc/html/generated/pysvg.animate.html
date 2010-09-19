@@ -419,12 +419,12 @@ For licensing information please refer to license.txt</p>
 <h3><a title="pysvg.animate.animate" class="reference internal" href="#pysvg.animate.animate"><tt class="xref docutils literal"><span class="pre">animate</span></tt></a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.animate.animate">
-<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animate</tt><a class="headerlink" href="#pysvg.animate.animate" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animate</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.ConditionalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.animate.AnimationEventsAttrib" class="reference internal" href="#pysvg.animate.AnimationEventsAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationEventsAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttrib" class="reference internal" href="#pysvg.animate.AnimationAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttributeAttrib" class="reference internal" href="#pysvg.animate.AnimationAttributeAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttributeAttrib</span></tt></a>, <a title="pysvg.animate.AnimationTimingAttrib" class="reference internal" href="#pysvg.animate.AnimationTimingAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationTimingAttrib</span></tt></a>, <a title="pysvg.animate.AnimationValueAttrib" class="reference internal" href="#pysvg.animate.AnimationValueAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationValueAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAdditionAttrib" class="reference internal" href="#pysvg.animate.AnimationAdditionAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAdditionAttrib</span></tt></a></p>
 <p>Class representing the animate element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.animate.animate.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.animate.animate.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -847,7 +847,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.animate.animate.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -855,6 +855,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.animate.animate.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.animate.animate.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id2"><span class="problematic" id="id3">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.animate.animate.set_accumulate">
@@ -1238,7 +1245,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.animate.animate.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animate.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1248,12 +1255,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.animate.animateColor" class="reference internal" href="#pysvg.animate.animateColor"><tt class="xref docutils literal"><span class="pre">animateColor</span></tt></a><a class="headerlink" href="#animatecolor" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.animate.animateColor">
-<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animateColor</tt><a class="headerlink" href="#pysvg.animate.animateColor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animateColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.ConditionalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.animate.AnimationEventsAttrib" class="reference internal" href="#pysvg.animate.AnimationEventsAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationEventsAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttrib" class="reference internal" href="#pysvg.animate.AnimationAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttributeAttrib" class="reference internal" href="#pysvg.animate.AnimationAttributeAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttributeAttrib</span></tt></a>, <a title="pysvg.animate.AnimationTimingAttrib" class="reference internal" href="#pysvg.animate.AnimationTimingAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationTimingAttrib</span></tt></a>, <a title="pysvg.animate.AnimationValueAttrib" class="reference internal" href="#pysvg.animate.AnimationValueAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationValueAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAdditionAttrib" class="reference internal" href="#pysvg.animate.AnimationAdditionAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAdditionAttrib</span></tt></a></p>
 <p>Class representing the animateColor element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.animate.animateColor.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1676,7 +1683,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.animate.animateColor.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1684,6 +1691,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.animate.animateColor.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.animate.animateColor.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id4"><span class="problematic" id="id5">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.animate.animateColor.set_accumulate">
@@ -2067,7 +2081,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.animate.animateColor.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateColor.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2077,12 +2091,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.animate.animateMotion" class="reference internal" href="#pysvg.animate.animateMotion"><tt class="xref docutils literal"><span class="pre">animateMotion</span></tt></a><a class="headerlink" href="#animatemotion" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.animate.animateMotion">
-<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animateMotion</tt><a class="headerlink" href="#pysvg.animate.animateMotion" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animateMotion</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.ConditionalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.animate.AnimationEventsAttrib" class="reference internal" href="#pysvg.animate.AnimationEventsAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationEventsAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttrib" class="reference internal" href="#pysvg.animate.AnimationAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttrib</span></tt></a>, <a title="pysvg.animate.AnimationTimingAttrib" class="reference internal" href="#pysvg.animate.AnimationTimingAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationTimingAttrib</span></tt></a>, <a title="pysvg.animate.AnimationValueAttrib" class="reference internal" href="#pysvg.animate.AnimationValueAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationValueAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAdditionAttrib" class="reference internal" href="#pysvg.animate.AnimationAdditionAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAdditionAttrib</span></tt></a></p>
 <p>Class representing the animateMotion element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.animate.animateMotion.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2515,7 +2529,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.animate.animateMotion.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2523,6 +2537,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.animate.animateMotion.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.animate.animateMotion.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id6"><span class="problematic" id="id7">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.animate.animateMotion.set_accumulate">
@@ -2916,7 +2937,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.animate.animateMotion.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateMotion.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2926,12 +2947,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.animate.animateTransform" class="reference internal" href="#pysvg.animate.animateTransform"><tt class="xref docutils literal"><span class="pre">animateTransform</span></tt></a><a class="headerlink" href="#animatetransform" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.animate.animateTransform">
-<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animateTransform</tt><a class="headerlink" href="#pysvg.animate.animateTransform" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">animateTransform</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.ConditionalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.animate.AnimationEventsAttrib" class="reference internal" href="#pysvg.animate.AnimationEventsAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationEventsAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttrib" class="reference internal" href="#pysvg.animate.AnimationAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttributeAttrib" class="reference internal" href="#pysvg.animate.AnimationAttributeAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttributeAttrib</span></tt></a>, <a title="pysvg.animate.AnimationTimingAttrib" class="reference internal" href="#pysvg.animate.AnimationTimingAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationTimingAttrib</span></tt></a>, <a title="pysvg.animate.AnimationValueAttrib" class="reference internal" href="#pysvg.animate.AnimationValueAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationValueAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAdditionAttrib" class="reference internal" href="#pysvg.animate.AnimationAdditionAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAdditionAttrib</span></tt></a></p>
 <p>Class representing the animateTransform element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.animate.animateTransform.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3359,7 +3380,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.animate.animateTransform.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -3367,6 +3388,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.animate.animateTransform.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.animate.animateTransform.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id8"><span class="problematic" id="id9">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.animate.animateTransform.set_accumulate">
@@ -3755,7 +3783,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.animate.animateTransform.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.animateTransform.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -3765,12 +3793,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.animate.mpath" class="reference internal" href="#pysvg.animate.mpath"><tt class="xref docutils literal"><span class="pre">mpath</span></tt></a><a class="headerlink" href="#mpath" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.animate.mpath">
-<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">mpath</tt><a class="headerlink" href="#pysvg.animate.mpath" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">mpath</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.XLinkAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.XLinkAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.XLinkAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a></p>
 <p>Class representing the animateColor element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.animate.mpath.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4083,7 +4111,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.animate.mpath.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4091,6 +4119,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.animate.mpath.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.animate.mpath.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id10"><span class="problematic" id="id11">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.animate.mpath.set_class">
@@ -4364,7 +4399,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.animate.mpath.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.mpath.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -4374,12 +4409,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.animate.set" class="reference internal" href="#pysvg.animate.set"><tt class="xref docutils literal"><span class="pre">set</span></tt></a><a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.animate.set">
-<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">set</tt><a class="headerlink" href="#pysvg.animate.set" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.animate.</tt><tt class="descname">set</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.set" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.ConditionalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.animate.AnimationEventsAttrib" class="reference internal" href="#pysvg.animate.AnimationEventsAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationEventsAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttrib" class="reference internal" href="#pysvg.animate.AnimationAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttrib</span></tt></a>, <a title="pysvg.animate.AnimationAttributeAttrib" class="reference internal" href="#pysvg.animate.AnimationAttributeAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationAttributeAttrib</span></tt></a>, <a title="pysvg.animate.AnimationTimingAttrib" class="reference internal" href="#pysvg.animate.AnimationTimingAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.animate.AnimationTimingAttrib</span></tt></a></p>
 <p>Class representing the set element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.animate.set.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.animate.set.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.set.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4762,7 +4797,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.animate.set.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.animate.set.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.set.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4770,6 +4805,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.animate.set.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.animate.set.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.animate.set.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.animate.set.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id12"><span class="problematic" id="id13">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.animate.set.set_attributeName">
@@ -5113,7 +5155,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.animate.set.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.animate.set.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.animate.set.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>

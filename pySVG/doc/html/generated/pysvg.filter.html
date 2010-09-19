@@ -54,12 +54,12 @@ For licensing information please refer to license.txt</p>
 <h3><a title="pysvg.filter.feBlend" class="reference internal" href="#pysvg.filter.feBlend"><tt class="xref docutils literal"><span class="pre">feBlend</span></tt></a><a class="headerlink" href="#feblend" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feBlend">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feBlend</tt><big>(</big><em>in2=None</em>, <em>mode=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feBlend</tt><big>(</big><em>in2=None</em>, <em>mode=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feBlend element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feBlend.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>in2=None</em>, <em>mode=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>in2=None</em>, <em>mode=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -167,7 +167,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feBlend.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -175,6 +175,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feBlend.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feBlend.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feBlend.set_color_interpolation_filters">
@@ -243,7 +250,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feBlend.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feBlend.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -253,12 +260,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feColorMatrix" class="reference internal" href="#pysvg.filter.feColorMatrix"><tt class="xref docutils literal"><span class="pre">feColorMatrix</span></tt></a><a class="headerlink" href="#fecolormatrix" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feColorMatrix">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feColorMatrix</tt><big>(</big><em>type=None</em>, <em>values=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feColorMatrix</tt><big>(</big><em>type=None</em>, <em>values=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feColorMatrix element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feColorMatrix.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>values=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>values=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -366,7 +373,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feColorMatrix.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -374,6 +381,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feColorMatrix.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feColorMatrix.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feColorMatrix.set_color_interpolation_filters">
@@ -442,7 +456,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feColorMatrix.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feColorMatrix.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -452,12 +466,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">feComponentTransfer</span></tt></a><a class="headerlink" href="#fecomponenttransfer" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feComponentTransfer">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feComponentTransfer</tt><a class="headerlink" href="#pysvg.filter.feComponentTransfer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feComponentTransfer</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.FilterColorAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterColorAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterColorAttrib</span></tt></a>, <a title="pysvg.attributes.FilterPrimitiveWithInAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterPrimitiveWithInAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterPrimitiveWithInAttrib</span></tt></a></p>
 <p>Class representing the feComponentTransfer element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feComponentTransfer.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -555,7 +569,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feComponentTransfer.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -563,6 +577,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feComponentTransfer.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feComponentTransfer.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id5"><span class="problematic" id="id6">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feComponentTransfer.set_color_interpolation_filters">
@@ -621,7 +642,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feComponentTransfer.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComponentTransfer.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -631,12 +652,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feComposite" class="reference internal" href="#pysvg.filter.feComposite"><tt class="xref docutils literal"><span class="pre">feComposite</span></tt></a><a class="headerlink" href="#fecomposite" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feComposite">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feComposite</tt><big>(</big><em>in2=None</em>, <em>operator=None</em>, <em>k1=None</em>, <em>k2=None</em>, <em>k3=None</em>, <em>k4=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feComposite</tt><big>(</big><em>in2=None</em>, <em>operator=None</em>, <em>k1=None</em>, <em>k2=None</em>, <em>k3=None</em>, <em>k4=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feComposite element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feComposite.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>in2=None</em>, <em>operator=None</em>, <em>k1=None</em>, <em>k2=None</em>, <em>k3=None</em>, <em>k4=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>in2=None</em>, <em>operator=None</em>, <em>k1=None</em>, <em>k2=None</em>, <em>k3=None</em>, <em>k4=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -764,7 +785,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feComposite.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -772,6 +793,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feComposite.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feComposite.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feComposite.set_color_interpolation_filters">
@@ -860,7 +888,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feComposite.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feComposite.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -870,12 +898,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feConvolveMatrix" class="reference internal" href="#pysvg.filter.feConvolveMatrix"><tt class="xref docutils literal"><span class="pre">feConvolveMatrix</span></tt></a><a class="headerlink" href="#feconvolvematrix" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feConvolveMatrix">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feConvolveMatrix</tt><big>(</big><em>order=None</em>, <em>kernelMatrix=None</em>, <em>divisor=None</em>, <em>bias=None</em>, <em>targetX=None</em>, <em>targetY=None</em>, <em>edgeMode=None</em>, <em>kernelUnitLength=None</em>, <em>preserveAlpha=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feConvolveMatrix</tt><big>(</big><em>order=None</em>, <em>kernelMatrix=None</em>, <em>divisor=None</em>, <em>bias=None</em>, <em>targetX=None</em>, <em>targetY=None</em>, <em>edgeMode=None</em>, <em>kernelUnitLength=None</em>, <em>preserveAlpha=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feConvolveMatrix element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feConvolveMatrix.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>order=None</em>, <em>kernelMatrix=None</em>, <em>divisor=None</em>, <em>bias=None</em>, <em>targetX=None</em>, <em>targetY=None</em>, <em>edgeMode=None</em>, <em>kernelUnitLength=None</em>, <em>preserveAlpha=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>order=None</em>, <em>kernelMatrix=None</em>, <em>divisor=None</em>, <em>bias=None</em>, <em>targetX=None</em>, <em>targetY=None</em>, <em>edgeMode=None</em>, <em>kernelUnitLength=None</em>, <em>preserveAlpha=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1018,7 +1046,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feConvolveMatrix.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1026,6 +1054,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feConvolveMatrix.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feConvolveMatrix.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id9"><span class="problematic" id="id10">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feConvolveMatrix.set_bias">
@@ -1129,7 +1164,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feConvolveMatrix.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feConvolveMatrix.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1139,12 +1174,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feDiffuseLighting" class="reference internal" href="#pysvg.filter.feDiffuseLighting"><tt class="xref docutils literal"><span class="pre">feDiffuseLighting</span></tt></a><a class="headerlink" href="#fediffuselighting" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feDiffuseLighting">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feDiffuseLighting</tt><big>(</big><em>surfaceScale=None</em>, <em>diffuseConstant=None</em>, <em>kernelUnitLength=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feDiffuseLighting</tt><big>(</big><em>surfaceScale=None</em>, <em>diffuseConstant=None</em>, <em>kernelUnitLength=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.PaintAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a title="pysvg.attributes.PresentationAttributes_LightingEffects" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PresentationAttributes_LightingEffects"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PresentationAttributes_LightingEffects</span></tt></a></p>
 <p>Class representing the feDiffuseLighting element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feDiffuseLighting.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>surfaceScale=None</em>, <em>diffuseConstant=None</em>, <em>kernelUnitLength=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>surfaceScale=None</em>, <em>diffuseConstant=None</em>, <em>kernelUnitLength=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1332,7 +1367,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feDiffuseLighting.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1340,6 +1375,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feDiffuseLighting.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feDiffuseLighting.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id11"><span class="problematic" id="id12">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feDiffuseLighting.set_class">
@@ -1488,7 +1530,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feDiffuseLighting.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDiffuseLighting.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1498,12 +1540,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feDisplacementMap" class="reference internal" href="#pysvg.filter.feDisplacementMap"><tt class="xref docutils literal"><span class="pre">feDisplacementMap</span></tt></a><a class="headerlink" href="#fedisplacementmap" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feDisplacementMap">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feDisplacementMap</tt><big>(</big><em>in2=None</em>, <em>scale=None</em>, <em>xChannelSelector=None</em>, <em>yChannelSelector=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feDisplacementMap</tt><big>(</big><em>in2=None</em>, <em>scale=None</em>, <em>xChannelSelector=None</em>, <em>yChannelSelector=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feDisplacementMap element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feDisplacementMap.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>in2=None</em>, <em>scale=None</em>, <em>xChannelSelector=None</em>, <em>yChannelSelector=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>in2=None</em>, <em>scale=None</em>, <em>xChannelSelector=None</em>, <em>yChannelSelector=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1621,7 +1663,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feDisplacementMap.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1629,6 +1671,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feDisplacementMap.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feDisplacementMap.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id13"><span class="problematic" id="id14">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feDisplacementMap.set_color_interpolation_filters">
@@ -1707,7 +1756,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feDisplacementMap.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDisplacementMap.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1717,12 +1766,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feDistantLight" class="reference internal" href="#pysvg.filter.feDistantLight"><tt class="xref docutils literal"><span class="pre">feDistantLight</span></tt></a><a class="headerlink" href="#fedistantlight" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feDistantLight">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feDistantLight</tt><big>(</big><em>azimuth=None</em>, <em>elevation=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feDistantLight</tt><big>(</big><em>azimuth=None</em>, <em>elevation=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a></p>
 <p>Class representing the feDistantLight element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feDistantLight.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>azimuth=None</em>, <em>elevation=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>azimuth=None</em>, <em>elevation=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -1795,7 +1844,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feDistantLight.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1803,6 +1852,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feDistantLight.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feDistantLight.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id15"><span class="problematic" id="id16">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feDistantLight.set_azimuth">
@@ -1836,7 +1892,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feDistantLight.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feDistantLight.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1846,12 +1902,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feFlood" class="reference internal" href="#pysvg.filter.feFlood"><tt class="xref docutils literal"><span class="pre">feFlood</span></tt></a><a class="headerlink" href="#feflood" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feFlood">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFlood</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>flood_color=None</em>, <em>flood_opacity=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFlood</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>flood_color=None</em>, <em>flood_opacity=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.PaintAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a title="pysvg.attributes.PresentationAttributes_feFlood" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PresentationAttributes_feFlood"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PresentationAttributes_feFlood</span></tt></a></p>
 <p>Class representing the feFlood element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feFlood.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>flood_color=None</em>, <em>flood_opacity=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>flood_color=None</em>, <em>flood_opacity=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2029,7 +2085,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feFlood.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2037,6 +2093,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feFlood.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feFlood.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id17"><span class="problematic" id="id18">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feFlood.set_class">
@@ -2175,7 +2238,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feFlood.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFlood.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2185,12 +2248,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feFuncA" class="reference internal" href="#pysvg.filter.feFuncA"><tt class="xref docutils literal"><span class="pre">feFuncA</span></tt></a><a class="headerlink" href="#fefunca" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feFuncA">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncA</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncA</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feFuncR" class="reference internal" href="#pysvg.filter.feFuncR"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feFuncR</span></tt></a></p>
 <p>Class representing the feFuncA element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feFuncA.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2288,7 +2351,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncA.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2296,6 +2359,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feFuncA.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feFuncA.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id19"><span class="problematic" id="id20">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncA.set_amplitude">
@@ -2354,7 +2424,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncA.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncA.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2364,12 +2434,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feFuncB" class="reference internal" href="#pysvg.filter.feFuncB"><tt class="xref docutils literal"><span class="pre">feFuncB</span></tt></a><a class="headerlink" href="#fefuncb" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feFuncB">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncB</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncB</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feFuncR" class="reference internal" href="#pysvg.filter.feFuncR"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feFuncR</span></tt></a></p>
 <p>Class representing the feFuncB element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feFuncB.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2467,7 +2537,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncB.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2475,6 +2545,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feFuncB.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feFuncB.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id21"><span class="problematic" id="id22">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncB.set_amplitude">
@@ -2533,7 +2610,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncB.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncB.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2543,12 +2620,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feFuncG" class="reference internal" href="#pysvg.filter.feFuncG"><tt class="xref docutils literal"><span class="pre">feFuncG</span></tt></a><a class="headerlink" href="#fefuncg" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feFuncG">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncG</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncG</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feFuncR" class="reference internal" href="#pysvg.filter.feFuncR"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feFuncR</span></tt></a></p>
 <p>Class representing the feFuncG element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feFuncG.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2646,7 +2723,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncG.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2654,6 +2731,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feFuncG.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feFuncG.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id23"><span class="problematic" id="id24">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncG.set_amplitude">
@@ -2712,7 +2796,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncG.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncG.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2722,12 +2806,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feFuncR" class="reference internal" href="#pysvg.filter.feFuncR"><tt class="xref docutils literal"><span class="pre">feFuncR</span></tt></a><a class="headerlink" href="#fefuncr" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feFuncR">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncR</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feFuncR</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a></p>
 <p>Class representing the feFuncR element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feFuncR.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>type=None</em>, <em>tableValues=None</em>, <em>slope=None</em>, <em>intercept=None</em>, <em>amplitude=None</em>, <em>exponent=None</em>, <em>offset=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2825,7 +2909,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncR.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2833,6 +2917,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feFuncR.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feFuncR.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id25"><span class="problematic" id="id26">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncR.set_amplitude">
@@ -2891,7 +2982,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feFuncR.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feFuncR.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2901,12 +2992,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feGaussianBlur" class="reference internal" href="#pysvg.filter.feGaussianBlur"><tt class="xref docutils literal"><span class="pre">feGaussianBlur</span></tt></a><a class="headerlink" href="#fegaussianblur" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feGaussianBlur">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feGaussianBlur</tt><big>(</big><em>inValue=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>stdDeviation=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feGaussianBlur</tt><big>(</big><em>inValue=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>stdDeviation=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feGaussianBlur element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feGaussianBlur.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>inValue=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>stdDeviation=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>inValue=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>stdDeviation=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3009,7 +3100,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feGaussianBlur.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -3017,6 +3108,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feGaussianBlur.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feGaussianBlur.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id27"><span class="problematic" id="id28">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feGaussianBlur.set_color_interpolation_filters">
@@ -3080,7 +3178,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feGaussianBlur.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feGaussianBlur.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -3090,12 +3188,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feImage" class="reference internal" href="#pysvg.filter.feImage"><tt class="xref docutils literal"><span class="pre">feImage</span></tt></a><a class="headerlink" href="#feimage" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feImage">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feImage</tt><big>(</big><em>xlink_href=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>result=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feImage</tt><big>(</big><em>xlink_href=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>result=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.XLinkAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.XLinkAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.XLinkAttrib</span></tt></a>, <a title="pysvg.attributes.FilterColorAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterColorAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterColorAttrib</span></tt></a>, <a title="pysvg.attributes.FilterPrimitiveAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterPrimitiveAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterPrimitiveAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.PresentationAttributes_All" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PresentationAttributes_All"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PresentationAttributes_All</span></tt></a></p>
 <p>Class representing the feImage element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feImage.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>xlink_href=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>result=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>xlink_href=None</em>, <em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>result=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3528,7 +3626,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feImage.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -3536,6 +3634,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feImage.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feImage.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id29"><span class="problematic" id="id30">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feImage.set_alignment_baseline">
@@ -3929,7 +4034,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feImage.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feImage.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -3939,12 +4044,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feMerge" class="reference internal" href="#pysvg.filter.feMerge"><tt class="xref docutils literal"><span class="pre">feMerge</span></tt></a><a class="headerlink" href="#femerge" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feMerge">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feMerge</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a></p>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feMerge</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.FilterPrimitiveAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterPrimitiveAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterPrimitiveAttrib</span></tt></a></p>
 <p>Class representing the feMerge element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feMerge.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3976,8 +4081,28 @@ This function can be used for debugging purposes. It is also used by getXML in S
 </dd></dl>
 
 <dl class="method">
+<dt id="pysvg.filter.feMerge.get_height">
+<tt class="descname">get_height</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.get_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pysvg.filter.feMerge.get_id">
 <tt class="descname">get_id</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.get_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMerge.get_result">
+<tt class="descname">get_result</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.get_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMerge.get_width">
+<tt class="descname">get_width</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.get_width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMerge.get_x">
+<tt class="descname">get_x</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.get_x" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3996,6 +4121,11 @@ This function can be used for debugging purposes. It is also used by getXML in S
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.filter.feMerge.get_y">
+<tt class="descname">get_y</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.get_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pysvg.filter.feMerge.insertElementAt">
 <tt class="descname">insertElementAt</tt><big>(</big><em>element</em>, <em>pos</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.insertElementAt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
@@ -4007,7 +4137,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feMerge.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4017,8 +4147,35 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.filter.feMerge.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id31"><span class="problematic" id="id32">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMerge.set_height">
+<tt class="descname">set_height</tt><big>(</big><em>height</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.set_height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pysvg.filter.feMerge.set_id">
 <tt class="descname">set_id</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.set_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMerge.set_result">
+<tt class="descname">set_result</tt><big>(</big><em>result</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.set_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMerge.set_width">
+<tt class="descname">set_width</tt><big>(</big><em>width</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.set_width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMerge.set_x">
+<tt class="descname">set_x</tt><big>(</big><em>x</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.set_x" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4037,8 +4194,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.filter.feMerge.set_y">
+<tt class="descname">set_y</tt><big>(</big><em>y</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.set_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
 <dt id="pysvg.filter.feMerge.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMerge.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -4048,12 +4210,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feMergeNode" class="reference internal" href="#pysvg.filter.feMergeNode"><tt class="xref docutils literal"><span class="pre">feMergeNode</span></tt></a><a class="headerlink" href="#femergenode" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feMergeNode">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feMergeNode</tt><big>(</big><em>inValue=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feMergeNode</tt><big>(</big><em>inValue=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.FilterColorAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterColorAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterColorAttrib</span></tt></a>, <a title="pysvg.attributes.FilterPrimitiveWithInAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterPrimitiveWithInAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterPrimitiveWithInAttrib</span></tt></a></p>
 <p>Class representing the feMergeNode element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feMergeNode.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>inValue=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>inValue=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4151,7 +4313,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feMergeNode.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4159,6 +4321,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feMergeNode.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMergeNode.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id33"><span class="problematic" id="id34">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feMergeNode.set_color_interpolation_filters">
@@ -4217,7 +4386,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feMergeNode.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMergeNode.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -4227,12 +4396,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feMorphology" class="reference internal" href="#pysvg.filter.feMorphology"><tt class="xref docutils literal"><span class="pre">feMorphology</span></tt></a><a class="headerlink" href="#femorphology" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feMorphology">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feMorphology</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>operator=None</em>, <em>radius=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feMorphology</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>operator=None</em>, <em>radius=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feMorphology element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feMorphology.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>operator=None</em>, <em>radius=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>operator=None</em>, <em>radius=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4340,7 +4509,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feMorphology.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4348,6 +4517,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feMorphology.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feMorphology.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id35"><span class="problematic" id="id36">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feMorphology.set_color_interpolation_filters">
@@ -4416,7 +4592,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feMorphology.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feMorphology.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -4426,12 +4602,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feOffset" class="reference internal" href="#pysvg.filter.feOffset"><tt class="xref docutils literal"><span class="pre">feOffset</span></tt></a><a class="headerlink" href="#feoffset" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feOffset">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feOffset</tt><big>(</big><em>inValue=None</em>, <em>dx=None</em>, <em>dy=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feOffset</tt><big>(</big><em>inValue=None</em>, <em>dx=None</em>, <em>dy=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a>, <a title="pysvg.core.DeltaPointAttrib" class="reference external" href="pysvg.core.html#pysvg.core.DeltaPointAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.DeltaPointAttrib</span></tt></a></p>
 <p>Class representing the feOffset element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feOffset.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>inValue=None</em>, <em>dx=None</em>, <em>dy=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>inValue=None</em>, <em>dx=None</em>, <em>dy=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4539,7 +4715,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feOffset.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4547,6 +4723,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feOffset.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feOffset.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id37"><span class="problematic" id="id38">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feOffset.set_color_interpolation_filters">
@@ -4615,7 +4798,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feOffset.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feOffset.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -4625,12 +4808,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.fePointLight" class="reference internal" href="#pysvg.filter.fePointLight"><tt class="xref docutils literal"><span class="pre">fePointLight</span></tt></a><a class="headerlink" href="#fepointlight" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.fePointLight">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">fePointLight</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">fePointLight</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.core.PointAttrib" class="reference external" href="pysvg.core.html#pysvg.core.PointAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.PointAttrib</span></tt></a></p>
 <p>Class representing the fePointLight element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.fePointLight.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4708,7 +4891,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.fePointLight.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4716,6 +4899,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.fePointLight.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.fePointLight.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id39"><span class="problematic" id="id40">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.fePointLight.set_id">
@@ -4754,7 +4944,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.fePointLight.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.fePointLight.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -4764,12 +4954,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feSpecularLighting" class="reference internal" href="#pysvg.filter.feSpecularLighting"><tt class="xref docutils literal"><span class="pre">feSpecularLighting</span></tt></a><a class="headerlink" href="#fespecularlighting" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feSpecularLighting">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feSpecularLighting</tt><big>(</big><em>lighting_color=None</em>, <em>surfaceScale=None</em>, <em>specularConstant=None</em>, <em>specularExponent=None</em>, <em>kernelUnitLength=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feSpecularLighting</tt><big>(</big><em>lighting_color=None</em>, <em>surfaceScale=None</em>, <em>specularConstant=None</em>, <em>specularExponent=None</em>, <em>kernelUnitLength=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.PaintAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a title="pysvg.attributes.PresentationAttributes_LightingEffects" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PresentationAttributes_LightingEffects"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PresentationAttributes_LightingEffects</span></tt></a></p>
 <p>Class representing the feSpecularLighting element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feSpecularLighting.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>lighting_color=None</em>, <em>surfaceScale=None</em>, <em>specularConstant=None</em>, <em>specularExponent=None</em>, <em>kernelUnitLength=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>lighting_color=None</em>, <em>surfaceScale=None</em>, <em>specularConstant=None</em>, <em>specularExponent=None</em>, <em>kernelUnitLength=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -4962,7 +5152,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feSpecularLighting.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -4970,6 +5160,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feSpecularLighting.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feSpecularLighting.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id41"><span class="problematic" id="id42">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feSpecularLighting.set_class">
@@ -5123,7 +5320,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feSpecularLighting.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpecularLighting.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -5133,12 +5330,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feSpotLight" class="reference internal" href="#pysvg.filter.feSpotLight"><tt class="xref docutils literal"><span class="pre">feSpotLight</span></tt></a><a class="headerlink" href="#fespotlight" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feSpotLight">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feSpotLight</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>pointsAtX=None</em>, <em>pointsAtY=None</em>, <em>pointsAtZ=None</em>, <em>specularExponent=None</em>, <em>limitingConeAngle=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feSpotLight</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>pointsAtX=None</em>, <em>pointsAtY=None</em>, <em>pointsAtZ=None</em>, <em>specularExponent=None</em>, <em>limitingConeAngle=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.fePointLight" class="reference internal" href="#pysvg.filter.fePointLight"><tt class="xref docutils literal"><span class="pre">pysvg.filter.fePointLight</span></tt></a></p>
 <p>Class representing the feSpotLight element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feSpotLight.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>pointsAtX=None</em>, <em>pointsAtY=None</em>, <em>pointsAtZ=None</em>, <em>specularExponent=None</em>, <em>limitingConeAngle=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>z=None</em>, <em>pointsAtX=None</em>, <em>pointsAtY=None</em>, <em>pointsAtZ=None</em>, <em>specularExponent=None</em>, <em>limitingConeAngle=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -5241,7 +5438,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feSpotLight.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -5249,6 +5446,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feSpotLight.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feSpotLight.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id43"><span class="problematic" id="id44">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feSpotLight.set_id">
@@ -5312,7 +5516,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feSpotLight.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feSpotLight.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -5322,12 +5526,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feTile" class="reference internal" href="#pysvg.filter.feTile"><tt class="xref docutils literal"><span class="pre">feTile</span></tt></a><a class="headerlink" href="#fetile" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feTile">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feTile</tt><a class="headerlink" href="#pysvg.filter.feTile" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feTile</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.filter.feComponentTransfer" class="reference internal" href="#pysvg.filter.feComponentTransfer"><tt class="xref docutils literal"><span class="pre">pysvg.filter.feComponentTransfer</span></tt></a></p>
 <p>Class representing the feTile element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feTile.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -5425,7 +5629,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feTile.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -5433,6 +5637,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feTile.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feTile.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id45"><span class="problematic" id="id46">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feTile.set_color_interpolation_filters">
@@ -5491,7 +5702,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feTile.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTile.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -5501,12 +5712,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.filter.feTurbulence" class="reference internal" href="#pysvg.filter.feTurbulence"><tt class="xref docutils literal"><span class="pre">feTurbulence</span></tt></a><a class="headerlink" href="#feturbulence" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.feTurbulence">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feTurbulence</tt><a class="headerlink" href="#pysvg.filter.feTurbulence" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">feTurbulence</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.FilterColorAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterColorAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterColorAttrib</span></tt></a>, <a title="pysvg.attributes.FilterPrimitiveAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterPrimitiveAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterPrimitiveAttrib</span></tt></a></p>
 <p>Class representing the feTurbulence element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.feTurbulence.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -5624,7 +5835,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.feTurbulence.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -5632,6 +5843,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.feTurbulence.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.feTurbulence.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id47"><span class="problematic" id="id48">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.feTurbulence.set_baseFrequency">
@@ -5710,22 +5928,22 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.feTurbulence.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.feTurbulence.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
 
 </div>
-<div class="section" id="id1">
-<h3><a title="pysvg.filter.filter" class="reference internal" href="#pysvg.filter.filter"><tt class="xref docutils literal"><span class="pre">filter</span></tt></a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id49">
+<h3><a title="pysvg.filter.filter" class="reference internal" href="#pysvg.filter.filter"><tt class="xref docutils literal"><span class="pre">filter</span></tt></a><a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.filter.filter">
-<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">filter</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>filterRes=None</em>, <em>filterUnits=None</em>, <em>primitiveUnits=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.filter.</tt><tt class="descname">filter</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>filterRes=None</em>, <em>filterUnits=None</em>, <em>primitiveUnits=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference external" href="pysvg.core.html#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.XLinkAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.XLinkAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.XLinkAttrib</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.PresentationAttributes_All" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PresentationAttributes_All"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PresentationAttributes_All</span></tt></a>, <a title="pysvg.core.PointAttrib" class="reference external" href="pysvg.core.html#pysvg.core.PointAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.PointAttrib</span></tt></a>, <a title="pysvg.core.DimensionAttrib" class="reference external" href="pysvg.core.html#pysvg.core.DimensionAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.DimensionAttrib</span></tt></a></p>
 <p>Class representing the filter element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.filter.filter.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>filterRes=None</em>, <em>filterUnits=None</em>, <em>primitiveUnits=None</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>filterRes=None</em>, <em>filterUnits=None</em>, <em>primitiveUnits=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -6168,7 +6386,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.filter.filter.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -6176,6 +6394,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.filter.filter.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.filter.filter.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id50"><span class="problematic" id="id51">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.filter.filter.set_alignment_baseline">
@@ -6579,7 +6804,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.filter.filter.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.filter.filter.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -6623,7 +6848,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <li><a class="reference external" href="#fespotlight"><tt class="docutils literal"><span class="pre">feSpotLight</span></tt></a></li>
 <li><a class="reference external" href="#fetile"><tt class="docutils literal"><span class="pre">feTile</span></tt></a></li>
 <li><a class="reference external" href="#feturbulence"><tt class="docutils literal"><span class="pre">feTurbulence</span></tt></a></li>
-<li><a class="reference external" href="#id1"><tt class="docutils literal"><span class="pre">filter</span></tt></a></li>
+<li><a class="reference external" href="#id49"><tt class="docutils literal"><span class="pre">filter</span></tt></a></li>
 </ul>
 </li>
 </ul>

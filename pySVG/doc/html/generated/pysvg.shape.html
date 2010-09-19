@@ -54,12 +54,12 @@ For licensing information please refer to license.txt</p>
 <h3><a title="pysvg.shape.circle" class="reference internal" href="#pysvg.shape.circle"><tt class="xref docutils literal"><span class="pre">circle</span></tt></a><a class="headerlink" href="#circle" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.shape.circle">
-<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">circle</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>r=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">circle</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>r=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a></p>
 <p>Class representing the circle element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.shape.circle.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>r=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>r=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -391,7 +391,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.shape.circle.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -399,6 +399,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.shape.circle.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.circle.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.circle.set_class">
@@ -647,7 +654,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.circle.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.circle.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -657,12 +664,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.shape.ellipse" class="reference internal" href="#pysvg.shape.ellipse"><tt class="xref docutils literal"><span class="pre">ellipse</span></tt></a><a class="headerlink" href="#ellipse" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.shape.ellipse">
-<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">ellipse</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>rx=None</em>, <em>ry=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">ellipse</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>rx=None</em>, <em>ry=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a></p>
 <p>Class representing the ellipse element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.shape.ellipse.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>rx=None</em>, <em>ry=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>cx=None</em>, <em>cy=None</em>, <em>rx=None</em>, <em>ry=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -989,7 +996,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.shape.ellipse.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -997,6 +1004,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.shape.ellipse.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.ellipse.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.ellipse.set_class">
@@ -1250,7 +1264,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.ellipse.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.ellipse.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1260,14 +1274,14 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.shape.line" class="reference internal" href="#pysvg.shape.line"><tt class="xref docutils literal"><span class="pre">line</span></tt></a><a class="headerlink" href="#line" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.shape.line">
-<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">line</tt><big>(</big><em>X1=None</em>, <em>Y1=None</em>, <em>X2=None</em>, <em>Y2=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.line" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">line</tt><big>(</big><em>X1=None</em>, <em>Y1=None</em>, <em>X2=None</em>, <em>Y2=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.line" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.core.PointToAttrib" class="reference external" href="pysvg.core.html#pysvg.core.PointToAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.PointToAttrib</span></tt></a></p>
 <p>Class representing the line element of an svg doc.
 Note that this element is NOT painted VISIBLY by default UNLESS you provide
 a style including STROKE and STROKE-WIDTH</p>
 <dl class="method">
 <dt id="pysvg.shape.line.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>X1=None</em>, <em>Y1=None</em>, <em>X2=None</em>, <em>Y2=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>X1=None</em>, <em>Y1=None</em>, <em>X2=None</em>, <em>Y2=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.__init__" title="Permalink to this definition">¶</a></dt>
 <dd>Creates a line
 &#64;type  X1: string or int
 &#64;param X1:  starting x-coordinate
@@ -1609,7 +1623,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.shape.line.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -1617,6 +1631,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.shape.line.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.line.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id5"><span class="problematic" id="id6">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.line.set_class">
@@ -1870,7 +1891,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.line.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.line.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -1880,12 +1901,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.shape.path" class="reference internal" href="#pysvg.shape.path"><tt class="xref docutils literal"><span class="pre">path</span></tt></a><a class="headerlink" href="#path" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.shape.path">
-<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">path</tt><big>(</big><em>pathData=''</em>, <em>pathLength=None</em>, <em>style=None</em>, <em>focusable=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.path" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">path</tt><big>(</big><em>pathData=''</em>, <em>pathLength=None</em>, <em>style=None</em>, <em>focusable=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.attributes.ExternalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ExternalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ExternalAttrib</span></tt></a>, <a title="pysvg.attributes.MarkerAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.MarkerAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.MarkerAttrib</span></tt></a></p>
 <p>Class representing the path element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.shape.path.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>pathData=''</em>, <em>pathLength=None</em>, <em>style=None</em>, <em>focusable=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>pathData=''</em>, <em>pathLength=None</em>, <em>style=None</em>, <em>focusable=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2238,7 +2259,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.shape.path.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2246,6 +2267,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.shape.path.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.path.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id7"><span class="problematic" id="id8">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.path.set_class">
@@ -2509,7 +2537,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.path.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.path.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -2519,12 +2547,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.shape.polygon" class="reference internal" href="#pysvg.shape.polygon"><tt class="xref docutils literal"><span class="pre">polygon</span></tt></a><a class="headerlink" href="#polygon" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.shape.polygon">
-<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">polygon</tt><big>(</big><em>points=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">polygon</tt><big>(</big><em>points=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.shape.polyline" class="reference internal" href="#pysvg.shape.polyline"><tt class="xref docutils literal"><span class="pre">pysvg.shape.polyline</span></tt></a></p>
 <p>Class representing the polygon element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.shape.polygon.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>points=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>points=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -2802,7 +2830,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.shape.polygon.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -2810,6 +2838,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.shape.polygon.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.polygon.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id9"><span class="problematic" id="id10">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.polygon.set_class">
@@ -3048,7 +3083,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.polygon.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.polygon.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -3058,12 +3093,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.shape.polyline" class="reference internal" href="#pysvg.shape.polyline"><tt class="xref docutils literal"><span class="pre">polyline</span></tt></a><a class="headerlink" href="#polyline" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.shape.polyline">
-<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">polyline</tt><big>(</big><em>points=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">polyline</tt><big>(</big><em>points=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a></p>
 <p>Class representing the polyline element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.shape.polyline.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>points=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>points=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3341,7 +3376,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.shape.polyline.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -3349,6 +3384,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.shape.polyline.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.polyline.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id11"><span class="problematic" id="id12">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.polyline.set_class">
@@ -3587,7 +3629,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.polyline.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.polyline.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
@@ -3597,12 +3639,12 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <h3><a title="pysvg.shape.rect" class="reference internal" href="#pysvg.shape.rect"><tt class="xref docutils literal"><span class="pre">rect</span></tt></a><a class="headerlink" href="#rect" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.shape.rect">
-<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">rect</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>rx=None</em>, <em>ry=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">pysvg.shape.</tt><tt class="descname">rect</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>rx=None</em>, <em>ry=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a title="pysvg.core.BaseShape" class="reference external" href="pysvg.core.html#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseShape</span></tt></a>, <a title="pysvg.core.PointAttrib" class="reference external" href="pysvg.core.html#pysvg.core.PointAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.PointAttrib</span></tt></a>, <a title="pysvg.core.DimensionAttrib" class="reference external" href="pysvg.core.html#pysvg.core.DimensionAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.core.DimensionAttrib</span></tt></a></p>
 <p>Class representing the rect element of an svg doc.</p>
 <dl class="method">
 <dt id="pysvg.shape.rect.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>rx=None</em>, <em>ry=None</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>x=None</em>, <em>y=None</em>, <em>width=None</em>, <em>height=None</em>, <em>rx=None</em>, <em>ry=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -3950,7 +3992,7 @@ This function can be used for debugging purposes. It is also used by getXML in S
 
 <dl class="method">
 <dt id="pysvg.shape.rect.save">
-<tt class="descname">save</tt><big>(</big><em>filename</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.save" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.save" title="Permalink to this definition">¶</a></dt>
 <dd>Stores any element in a svg file (including header). 
 Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
 
@@ -3958,6 +4000,13 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dt id="pysvg.shape.rect.setAttribute">
 <tt class="descname">setAttribute</tt><big>(</big><em>attribute_name</em>, <em>attribute_value</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.setAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.shape.rect.setKWARGS">
+<tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.setKWARGS" title="Permalink to this definition">¶</a></dt>
+<dd>Used to set all attributes given in a <a href="#id13"><span class="problematic" id="id14">**</span></a>kwargs parameter.
+Might throw an Exception if attribute was not found.
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.shape.rect.set_class">
@@ -4221,7 +4270,7 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 
 <dl class="method">
 <dt id="pysvg.shape.rect.wrap_xml">
-<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.wrap_xml" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.shape.rect.wrap_xml" title="Permalink to this definition">¶</a></dt>
 <dd>Method that provides a standard svg header string for a file</dd></dl>
 
 </dd></dl>
