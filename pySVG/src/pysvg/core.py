@@ -92,19 +92,20 @@ class BaseElement:
             #    print('attribute not found via setter ')
             #    self.setAttribute(self, key, kwargs[key])
             
-    def wrap_xml(self, xml):
+    def wrap_xml(self, xml, encoding ='ISO-8859-1', standalone='no'):
         """
         Method that provides a standard svg header string for a file
         """
-        return '''<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>'''+xml
+        header = '''<?xml version="1.0" encoding="%s" standalone="%s"?>''' %(encoding, standalone)
+        return  header+xml
     
-    def save(self, filename):
+    def save(self, filename, encoding ='ISO-8859-1', standalone='no'):
         """
         Stores any element in a svg file (including header). 
         Calling this method only makes sense if the root element is an svg elemnt
         """
         f = open(filename, 'w')
-        f.write(self.wrap_xml(self.getXML()))
+        f.write(self.wrap_xml(self.getXML(), encoding, standalone))
         f.close()
         
     def quote_attrib(self, inStr):

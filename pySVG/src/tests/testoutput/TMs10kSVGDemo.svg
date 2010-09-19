@@ -108,7 +108,7 @@ Es werden wichtige Grundelemente von SVG demonstriert.</desc>
 
     <filter id="filter1"  >
 
-      <feGaussianBlur stdDeviation="4" result="out1" in="SourceAlpha"  />
+      <feGaussianBlur result="out1" in="SourceAlpha" stdDeviation="4"  />
 
       <feSpecularLighting result="out2" specularExponent="10" in="out1" surfaceScale="3"  >
 
@@ -141,11 +141,11 @@ SVG</tspan>
 </text>
 
   <text style="fill: #000; font-size: 13px" y="35" x="360"  >
-[Der rote Kreis, die Erkl‰rungstexte und die Textlinks sind mit JavaScript-Funktionen verkn¸pft.]</text>
+[Der rote Kreis, die Erkl√§rungstexte und die Textlinks sind mit JavaScript-Funktionen verkn√ºpft.]</text>
 
   <a xlink:href="mailto:thomas@handmadecode.de"  >
 <text onmouseout="TextHover('mail','#00C','none')" id="mail" class="klein" onmouseover="TextHover('mail','#F00','underline')" y="620" x="5"  >
-© by Dr. Thomas Meinike 2002</text>
+¬© by Dr. Thomas Meinike 2002</text>
 </a>
 
   <text class="klein" y="620" x="830"  >
@@ -177,7 +177,7 @@ Linie</text>
 Pfad</text>
 
   <text onmouseout="InfoText('','h')" onmouseover="InfoText('&lt;text x=&quot;...&quot; y=&quot;...&quot; style=&quot;...&quot;&gt;...&lt;/text&gt;','v')" y="550" x="800"  >
-normaler Flieﬂtext</text>
+normaler Flie√ütext</text>
 
   <text onmouseout="InfoText('','h')" onmouseover="InfoText('&lt;linearGradient&gt;&lt;stop offset=&quot;...&quot; style=&quot;...&quot;/&gt;&lt;/linearGradient&gt;','v')" y="90" x="600"  >
 linearer Gradient</text>
@@ -186,7 +186,7 @@ linearer Gradient</text>
 radialer Gradient</text>
 
   <text onmouseout="InfoText('','h')" onmouseover="InfoText('style=&quot;fill-opacity: ...; stroke-opacity: ...&quot;','v')" y="310" x="600"  >
-Opazit‰t (Durchl‰ssigkeit)</text>
+Opazit√§t (Durchl√§ssigkeit)</text>
 
   <text onmouseout="InfoText('','h')" onmouseover="InfoText('&lt;filter&gt;&lt;feFiltername ... /&gt;&lt;/filter&gt;','v')" y="440" x="600"  >
 Spezialfilter</text>
@@ -263,7 +263,7 @@ Textlink</text>
   <rect style="fill: url(#muster1)" height="50" width="150" y="520" x="400"  />
 
 
-  <!--  Opazit‰t  -->
+  <!--  Opazit√§t  -->
   <circle cy="290" cx="450" r="50" style="fill: #00C; fill-opacity: 0.5"  />
 
   <circle cy="325" cx="475" r="50" style="fill: #00C; stroke: #00C; fill-opacity: 0.2; stroke-opacity: 0.3"  />

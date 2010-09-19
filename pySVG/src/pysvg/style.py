@@ -13,8 +13,9 @@ class style(BaseElement, CoreAttrib, XLinkAttrib):
     """
     Class representing the style element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, **kwargs):
         BaseElement.__init__(self,'style')
+        self.setKWARGS(**kwargs)
     
     def set_type(self, type):
         self._attributes['type']=type

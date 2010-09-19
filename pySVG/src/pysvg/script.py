@@ -13,8 +13,9 @@ class script(BaseElement, CoreAttrib, XLinkAttrib):
     """
     Class representing the script element of an svg doc.
     """
-    def __init__(self, ):
+    def __init__(self, **kwargs):
         BaseElement.__init__(self,'script')
+        self.setKWARGS(**kwargs)
     
     def set_type(self, type):
         self._attributes['type']=type

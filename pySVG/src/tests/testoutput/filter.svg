@@ -8,7 +8,7 @@
 <path stroke="black" stroke-width="2" fill="none" d="M 13 26 A 5 3 0 0 0 27 26 " id="mund"  />
 </symbol>
 <filter height="1.9" width="1.9" y="-.5" x="-.3" id="Filter6"  >
-<feGaussianBlur stdDeviation="4" result="out1" in="SourceAlpha"  />
+<feGaussianBlur result="out1" in="SourceAlpha" stdDeviation="4"  />
 <feOffset dy="-4" result="out2" dx="4" in="out1"  />
 <feMerge  >
 <feMergeNode in="out2"  />

@@ -134,17 +134,17 @@ class ShapeBuilder:
         return p
         
         
-    def createLine(self, X1, Y1, X2, Y2, strokewidth=1, stroke="black"):
+    def createLine(self, x1, y1, x2, y2, strokewidth=1, stroke="black"):
         """
         Creates a line
-        @type  X1: string or int
-        @param X1:  starting x-coordinate
-        @type  Y1: string or int
-        @param Y1:  starting y-coordinate
-        @type  X2: string or int
-        @param X2:  ending x-coordinate
-        @type  Y2: string or int
-        @param Y2:  ending y-coordinate
+        @type  x1: string or int
+        @param x1:  starting x-coordinate
+        @type  y1: string or int
+        @param y1:  starting y-coordinate
+        @type  x2: string or int
+        @param x2:  ending x-coordinate
+        @type  y2: string or int
+        @param y2:  ending y-coordinate
         @type  strokewidth: string or int
         @param strokewidth:  width of the pen used to draw
         @type  stroke: string (either css constants like "black" or numerical values like "#FFFFFF")
@@ -153,7 +153,7 @@ class ShapeBuilder:
         """
         style_dict = {'stroke-width':strokewidth, 'stroke':stroke}
         myStyle = StyleBuilder(style_dict)
-        l = line(X1, Y1, X2, Y2)
+        l = line(x1, y1, x2, y2)
         l.set_style(myStyle.getStyle())
         return l
       
@@ -310,8 +310,8 @@ class TransformBuilder:
     def __init__(self):
         self.transform_dict = {}
   
-    def setMatrix(self, matrix):
-        self.transform_dict["matrix"] = 'matrix(%s)' % matrix
+    #def setMatrix(self, matrix):
+    #    self.transform_dict["matrix"] = 'matrix(%s)' % matrix
   
     def setMatrix(self, a, b, c, d, e, f):
         self.transform_dict["matrix"] = 'matrix(%s %s %s %s %s %s)' % (a, b, c, d, e, f)
@@ -319,20 +319,20 @@ class TransformBuilder:
     def setRotation(self, rotate):
         self.transform_dict["rotate"] = 'rotate(%s)' % rotate
   
-    def setRotation(self, rotation, cx=None, cy=None):
-        if cx != None and cy != None:
-            self.transform_dict["rotate"] = 'rotate(%s %s %s)' % (rotation, cx, cy)
-        else:
-            self.transform_dict["rotate"] = 'rotate(%s)' % (rotation)
+    #def setRotation(self, rotation, cx=None, cy=None):
+    #    if cx != None and cy != None:
+    #        self.transform_dict["rotate"] = 'rotate(%s %s %s)' % (rotation, cx, cy)
+    #    else:
+    #        self.transform_dict["rotate"] = 'rotate(%s)' % (rotation)
     
     def setTranslation(self, translate):
         self.transform_dict["translate"] = 'translate(%s)' % (translate)
   
-    def setTranslation(self, x, y=0):
-        self.transform_dict["translate"] = 'translate(%s %s)' % (x, y)
+    #def setTranslation(self, x, y=0):
+    #    self.transform_dict["translate"] = 'translate(%s %s)' % (x, y)
     
-    def setScaling(self, scale):
-        self.transform_dict["scale"] = 'scale(%s)' % (scale)
+    #def setScaling(self, scale):
+    #    self.transform_dict["scale"] = 'scale(%s)' % (scale)
   
     def setScaling(self, x=None, y=None):
         if x == None and y != None:

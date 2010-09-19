@@ -277,7 +277,7 @@ def HelloWorld1():
     t = text("Hello World", 0, 100)
     s.addElement(t)
     print s.getXML()
-    s.save('./testoutput/1_HelloWorld1.svg')
+    s.save('./testoutput/1_HelloWorld1.svg', encoding='UTF-8')
   
 def tutorialChain():
     HelloWorld1()
