@@ -1,6 +1,6 @@
 # Sphinx inventory version 1
 # Project: pySVG
-# Version: 0.2.0
+# Version: 0.2.1
 pysvg.parser mod generated/pysvg.parser.html
 pysvg.style mod generated/pysvg.style.html
 pysvg.gradient mod generated/pysvg.gradient.html
