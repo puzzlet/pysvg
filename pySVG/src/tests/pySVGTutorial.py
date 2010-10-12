@@ -278,7 +278,17 @@ def HelloWorld1():
     s.addElement(t)
     print s.getXML()
     s.save('./testoutput/1_HelloWorld1.svg', encoding='UTF-8')
-  
+
+def KWARGS():
+    s = svg() 
+    kw={}
+    kw['style']= 'font-size:20em; font-family:Verdana; fill:blue; '
+    t1 = text("KWARGS Text", 0, 300, **kw)
+    s.addElement(t1)
+    print s.getXML()
+    s.save('./testoutput/KWARGS.svg')
+
+
 def tutorialChain():
     HelloWorld1()
     HelloWorld2()
@@ -290,6 +300,7 @@ def tutorialChain():
     LinearGradient()
     RadialGradient()
     Image()
+    KWARGS()
   
 if __name__ == '__main__': 
     tutorialChain()
