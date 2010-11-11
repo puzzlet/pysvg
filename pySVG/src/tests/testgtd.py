@@ -22,7 +22,7 @@ def main():
     
     for element in anSVG.getElementsByType(rect):
         print element.get_id()
-    #print anSVG
+        print element.getAttributes()
     
     
     
