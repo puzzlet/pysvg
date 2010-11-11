@@ -5,18 +5,6 @@
 For licensing information please refer to license.txt
 '''
 from attributes import CoreAttrib, ConditionalAttrib, StyleAttrib, GraphicalEventsAttrib, PaintAttrib, OpacityAttrib, GraphicsAttrib, CursorAttrib, FilterAttrib, MaskAttrib, ClipAttrib
-
-
-class TextContent:
-    """
-    Class for the text content of an xml element. Can also include PCDATA
-    """
-    def __init__(self,content):
-        self.content=content
-    def setContent(self,content):
-        self.content=content
-    def getXML(self):
-        return self.content
     
 class BaseElement:
     """
@@ -41,10 +29,50 @@ class BaseElement:
         self._subElements.append(element)
     
     def getElementAt(self,pos):
+        """ returns the element at a specific position within this svg
+        """
         return self._subElements[pos]
+    
+    def getAllElements(self):
+        """ returns all elements contained within the top level element list of this element
+        """
+        return self._subElements
+    
+    def getAllElementsOfHirarchy(self):
+        """ returns ALL elements of the complete hirarchy as a flat list
+        """
+        allElements=[]
+        for element in self.getAllElements():
+            allElements.append(element)
+            if isinstance(element, BaseElement):
+                allElements.extend(element.getAllElementsOfHirarchy())
+        return allElements
+    
+    def getElementByID(self, id):
+        """ returns an element with the specific id and the position of that element within the svg elements array
+        """
+        pos=0
+        for element in self._subElements:
+            if element.get_id()==id:
+                return (element,pos)
+            pos+=1
+    
+    def getElementsByType(self, type):
+        """
+        retrieves all Elements that are of type type
+        @type  type: class 
+        @param type:  type of the element 
+        """
+        foundElements=[]
+        for element in self.getAllElementsOfHirarchy():
+            if isinstance(element, type):
+                foundElements.append(element)                
+                
+        return foundElements
     
     def insertElementAt(self, element, pos):
         return self._subElements.insert(pos, element)
+    
         
     def getXML(self):
         """
@@ -77,6 +105,11 @@ class BaseElement:
     
     def getAttribute(self, attribute_name):
         return self._attributes.get(attribute_name)
+    
+    def getAttributes(self):
+        """ get all atributes of the element
+        """
+        return self._attributes
 
     def setKWARGS(self, **kwargs):
         """ 
@@ -125,6 +158,20 @@ class BaseElement:
         #else:
         #    s1 = '"%s"' % s1
         return s1
+    
+class TextContent:
+    """
+    Class for the text content of an xml element. Can also include PCDATA
+    """
+    def __init__(self,content):
+        self.content=content
+    def setContent(self,content):
+        self.content=content
+    def getXML(self):
+        return self.content
+    def get_id(self):
+        return None
+    
 #--------------------------------------------------------------------------#
 # Below are classes that define attribute sets that pysvg uses for convenience.
 # There exist no corresponding attribute sets in svg.

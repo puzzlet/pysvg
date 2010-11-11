@@ -1,5 +1,5 @@
 Licensing Information for pySVG
 
 
-For the moment pySVG is licensed under [GPL (Version 3)][gpl]. 
-[gpl]:http://www.opensource.org/licenses/gpl-3.0.html
+For the moment pySVG is licensed under a BSD license. 
+
