@@ -444,37 +444,37 @@ class XLinkAttrib:
     def set_xlink_type(self, xlink_type):
         self._attributes['xlink:type'] = xlink_type
     def get_xlink_type(self):
-        return self.attributes['xlink:type']
+        return self._attributes['xlink:type']
     
     def set_xlink_href(self, xlink_href):
         self._attributes['xlink:href'] = xlink_href
     def get_xlink_href(self):
-        return self.attributes['xlink:href']
+        return self._attributes['xlink:href']
     
     def set_xlink_role(self, xlink_role):
         self._attributes['xlink:role'] = xlink_role
     def get_xlink_role(self):
-        return self.attributes['xlink:role']
+        return self._attributes['xlink:role']
     
     def set_xlink_arcrole(self, xlink_arcrole):
         self._attributes['xlink:arcrole'] = xlink_arcrole
     def get_xlink_arcrole(self):
-        return self.attributes['xlink:arcrole']
+        return self._attributes['xlink:arcrole']
     
     def set_xlink_title(self, xlink_title):
         self._attributes['xlink:title'] = xlink_title
     def get_xlink_title(self):
-        return self.attributes['xlink:title']
+        return self._attributes['xlink:title']
     
     def set_xlink_show(self, xlink_show):
         self._attributes['xlink:show'] = xlink_show
     def get_xlink_show(self):
-        return self.attributes['xlink:show']
+        return self._attributes['xlink:show']
     
     def set_xlink_actuate(self, xlink_actuate):
         self._attributes['xlink:actuate'] = xlink_actuate
     def get_xlink_actuate(self):
-        return self.attributes['xlink:actuate']
+        return self._attributes['xlink:actuate']
 
 class TextAttrib:
     """
@@ -483,7 +483,7 @@ class TextAttrib:
     def set_writing_mode(self, writing_mode):
         self._attributes['writing-mode'] = writing_mode
     def get_writing_mode(self):
-        return self.attributes['writing-mode']
+        return self._attributes['writing-mode']
 
 class TextContentAttrib:
     """
@@ -492,62 +492,62 @@ class TextContentAttrib:
     def set_alignment_baseline(self, alignment_baseline):
         self._attributes['alignment-baseline'] = alignment_baseline
     def get_alignment_baseline(self):
-        return self.attributes['alignment-baseline']
+        return self._attributes['alignment-baseline']
     
     def set_baseline_shift(self, baseline_shift):
         self._attributes['baseline-shift'] = baseline_shift
     def get_baseline_shift(self):
-        return self.attributes['baseline-shift']
+        return self._attributes['baseline-shift']
     
     def set_direction(self, direction):
         self._attributes['direction'] = direction
     def get_direction(self):
-        return self.attributes['direction']
+        return self._attributes['direction']
     
     def set_dominant_baseline(self, dominant_baseline):
         self._attributes['dominant-baseline'] = dominant_baseline
     def get_dominant_baseline(self):
-        return self.attributes['dominant-baseline']
+        return self._attributes['dominant-baseline']
     
     def set_glyph_orientation_horizontal(self, glyph_orientation_horizontal):
         self._attributes['glyph-orientation-horizontal'] = glyph_orientation_horizontal
     def get_glyph_orientation_horizontal(self):
-        return self.attributes['glyph-orientation-horizontal']
+        return self._attributes['glyph-orientation-horizontal']
     
     def set_glyph_orientation_vertical(self, glyph_orientation_vertical):
         self._attributes['glyph-orientation-vertical'] = glyph_orientation_vertical
     def get_glyph_orientation_vertical(self):
-        return self.attributes['glyph-orientation-vertical']
+        return self._attributes['glyph-orientation-vertical']
     
     def set_kerning(self, kerning):
         self._attributes['kerning'] = kerning
     def get_kerning(self):
-        return self.attributes['kerning']
+        return self._attributes['kerning']
     
     def set_letter_spacing(self, letter_spacing):
         self._attributes['letter-spacing'] = letter_spacing
     def get_letter_spacing(self):
-        return self.attributes['letter-spacing']
+        return self._attributes['letter-spacing']
     
     def set_text_anchor(self, text_anchor):
         self._attributes['text-anchor'] = text_anchor
     def get_text_anchor(self):
-        return self.attributes['text-anchor']
+        return self._attributes['text-anchor']
     
     def set_text_decoration(self, text_decoration):
         self._attributes['text-decoration'] = text_decoration
     def get_text_decoration(self):
-        return self.attributes['text-decoration']
+        return self._attributes['text-decoration']
     
     def set_unicode_bidi(self, unicode_bidi):
         self._attributes['unicode-bidi'] = unicode_bidi
     def get_unicode_bidi(self):
-        return self.attributes['unicode-bidi']
+        return self._attributes['unicode-bidi']
     
     def set_word_spacing(self, word_spacing):
         self._attributes['word-spacing'] = word_spacing
     def get_word_spacing(self):
-        return self.attributes['word-spacing']
+        return self._attributes['word-spacing']
 
 class FontAttrib:
     """
@@ -556,37 +556,37 @@ class FontAttrib:
     def set_font_family(self, font_family):
         self._attributes['font-family'] = font_family
     def get_font_family(self):
-        return self.attributes['font-family']
+        return self._attributes['font-family']
     
     def set_font_size(self, font_size):
         self._attributes['font-size'] = font_size
     def get_font_size(self):
-        return self.attributes['font-size']
+        return self._attributes['font-size']
     
     def set_font_size_adjust(self, font_size_adjust):
         self._attributes['font-size-adjust'] = font_size_adjust
     def get_font_size_adjust(self):
-        return self.attributes['font-size-adjust']
+        return self._attributes['font-size-adjust']
     
     def set_font_stretch(self, font_stretch):
         self._attributes['font-stretch'] = font_stretch
     def get_font_stretch(self):
-        return self.attributes['font-stretch']
+        return self._attributes['font-stretch']
     
     def set_font_style(self, font_style):
         self._attributes['font-style'] = font_style
     def get_font_style(self):
-        return self.attributes['font-style']
+        return self._attributes['font-style']
     
     def set_font_variant(self, font_variant):
         self._attributes['font-variant'] = font_variant
     def get_font_variant(self):
-        return self.attributes['font-variant']
+        return self._attributes['font-variant']
     
     def set_font_weight(self, font_weight):
         self._attributes['font-weight'] = font_weight
     def get_font_weight(self):
-        return self.attributes['font-weight']
+        return self._attributes['font-weight']
     
 class MaskAttrib:
     """
