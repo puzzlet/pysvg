@@ -5,7 +5,8 @@
 For licensing information please refer to license.txt
 '''
 from attributes import CoreAttrib, ConditionalAttrib, StyleAttrib, GraphicalEventsAttrib, PaintAttrib, OpacityAttrib, GraphicsAttrib, CursorAttrib, FilterAttrib, MaskAttrib, ClipAttrib
-    
+import codecs
+
 class BaseElement:
     """
     This is the base class for all svg elements like title etc. It provides common functionality.
@@ -91,6 +92,10 @@ class BaseElement:
             xml+=' >\n'
             #if self._textContent==None:
             for subelement in self._subElements:
+                s = subelement.getXML()
+                if type(s) != unicode:
+                    s = str(s)
+                xml+=s
                 xml+=str(subelement.getXML())
             #else:
             #if self._textContent!=None:
@@ -137,9 +142,14 @@ class BaseElement:
         Stores any element in a svg file (including header). 
         Calling this method only makes sense if the root element is an svg elemnt
         """
-        f = open(filename, 'w')
-        f.write(self.wrap_xml(self.getXML(), encoding, standalone))
+        f = codecs.open(filename, 'w', encoding)
+        s = self.wrap_xml(self.getXML(), encoding, standalone)
+        #s = s.replace("&", "&amp;")
+        f.write(s)
         f.close()
+        #f = open(filename, 'w')
+        #f.write(self.wrap_xml(self.getXML(), encoding, standalone))
+        #f.close()
         
     def quote_attrib(self, inStr):
         """
