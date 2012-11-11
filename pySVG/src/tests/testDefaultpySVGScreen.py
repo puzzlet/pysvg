@@ -3,11 +3,11 @@
 
 from pysvg.structure import *
 from pysvg.builders import *
-from pysvg.gradient import pattern
+from pysvg.gradient import Pattern
 
 #actions not working
 def createText(content, x,y, actions=None):
-  t=text(content,x,y)
+  t=Text(content,x,y)
   return t
 
 def createMainBorderAndTexts():
@@ -18,12 +18,12 @@ def createMainBorderAndTexts():
   elements.append(r)
   sh.setFilling("#000")
   sh.setFontSize("24px")
-  t=text("Objects and Effects in ...", 30, 40)
+  t=Text("Objects and Effects in ...", 30, 40)
   t.set_style(sh.getStyle())
   elements.append(t)
   sh=StyleBuilder()
   sh.setFontSize("13px")
-  t=text("[The red circle, explanation texts and textlinks WILL (but are not yet) connected to JavaScript.]", 360, 35)
+  t=Text("[The red circle, explanation texts and textlinks WILL (but are not yet) connected to JavaScript.]", 360, 35)
   t.set_style(sh.getStyle())
   elements.append(t)
   
@@ -126,7 +126,7 @@ def createShapes():
   sh=StyleBuilder()
   sh.setFilling('#00C')
   sh.setFillOpacity(0.5)
-  c=circle(450, 290, 50)
+  c=Circle(450, 290, 50)
   c.set_style(sh.getStyle())
   elements.append(c)
   sh=StyleBuilder()
@@ -134,14 +134,14 @@ def createShapes():
   sh.setFillOpacity(0.2)
   sh.setStroke('#00C')
   sh.setStrokeOpacity(0.3)
-  c=circle(475, 325, 50)
+  c=Circle(475, 325, 50)
   c.set_style(sh.getStyle())
   elements.append(c)
   
   #group + transform
   th=TransformBuilder()
   th.setRotation('-30')
-  group=g()
+  group=G()
   group.set_transform(th.getTransform())
   r=oh.createRect(620, 500, width='100', height='50', rx=10, ry=10, stroke='#F00',strokewidth='2px',fill='none')
   group.addElement(r)
@@ -151,7 +151,7 @@ def createShapes():
   sh.setFontSize('36px')
   sh.setStrokeWidth('1px')
   sh.setStroke('#00C')
-  t=text('Text',635, 537)
+  t=Text('Text',635, 537)
   t.set_style(sh.getStyle())
   group.addElement(t)
   elements.append(group)
@@ -166,13 +166,13 @@ def createPaths():
   sh.setFilling('#EEE')
   sh.setStroke('#00F')
   sh.setStrokeWidth('2px')
-  path1=path('M 40,530 L 100,560 L 60,520 Z', style=sh.getStyle())
+  path1=Path('M 40,530 L 100,560 L 60,520 Z', style=sh.getStyle())
   
   sh2=StyleBuilder()
   sh2.setFilling('#FFC')
   sh2.setStroke('#00F')
   sh2.setStrokeWidth('2px')
-  path2=path(style=sh2.getStyle())
+  path2=Path(style=sh2.getStyle())
   path2.appendMoveToPath(190, 520, False)
   #as you can see we can mix strings and ints without trouble
   path2.appendCubicCurveToPath('+0', '+0', 30, 30, -60, 30, True)
@@ -182,7 +182,7 @@ def createPaths():
   sh3.setFilling('none')
   sh3.setStroke('#00F')
   sh3.setStrokeWidth('2px')
-  path3=path('M 230,530', style=sh3.getStyle())
+  path3=Path('M 230,530', style=sh3.getStyle())
   path3.appendQuadraticCurveToPath(0, 30, 30, 0)
   path3.appendQuadraticCurveToPath(30, -30, 30, 0)
   path3.appendQuadraticCurveToPath(-0, 30, 30, 0)
@@ -200,11 +200,11 @@ def createPaths():
   <circle cx="450" cy="440" r="50" style="fill: #090; filter: url(#filter1)"/>
 """  
 def getLinearGradient():
-    lg=linearGradient();
+    lg=LinearGradient();
     lg.set_id('lingra1')
-    stop1=stop('0%')
-    stop2=stop('50%')
-    stop3=stop('100%')
+    stop1=Stop('0%')
+    stop2=Stop('50%')
+    stop3=Stop('100%')
     stop1.set_style("stop-color: #000")
     stop2.set_style("stop-color: #00F")
     stop3.set_style("stop-color: #FFF")
@@ -214,11 +214,11 @@ def getLinearGradient():
     return lg
 
 def getRadialGradient():
-    rg=radialGradient();
+    rg=RadialGradient();
     rg.set_id('radgra1')
-    stop1=stop('0%')
-    stop2=stop('60%')
-    stop3=stop('100%')
+    stop1=Stop('0%')
+    stop2=Stop('60%')
+    stop3=Stop('100%')
     stop1.set_style("stop-color: #FFF")
     stop2.set_style("stop-color: #FF9")
     stop3.set_style("stop-color: #F00")
@@ -242,13 +242,13 @@ def createImageAndLink():
     <a xlink:href="http://www.datenverdrahten.de" target="_top"><text id="textlink" x="600" y="495" style="fill: #F00" onmouseover="TextHover('textlink','#00C','underline')" onmouseout="TextHover('textlink','#F00','none')">http://www.datenverdrahten.de</text></a>
     """
     elements=[]
-    myImage=image(800, 250, 88, 31)
+    myImage=Image(800, 250, 88, 31)
     myImage.set_xlink_href('http://www.google.de/intl/de_de/images/logo.gif')
     elements.append(myImage)
     
-    myHyperlink = a('_top')
+    myHyperlink = A('_top')
     myHyperlink.set_xlink_href('http://codeboje.de/pysvg')
-    linkText=text('http://codeboje.de/pysvg', 600, 495)
+    linkText=Text('http://codeboje.de/pysvg', 600, 495)
     linkText.set_id='textlink'
     linkText.set_style('fill: #F00')
     myHyperlink.addElement(linkText)
@@ -256,7 +256,7 @@ def createImageAndLink():
     return elements
 
 def createDefs():
-    d = defs()
+    d = Defs()
     
     """
     <pattern id="muster1" height="20" width="20" patternUnits="userSpaceOnUse" y="0" x="0"  >
@@ -264,10 +264,10 @@ def createDefs():
     </pattern>
     """
   
-    p = pattern(0,0,20,20,"userSpaceOnUse")
+    p = Pattern(0,0,20,20,"userSpaceOnUse")
     p.set_id("muster1")
     
-    r = rect(0, 0, 10, 10)
+    r = Rect(0, 0, 10, 10)
     r.set_style("fill: #00C")
     p.addElement(r)
     d.addElement(p)
@@ -279,13 +279,13 @@ def createPattern():
     <!--  Muster  -->
     <rect style="fill: url(#muster1)" height="50" width="150" y="520" x="400"  />
     """
-    r = rect(400, 520, 150, 50)
+    r = Rect(400, 520, 150, 50)
     r.set_style("fill: url(#muster1)")
     return r
   
     
 def main():
-  s=svg(height="100%", width="100%")
+  s=Svg(height="100%", width="100%")
   s.set_viewBox("0 0 950 630")
   s.addElement(createDefs())
   for element in createMainBorderAndTexts():

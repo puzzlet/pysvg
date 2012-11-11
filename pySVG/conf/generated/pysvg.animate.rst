@@ -17,6 +17,54 @@ Inheritance diagram for ``pysvg.animate``:
 Classes
 -------
 
+:class:`Animate`
+~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: Animate
+  :members:
+  :undoc-members:
+  :show-inheritance:
+  :inherited-members:
+
+  .. automethod:: __init__
+
+:class:`AnimateColor`
+~~~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: AnimateColor
+  :members:
+  :undoc-members:
+  :show-inheritance:
+  :inherited-members:
+
+  .. automethod:: __init__
+
+:class:`AnimateMotion`
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: AnimateMotion
+  :members:
+  :undoc-members:
+  :show-inheritance:
+  :inherited-members:
+
+  .. automethod:: __init__
+
+:class:`AnimateTransform`
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+.. autoclass:: AnimateTransform
+  :members:
+  :undoc-members:
+  :show-inheritance:
+  :inherited-members:
+
+  .. automethod:: __init__
+
 :class:`AnimationAdditionAttrib`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -89,59 +137,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`animate`
-~~~~~~~~~~~~~~~~
-
-
-.. autoclass:: animate
-  :members:
-  :undoc-members:
-  :show-inheritance:
-  :inherited-members:
-
-  .. automethod:: __init__
-
-:class:`animateColor`
-~~~~~~~~~~~~~~~~~~~~~
-
-
-.. autoclass:: animateColor
-  :members:
-  :undoc-members:
-  :show-inheritance:
-  :inherited-members:
-
-  .. automethod:: __init__
-
-:class:`animateMotion`
-~~~~~~~~~~~~~~~~~~~~~~
-
-
-.. autoclass:: animateMotion
-  :members:
-  :undoc-members:
-  :show-inheritance:
-  :inherited-members:
-
-  .. automethod:: __init__
-
-:class:`animateTransform`
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-.. autoclass:: animateTransform
-  :members:
-  :undoc-members:
-  :show-inheritance:
-  :inherited-members:
-
-  .. automethod:: __init__
-
-:class:`mpath`
+:class:`Mpath`
 ~~~~~~~~~~~~~~
 
 
-.. autoclass:: mpath
+.. autoclass:: Mpath
   :members:
   :undoc-members:
   :show-inheritance:
@@ -149,11 +149,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`set`
+:class:`Set`
 ~~~~~~~~~~~~
 
 
-.. autoclass:: set
+.. autoclass:: Set
   :members:
   :undoc-members:
   :show-inheritance:

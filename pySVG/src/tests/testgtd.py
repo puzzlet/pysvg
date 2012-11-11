@@ -4,8 +4,8 @@ Created on 11.11.2010
 @author: kerim
 '''
 from pysvg import parser
-from pysvg.structure import svg
-from pysvg.shape import rect
+from pysvg.structure import Svg
+from pysvg.shape import Rect
 from pysvg.core import TextContent 
 
 def main():
@@ -20,7 +20,7 @@ def main():
          if isinstance(element, TextContent)==False:
             print element.get_id()
     
-    for element in anSVG.getElementsByType(rect):
+    for element in anSVG.getElementsByType(Rect):
         print element.get_id()
         print element.getAttributes()
     

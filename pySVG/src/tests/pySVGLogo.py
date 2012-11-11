@@ -9,9 +9,9 @@ from pysvg.core import *
 from pysvg.text import *
 
 def main():
-    mySVG=svg(0,0, width="100%", height="100%")
-    t=text("pySVG", x=0,y=100)
-    group=g()
+    mySVG=Svg(0,0, width="100%", height="100%")
+    t=Text("pySVG", x=0,y=100)
+    group=G()
     group.set_transform("rotate(-30)")
     t.set_stroke_width('1px')
     t.set_stroke('#00C')

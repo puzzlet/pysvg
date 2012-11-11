@@ -12,7 +12,7 @@ from pysvg.builders import *
 
 #actions not working
 def createText(content, x,y, actions=None):
-  t=text(content,x,y)
+  t=Text(content,x,y)
   return t
 
 def createMainBorderAndTexts():
@@ -37,7 +37,7 @@ def createShapes():
   #skewX
   th=TransformBuilder()
   th.setSkewX('-40.0')
-  group=g()
+  group=G()
   group.set_transform(th.getTransform())
   r=oh.createRect(620, 300, width='100', height='50', rx=10, ry=10, stroke='#F00',strokewidth='2px',fill='none')
   group.addElement(r)
@@ -47,7 +47,7 @@ def createShapes():
   sh.setFontSize('36px')
   sh.setStrokeWidth('1px')
   sh.setStroke('#00C')
-  t=text('Text',635, 337)
+  t=Text('Text',635, 337)
   t.set_style(sh.getStyle())
   group.addElement(t)
   elements.append(group)
@@ -55,7 +55,7 @@ def createShapes():
   #scaling
   th=TransformBuilder()
   th.setScaling('1.0','0.5')
-  group=g()
+  group=G()
   group.set_transform(th.getTransform())
   r=oh.createRect(620, 300, width='100', height='50', rx=10, ry=10, stroke='#F00',strokewidth='2px',fill='none')
   group.addElement(r)
@@ -65,7 +65,7 @@ def createShapes():
   sh.setFontSize('36px')
   sh.setStrokeWidth('1px')
   sh.setStroke('#00C')
-  t=text('Text',635, 337)
+  t=Text('Text',635, 337)
   t.set_style(sh.getStyle())
   group.addElement(t)
   elements.append(group)
@@ -73,7 +73,7 @@ def createShapes():
   #matrix
   th=TransformBuilder()
   th.setMatrix('0.866','0.5','-0.5','0.866','-300.0','-200.0')
-  group=g()
+  group=G()
   group.set_transform(th.getTransform())
   r=oh.createRect(620, 300, width='100', height='50', rx=10, ry=10, stroke='#F00',strokewidth='2px',fill='none')
   group.addElement(r)
@@ -83,7 +83,7 @@ def createShapes():
   sh.setFontSize('36px')
   sh.setStrokeWidth('1px')
   sh.setStroke('#00C')
-  t=text('Text',635, 337)
+  t=Text('Text',635, 337)
   t.set_style(sh.getStyle())
   group.addElement(t)
   elements.append(group)
@@ -92,7 +92,7 @@ def createShapes():
   return elements
  
 def main():
-  s=svg(height="100%", width="100%")
+  s=Svg(height="100%", width="100%")
   s.set_viewBox("0 0 950 630")
   for element in createMainBorderAndTexts():
     s.addElement(element)

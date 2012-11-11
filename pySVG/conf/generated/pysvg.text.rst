@@ -17,11 +17,11 @@ Inheritance diagram for ``pysvg.text``:
 Classes
 -------
 
-:class:`altGlyph`
+:class:`AltGlyph`
 ~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: altGlyph
+.. autoclass:: AltGlyph
   :members:
   :undoc-members:
   :show-inheritance:
@@ -29,11 +29,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`altGlyphDef`
+:class:`AltGlyphDef`
 ~~~~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: altGlyphDef
+.. autoclass:: AltGlyphDef
   :members:
   :undoc-members:
   :show-inheritance:
@@ -41,11 +41,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`altGlyphItem`
+:class:`AltGlyphItem`
 ~~~~~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: altGlyphItem
+.. autoclass:: AltGlyphItem
   :members:
   :undoc-members:
   :show-inheritance:
@@ -53,11 +53,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`glyphRef`
+:class:`GlyphRef`
 ~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: glyphRef
+.. autoclass:: GlyphRef
   :members:
   :undoc-members:
   :show-inheritance:
@@ -65,11 +65,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`text`
+:class:`Text`
 ~~~~~~~~~~~~~
 
 
-.. autoclass:: text
+.. autoclass:: Text
   :members:
   :undoc-members:
   :show-inheritance:
@@ -77,11 +77,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`textPath`
+:class:`TextPath`
 ~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: textPath
+.. autoclass:: TextPath
   :members:
   :undoc-members:
   :show-inheritance:
@@ -89,11 +89,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`tref`
+:class:`Tref`
 ~~~~~~~~~~~~~
 
 
-.. autoclass:: tref
+.. autoclass:: Tref
   :members:
   :undoc-members:
   :show-inheritance:
@@ -101,11 +101,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`tspan`
+:class:`Tspan`
 ~~~~~~~~~~~~~~
 
 
-.. autoclass:: tspan
+.. autoclass:: Tspan
   :members:
   :undoc-members:
   :show-inheritance:

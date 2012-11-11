@@ -158,7 +158,7 @@ class AnimationEventsAttrib:
 ##############################################
 # Animation Elements
 ##############################################
-class animate(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
+class Animate(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
     """
     Class representing the animate element of an svg doc.
     """
@@ -166,7 +166,7 @@ class animate(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, Animatio
         BaseElement.__init__(self, 'animate')
         self.setKWARGS(**kwargs)
         
-class set(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib):
+class Set(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib):
     """
     Class representing the set element of an svg doc.
     """
@@ -179,7 +179,7 @@ class set(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEve
     def get_to(self):
         return self._attributes.get('to')
 
-class animateMotion(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
+class AnimateMotion(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
     """
     Class representing the animateMotion element of an svg doc.
     """
@@ -207,7 +207,7 @@ class animateMotion(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, An
     def get_origin(self):
         return self._attributes.get('origin')
     
-class animateTransform(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
+class AnimateTransform(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
     """
     Class representing the animateTransform element of an svg doc.
     """
@@ -220,7 +220,7 @@ class animateTransform(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib,
     def get_type(self):
         return self._attributes.get('type')
     
-class animateColor(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
+class AnimateColor(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, AnimationEventsAttrib, AnimationAttrib, AnimationAttributeAttrib, AnimationTimingAttrib, AnimationValueAttrib, AnimationAdditionAttrib):
     """
     Class representing the animateColor element of an svg doc.
     """
@@ -228,7 +228,7 @@ class animateColor(BaseShape, CoreAttrib, ConditionalAttrib, ExternalAttrib, Ani
         BaseElement.__init__(self, 'animateColor')
         self.setKWARGS(**kwargs)
         
-class mpath(BaseShape, CoreAttrib, XLinkAttrib, ExternalAttrib):
+class Mpath(BaseShape, CoreAttrib, XLinkAttrib, ExternalAttrib):
     """
     Class representing the animateColor element of an svg doc.
     """

@@ -17,11 +17,11 @@ Inheritance diagram for ``pysvg.gradient``:
 Classes
 -------
 
-:class:`linearGradient`
+:class:`LinearGradient`
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: linearGradient
+.. autoclass:: LinearGradient
   :members:
   :undoc-members:
   :show-inheritance:
@@ -29,11 +29,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`pattern`
+:class:`Pattern`
 ~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: pattern
+.. autoclass:: Pattern
   :members:
   :undoc-members:
   :show-inheritance:
@@ -41,11 +41,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`radialGradient`
+:class:`RadialGradient`
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: radialGradient
+.. autoclass:: RadialGradient
   :members:
   :undoc-members:
   :show-inheritance:
@@ -53,11 +53,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`stop`
+:class:`Stop`
 ~~~~~~~~~~~~~
 
 
-.. autoclass:: stop
+.. autoclass:: Stop
   :members:
   :undoc-members:
   :show-inheritance:

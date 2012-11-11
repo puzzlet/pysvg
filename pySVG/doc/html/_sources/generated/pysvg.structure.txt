@@ -17,11 +17,11 @@ Inheritance diagram for ``pysvg.structure``:
 Classes
 -------
 
-:class:`clipPath`
+:class:`ClipPath`
 ~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: clipPath
+.. autoclass:: ClipPath
   :members:
   :undoc-members:
   :show-inheritance:
@@ -29,11 +29,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`defs`
+:class:`Defs`
 ~~~~~~~~~~~~~
 
 
-.. autoclass:: defs
+.. autoclass:: Defs
   :members:
   :undoc-members:
   :show-inheritance:
@@ -41,11 +41,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`desc`
+:class:`Desc`
 ~~~~~~~~~~~~~
 
 
-.. autoclass:: desc
+.. autoclass:: Desc
   :members:
   :undoc-members:
   :show-inheritance:
@@ -53,11 +53,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`g`
+:class:`G`
 ~~~~~~~~~~
 
 
-.. autoclass:: g
+.. autoclass:: G
   :members:
   :undoc-members:
   :show-inheritance:
@@ -65,11 +65,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`image`
+:class:`Image`
 ~~~~~~~~~~~~~~
 
 
-.. autoclass:: image
+.. autoclass:: Image
   :members:
   :undoc-members:
   :show-inheritance:
@@ -77,11 +77,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`metadata`
+:class:`Metadata`
 ~~~~~~~~~~~~~~~~~
 
 
-.. autoclass:: metadata
+.. autoclass:: Metadata
   :members:
   :undoc-members:
   :show-inheritance:
@@ -89,11 +89,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`svg`
+:class:`Svg`
 ~~~~~~~~~~~~
 
 
-.. autoclass:: svg
+.. autoclass:: Svg
   :members:
   :undoc-members:
   :show-inheritance:
@@ -101,11 +101,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`switch`
+:class:`Switch`
 ~~~~~~~~~~~~~~~
 
 
-.. autoclass:: switch
+.. autoclass:: Switch
   :members:
   :undoc-members:
   :show-inheritance:
@@ -113,11 +113,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`symbol`
+:class:`Symbol`
 ~~~~~~~~~~~~~~~
 
 
-.. autoclass:: symbol
+.. autoclass:: Symbol
   :members:
   :undoc-members:
   :show-inheritance:
@@ -125,11 +125,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`title`
+:class:`Title`
 ~~~~~~~~~~~~~~
 
 
-.. autoclass:: title
+.. autoclass:: Title
   :members:
   :undoc-members:
   :show-inheritance:
@@ -137,11 +137,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`use`
+:class:`Use`
 ~~~~~~~~~~~~
 
 
-.. autoclass:: use
+.. autoclass:: Use
   :members:
   :undoc-members:
   :show-inheritance:

@@ -1,25 +1,31 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>builders &mdash; pySVG v0.2.1 documentation</title>
+    <title>builders &mdash; pySVG 0.2.1 documentation</title>
+    
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '0.2.1',
-        COLLAPSE_MODINDEX: false,
+        COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pySVG v0.2.1 documentation" href="../index.html" /> 
+    <link rel="top" title="pySVG 0.2.1 documentation" href="../index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -29,9 +35,9 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../modindex.html" title="Global Module Index"
-             accesskey="M">modules</a> |</li>
-        <li><a href="../index.html">pySVG v0.2.1 documentation</a> &raquo;</li> 
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">pySVG 0.2.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -42,16 +48,16 @@
             
   <div class="section" id="builders">
 <h1>builders<a class="headerlink" href="#builders" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-pysvg.builders">
-<h2>Module: <tt class="xref docutils literal"><span class="pre">builders</span></tt><a class="headerlink" href="#module-pysvg.builders" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-builders">
+<h2>Module: <tt class="xref py py-mod docutils literal"><span class="pre">builders</span></tt><a class="headerlink" href="#module-builders" title="Permalink to this headline">¶</a></h2>
 <p>Inheritance diagram for <tt class="docutils literal"><span class="pre">pysvg.builders</span></tt>:</p>
-<p>(C) 2008, 2009 Kerim Mansour
+<span class="target" id="module-pysvg.builders"></span><p>(C) 2008, 2009 Kerim Mansour
 For licensing information please refer to license.txt</p>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="shapebuilder">
-<h3><a title="pysvg.builders.ShapeBuilder" class="reference internal" href="#pysvg.builders.ShapeBuilder"><tt class="xref docutils literal"><span class="pre">ShapeBuilder</span></tt></a><a class="headerlink" href="#shapebuilder" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.builders.ShapeBuilder" title="pysvg.builders.ShapeBuilder"><tt class="xref py py-class docutils literal"><span class="pre">ShapeBuilder</span></tt></a><a class="headerlink" href="#shapebuilder" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.builders.ShapeBuilder">
 <em class="property">class </em><tt class="descclassname">pysvg.builders.</tt><tt class="descname">ShapeBuilder</tt><a class="headerlink" href="#pysvg.builders.ShapeBuilder" title="Permalink to this definition">¶</a></dt>
@@ -60,16 +66,17 @@ few but often used parameters. Used to avoid more complex coding for common task
 <dl class="method">
 <dt id="pysvg.builders.ShapeBuilder.convertTupleArrayToPoints">
 <tt class="descname">convertTupleArrayToPoints</tt><big>(</big><em>arrayOfPointTuples</em><big>)</big><a class="headerlink" href="#pysvg.builders.ShapeBuilder.convertTupleArrayToPoints" title="Permalink to this definition">¶</a></dt>
-<dd>Method used to convert an array of tuples (x,y) into a string
+<dd><p>Method used to convert an array of tuples (x,y) into a string
 suitable for createPolygon or createPolyline
 &#64;type  arrayOfPointTuples: An array containing tuples eg.[(x1,y1),(x2,y2]
 &#64;param arrayOfPointTuples:  All points needed to create the shape
-&#64;return a string in the form &#8220;x1,y1 x2,y2 x3,y3&#8221;</dd></dl>
+&#64;return a string in the form &#8220;x1,y1 x2,y2 x3,y3&#8221;</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.builders.ShapeBuilder.createCircle">
 <tt class="descname">createCircle</tt><big>(</big><em>cx</em>, <em>cy</em>, <em>r</em>, <em>strokewidth=1</em>, <em>stroke='black'</em>, <em>fill='none'</em><big>)</big><a class="headerlink" href="#pysvg.builders.ShapeBuilder.createCircle" title="Permalink to this definition">¶</a></dt>
-<dd>Creates a circle
+<dd><p>Creates a circle
 &#64;type  cx: string or int
 &#64;param cx:  starting x-coordinate  
 &#64;type  cy: string or int
@@ -82,12 +89,13 @@ suitable for createPolygon or createPolyline
 &#64;param stroke:  color with which to draw the outer limits
 &#64;type  fill: string (either css constants like &#8220;black&#8221; or numerical values like &#8220;#FFFFFF&#8221;)
 &#64;param fill:  color with which to fill the element (default: no filling)
-&#64;return:  a circle object</dd></dl>
+&#64;return:  a circle object</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.builders.ShapeBuilder.createEllipse">
 <tt class="descname">createEllipse</tt><big>(</big><em>cx</em>, <em>cy</em>, <em>rx</em>, <em>ry</em>, <em>strokewidth=1</em>, <em>stroke='black'</em>, <em>fill='none'</em><big>)</big><a class="headerlink" href="#pysvg.builders.ShapeBuilder.createEllipse" title="Permalink to this definition">¶</a></dt>
-<dd>Creates an ellipse
+<dd><p>Creates an ellipse
 &#64;type  cx: string or int
 &#64;param cx:  starting x-coordinate  
 &#64;type  cy: string or int
@@ -102,12 +110,13 @@ suitable for createPolygon or createPolyline
 &#64;param stroke:  color with which to draw the outer limits
 &#64;type  fill: string (either css constants like &#8220;black&#8221; or numerical values like &#8220;#FFFFFF&#8221;)
 &#64;param fill:  color with which to fill the element (default: no filling)
-&#64;return:  an ellipse object</dd></dl>
+&#64;return:  an ellipse object</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.builders.ShapeBuilder.createLine">
 <tt class="descname">createLine</tt><big>(</big><em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>strokewidth=1</em>, <em>stroke='black'</em><big>)</big><a class="headerlink" href="#pysvg.builders.ShapeBuilder.createLine" title="Permalink to this definition">¶</a></dt>
-<dd>Creates a line
+<dd><p>Creates a line
 &#64;type  x1: string or int
 &#64;param x1:  starting x-coordinate
 &#64;type  y1: string or int
@@ -120,12 +129,13 @@ suitable for createPolygon or createPolyline
 &#64;param strokewidth:  width of the pen used to draw
 &#64;type  stroke: string (either css constants like &#8220;black&#8221; or numerical values like &#8220;#FFFFFF&#8221;)
 &#64;param stroke:  color with which to draw the outer limits
-&#64;return:  a line object</dd></dl>
+&#64;return:  a line object</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.builders.ShapeBuilder.createPolygon">
 <tt class="descname">createPolygon</tt><big>(</big><em>points</em>, <em>strokewidth=1</em>, <em>stroke='black'</em>, <em>fill='none'</em><big>)</big><a class="headerlink" href="#pysvg.builders.ShapeBuilder.createPolygon" title="Permalink to this definition">¶</a></dt>
-<dd>Creates a Polygon
+<dd><p>Creates a Polygon
 &#64;type  points: string in the form &#8220;x1,y1 x2,y2 x3,y3&#8221;
 &#64;param points:  all points relevant to the polygon
 &#64;type  strokewidth: string or int
@@ -134,24 +144,26 @@ suitable for createPolygon or createPolyline
 &#64;param stroke:  color with which to draw the outer limits
 &#64;type  fill: string (either css constants like &#8220;black&#8221; or numerical values like &#8220;#FFFFFF&#8221;)
 &#64;param fill:  color with which to fill the element (default: no filling)
-&#64;return:  a polygon object</dd></dl>
+&#64;return:  a polygon object</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.builders.ShapeBuilder.createPolyline">
 <tt class="descname">createPolyline</tt><big>(</big><em>points</em>, <em>strokewidth=1</em>, <em>stroke='black'</em><big>)</big><a class="headerlink" href="#pysvg.builders.ShapeBuilder.createPolyline" title="Permalink to this definition">¶</a></dt>
-<dd>Creates a Polyline
+<dd><p>Creates a Polyline
 &#64;type  points: string in the form &#8220;x1,y1 x2,y2 x3,y3&#8221;
 &#64;param points:  all points relevant to the polygon
 &#64;type  strokewidth: string or int
 &#64;param strokewidth:  width of the pen used to draw
 &#64;type  stroke: string (either css constants like &#8220;black&#8221; or numerical values like &#8220;#FFFFFF&#8221;)
 &#64;param stroke:  color with which to draw the outer limits
-&#64;return:  a polyline object</dd></dl>
+&#64;return:  a polyline object</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.builders.ShapeBuilder.createRect">
 <tt class="descname">createRect</tt><big>(</big><em>x</em>, <em>y</em>, <em>width</em>, <em>height</em>, <em>rx=None</em>, <em>ry=None</em>, <em>strokewidth=1</em>, <em>stroke='black'</em>, <em>fill='none'</em><big>)</big><a class="headerlink" href="#pysvg.builders.ShapeBuilder.createRect" title="Permalink to this definition">¶</a></dt>
-<dd>Creates a Rectangle
+<dd><p>Creates a Rectangle
 &#64;type  x: string or int
 &#64;param x:  starting x-coordinate  
 &#64;type  y: string or int
@@ -170,13 +182,14 @@ suitable for createPolygon or createPolyline
 &#64;param stroke:  color with which to draw the outer limits
 &#64;type  fill: string (either css constants like &#8220;black&#8221; or numerical values like &#8220;#FFFFFF&#8221;)
 &#64;param fill:  color with which to fill the element (default: no filling)
-&#64;return:  a rect object</dd></dl>
+&#64;return:  a rect object</p>
+</dd></dl>
 
 </dd></dl>
 
 </div>
 <div class="section" id="stylebuilder">
-<h3><a title="pysvg.builders.StyleBuilder" class="reference internal" href="#pysvg.builders.StyleBuilder"><tt class="xref docutils literal"><span class="pre">StyleBuilder</span></tt></a><a class="headerlink" href="#stylebuilder" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.builders.StyleBuilder" title="pysvg.builders.StyleBuilder"><tt class="xref py py-class docutils literal"><span class="pre">StyleBuilder</span></tt></a><a class="headerlink" href="#stylebuilder" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.builders.StyleBuilder">
 <em class="property">class </em><tt class="descclassname">pysvg.builders.</tt><tt class="descname">StyleBuilder</tt><big>(</big><em>aStyle_dict=None</em><big>)</big><a class="headerlink" href="#pysvg.builders.StyleBuilder" title="Permalink to this definition">¶</a></dt>
@@ -350,7 +363,7 @@ How to use it:
 
 </div>
 <div class="section" id="transformbuilder">
-<h3><a title="pysvg.builders.TransformBuilder" class="reference internal" href="#pysvg.builders.TransformBuilder"><tt class="xref docutils literal"><span class="pre">TransformBuilder</span></tt></a><a class="headerlink" href="#transformbuilder" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.builders.TransformBuilder" title="pysvg.builders.TransformBuilder"><tt class="xref py py-class docutils literal"><span class="pre">TransformBuilder</span></tt></a><a class="headerlink" href="#transformbuilder" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.builders.TransformBuilder">
 <em class="property">class </em><tt class="descclassname">pysvg.builders.</tt><tt class="descname">TransformBuilder</tt><a class="headerlink" href="#pysvg.builders.TransformBuilder" title="Permalink to this definition">¶</a></dt>
@@ -412,38 +425,38 @@ How to use it:
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-            <h3><a href="../index.html">Table Of Contents</a></h3>
-            <ul>
-<li><a class="reference external" href="">builders</a><ul>
-<li><a class="reference external" href="#module-pysvg.builders">Module: <tt class="docutils literal"><span class="pre">builders</span></tt></a></li>
-<li><a class="reference external" href="#classes">Classes</a><ul>
-<li><a class="reference external" href="#shapebuilder"><tt class="docutils literal"><span class="pre">ShapeBuilder</span></tt></a></li>
-<li><a class="reference external" href="#stylebuilder"><tt class="docutils literal"><span class="pre">StyleBuilder</span></tt></a></li>
-<li><a class="reference external" href="#transformbuilder"><tt class="docutils literal"><span class="pre">TransformBuilder</span></tt></a></li>
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">builders</a><ul>
+<li><a class="reference internal" href="#module-builders">Module: <tt class="docutils literal"><span class="pre">builders</span></tt></a></li>
+<li><a class="reference internal" href="#classes">Classes</a><ul>
+<li><a class="reference internal" href="#shapebuilder"><tt class="docutils literal"><span class="pre">ShapeBuilder</span></tt></a></li>
+<li><a class="reference internal" href="#stylebuilder"><tt class="docutils literal"><span class="pre">StyleBuilder</span></tt></a></li>
+<li><a class="reference internal" href="#transformbuilder"><tt class="docutils literal"><span class="pre">TransformBuilder</span></tt></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 
-            <h3>This Page</h3>
-            <ul class="this-page-menu">
-              <li><a href="../_sources/generated/pysvg.builders.txt"
-                     rel="nofollow">Show Source</a></li>
-            </ul>
-          <div id="searchbox" style="display: none">
-            <h3>Quick search</h3>
-              <form class="search" action="../search.html" method="get">
-                <input type="text" name="q" size="18" />
-                <input type="submit" value="Go" />
-                <input type="hidden" name="check_keywords" value="yes" />
-                <input type="hidden" name="area" value="default" />
-              </form>
-              <p class="searchtip" style="font-size: 90%">
-              Enter search terms or a module, class or function name.
-              </p>
-          </div>
-          <script type="text/javascript">$('#searchbox').show(0);</script>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/generated/pysvg.builders.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -455,14 +468,14 @@ How to use it:
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../modindex.html" title="Global Module Index"
+          <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li><a href="../index.html">pySVG v0.2.1 documentation</a> &raquo;</li> 
+        <li><a href="../index.html">pySVG 0.2.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-      &copy; Copyright 2010, Kerim Mansour.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.3.
+        &copy; Copyright 2010, Kerim Mansour.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

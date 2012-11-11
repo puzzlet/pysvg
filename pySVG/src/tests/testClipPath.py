@@ -7,14 +7,14 @@ from pysvg.shape import *
 import math
 
 def testClipPath():
-    mySVG = svg("a spiral with clipping")
-    group = g()
+    mySVG = Svg("a spiral with clipping")
+    group = G()
     pathId = "pathTriangle"
-    myPath = path(pathData= "M 0 0 L 450 450 L 900 0" )
-    clip = clipPath(id="pathTriangle")
+    myPath = Path(pathData= "M 0 0 L 450 450 L 900 0" )
+    clip = ClipPath(id="pathTriangle")
     clip.addElement(myPath)
     clip.set_id(pathId)
-    myDef=defs()
+    myDef=Defs()
     myDef.addElement(clip)
     mySVG.addElement(myDef)
     group.set_clip_path("url(#%s)" % pathId)
@@ -22,7 +22,7 @@ def testClipPath():
         x = 2 * i * math.cos(2 * math.pi * i / 40.5) + 450
         y = 2 * i * math.sin(2 * math.pi * i / 40.5) + 450
         #print 'color: rgb(%s,%s,%s)' % (i, 200-i, i*(200-i)/50)
-        c = circle(x, y, 0.2 * i)
+        c = Circle(x, y, 0.2 * i)
         fill = 'none'
         strokewidth = 5 
         stroke = 'rgb(%s,%s,%s)' % (i, 200 - i, i * (200 - i) / 50)

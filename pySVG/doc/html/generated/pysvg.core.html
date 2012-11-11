@@ -1,25 +1,31 @@
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>core &mdash; pySVG v0.2.1 documentation</title>
+    <title>core &mdash; pySVG 0.2.1 documentation</title>
+    
     <link rel="stylesheet" href="../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
         VERSION:     '0.2.1',
-        COLLAPSE_MODINDEX: false,
+        COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="top" title="pySVG v0.2.1 documentation" href="../index.html" /> 
+    <link rel="top" title="pySVG 0.2.1 documentation" href="../index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -29,9 +35,9 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../modindex.html" title="Global Module Index"
-             accesskey="M">modules</a> |</li>
-        <li><a href="../index.html">pySVG v0.2.1 documentation</a> &raquo;</li> 
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">pySVG 0.2.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -42,16 +48,16 @@
             
   <div class="section" id="core">
 <h1>core<a class="headerlink" href="#core" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-pysvg.core">
-<h2>Module: <tt class="xref docutils literal"><span class="pre">core</span></tt><a class="headerlink" href="#module-pysvg.core" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-core">
+<h2>Module: <tt class="xref py py-mod docutils literal"><span class="pre">core</span></tt><a class="headerlink" href="#module-core" title="Permalink to this headline">¶</a></h2>
 <p>Inheritance diagram for <tt class="docutils literal"><span class="pre">pysvg.core</span></tt>:</p>
-<p>(C) 2008, 2009 Kerim Mansour
+<span class="target" id="module-pysvg.core"></span><p>(C) 2008, 2009 Kerim Mansour
 For licensing information please refer to license.txt</p>
 </div>
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="baseelement">
-<h3><a title="pysvg.core.BaseElement" class="reference internal" href="#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">BaseElement</span></tt></a><a class="headerlink" href="#baseelement" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.BaseElement" title="pysvg.core.BaseElement"><tt class="xref py py-class docutils literal"><span class="pre">BaseElement</span></tt></a><a class="headerlink" href="#baseelement" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.BaseElement">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">BaseElement</tt><big>(</big><em>elementName</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement" title="Permalink to this definition">¶</a></dt>
@@ -60,9 +66,10 @@ It should NOT be directly used by anyone.</p>
 <dl class="method">
 <dt id="pysvg.core.BaseElement.__init__">
 <tt class="descname">__init__</tt><big>(</big><em>elementName</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd>initializes the object
+<dd><p>initializes the object
 &#64;type  elementName: string 
-&#64;param elementName:  name of the element (used for the xml tag)</dd></dl>
+&#64;param elementName:  name of the element (used for the xml tag)</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseElement.addElement">
@@ -75,14 +82,47 @@ It should NOT be directly used by anyone.</p>
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.core.BaseElement.getAllElements">
+<tt class="descname">getAllElements</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.getAllElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all elements contained within the top level element list of this element</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.core.BaseElement.getAllElementsOfHirarchy">
+<tt class="descname">getAllElementsOfHirarchy</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.getAllElementsOfHirarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns ALL elements of the complete hirarchy as a flat list</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.core.BaseElement.getAttribute">
 <tt class="descname">getAttribute</tt><big>(</big><em>attribute_name</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.getAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.core.BaseElement.getAttributes">
+<tt class="descname">getAttributes</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.getAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all atributes of the element</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.core.BaseElement.getElementAt">
 <tt class="descname">getElementAt</tt><big>(</big><em>pos</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.getElementAt" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>returns the element at a specific position within this svg</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.core.BaseElement.getElementByID">
+<tt class="descname">getElementByID</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.getElementByID" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns an element with the specific id and the position of that element within the svg elements array</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.core.BaseElement.getElementsByType">
+<tt class="descname">getElementsByType</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.getElementsByType" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieves all Elements that are of type type
+&#64;type  type: class 
+&#64;param type:  type of the element</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseElement.getXML">
@@ -100,13 +140,15 @@ This function can be used for debugging purposes. It is also used by getXML in S
 <dl class="method">
 <dt id="pysvg.core.BaseElement.quote_attrib">
 <tt class="descname">quote_attrib</tt><big>(</big><em>inStr</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.quote_attrib" title="Permalink to this definition">¶</a></dt>
-<dd>Transforms characters between xml notation and python notation.</dd></dl>
+<dd><p>Transforms characters between xml notation and python notation.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseElement.save">
 <tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.save" title="Permalink to this definition">¶</a></dt>
-<dd>Stores any element in a svg file (including header). 
-Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
+<dd><p>Stores any element in a svg file (including header). 
+Calling this method only makes sense if the root element is an svg elemnt</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseElement.setAttribute">
@@ -116,31 +158,34 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dl class="method">
 <dt id="pysvg.core.BaseElement.setKWARGS">
 <tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.setKWARGS" title="Permalink to this definition">¶</a></dt>
-<dd>Used to set all attributes given in a <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs parameter.
+<dd><p>Used to set all attributes given in a <a href="#id1"><span class="problematic" id="id2">**</span></a>kwargs parameter.
 Might throw an Exception if attribute was not found.
-#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseElement.wrap_xml">
 <tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseElement.wrap_xml" title="Permalink to this definition">¶</a></dt>
-<dd>Method that provides a standard svg header string for a file</dd></dl>
+<dd><p>Method that provides a standard svg header string for a file</p>
+</dd></dl>
 
 </dd></dl>
 
 </div>
 <div class="section" id="baseshape">
-<h3><a title="pysvg.core.BaseShape" class="reference internal" href="#pysvg.core.BaseShape"><tt class="xref docutils literal"><span class="pre">BaseShape</span></tt></a><a class="headerlink" href="#baseshape" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.BaseShape" title="pysvg.core.BaseShape"><tt class="xref py py-class docutils literal"><span class="pre">BaseShape</span></tt></a><a class="headerlink" href="#baseshape" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.BaseShape">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">BaseShape</tt><big>(</big><em>elementName</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a title="pysvg.core.BaseElement" class="reference internal" href="#pysvg.core.BaseElement"><tt class="xref docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a title="pysvg.attributes.CoreAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a title="pysvg.attributes.ConditionalAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a title="pysvg.attributes.StyleAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a title="pysvg.attributes.GraphicalEventsAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.GraphicalEventsAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.GraphicalEventsAttrib</span></tt></a>, <a title="pysvg.attributes.PaintAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a title="pysvg.attributes.OpacityAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.OpacityAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.OpacityAttrib</span></tt></a>, <a title="pysvg.attributes.GraphicsAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.GraphicsAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.GraphicsAttrib</span></tt></a>, <a title="pysvg.attributes.CursorAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.CursorAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.CursorAttrib</span></tt></a>, <a title="pysvg.attributes.FilterAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.FilterAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.FilterAttrib</span></tt></a>, <a title="pysvg.attributes.MaskAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.MaskAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.MaskAttrib</span></tt></a>, <a title="pysvg.attributes.ClipAttrib" class="reference external" href="pysvg.attributes.html#pysvg.attributes.ClipAttrib"><tt class="xref docutils literal"><span class="pre">pysvg.attributes.ClipAttrib</span></tt></a></p>
+<dd><p>Bases: <a class="reference internal" href="#pysvg.core.BaseElement" title="pysvg.core.BaseElement"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.core.BaseElement</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.CoreAttrib" title="pysvg.attributes.CoreAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.CoreAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.ConditionalAttrib" title="pysvg.attributes.ConditionalAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.ConditionalAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.StyleAttrib" title="pysvg.attributes.StyleAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.StyleAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.GraphicalEventsAttrib" title="pysvg.attributes.GraphicalEventsAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.GraphicalEventsAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.PaintAttrib" title="pysvg.attributes.PaintAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.PaintAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.OpacityAttrib" title="pysvg.attributes.OpacityAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.OpacityAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.GraphicsAttrib" title="pysvg.attributes.GraphicsAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.GraphicsAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.CursorAttrib" title="pysvg.attributes.CursorAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.CursorAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.FilterAttrib" title="pysvg.attributes.FilterAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.FilterAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.MaskAttrib" title="pysvg.attributes.MaskAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.MaskAttrib</span></tt></a>, <a class="reference internal" href="pysvg.attributes.html#pysvg.attributes.ClipAttrib" title="pysvg.attributes.ClipAttrib"><tt class="xref py py-class docutils literal"><span class="pre">pysvg.attributes.ClipAttrib</span></tt></a></p>
 <p>Baseclass for all shapes. Do not use this class directly. There is no svg element for it</p>
 <dl class="method">
 <dt id="pysvg.core.BaseShape.__init__">
 <tt class="descname">__init__</tt><big>(</big><em>elementName</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.__init__" title="Permalink to this definition">¶</a></dt>
-<dd>initializes the object
+<dd><p>initializes the object
 &#64;type  elementName: string 
-&#64;param elementName:  name of the element (used for the xml tag)</dd></dl>
+&#64;param elementName:  name of the element (used for the xml tag)</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseShape.addElement">
@@ -153,14 +198,47 @@ Might throw an Exception if attribute was not found.
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.core.BaseShape.getAllElements">
+<tt class="descname">getAllElements</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.getAllElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all elements contained within the top level element list of this element</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.core.BaseShape.getAllElementsOfHirarchy">
+<tt class="descname">getAllElementsOfHirarchy</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.getAllElementsOfHirarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns ALL elements of the complete hirarchy as a flat list</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.core.BaseShape.getAttribute">
 <tt class="descname">getAttribute</tt><big>(</big><em>attribute_name</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.getAttribute" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="pysvg.core.BaseShape.getAttributes">
+<tt class="descname">getAttributes</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.getAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all atributes of the element</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="pysvg.core.BaseShape.getElementAt">
 <tt class="descname">getElementAt</tt><big>(</big><em>pos</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.getElementAt" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>returns the element at a specific position within this svg</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.core.BaseShape.getElementByID">
+<tt class="descname">getElementByID</tt><big>(</big><em>id</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.getElementByID" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns an element with the specific id and the position of that element within the svg elements array</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pysvg.core.BaseShape.getElementsByType">
+<tt class="descname">getElementsByType</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.getElementsByType" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieves all Elements that are of type type
+&#64;type  type: class 
+&#64;param type:  type of the element</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseShape.getXML">
@@ -408,13 +486,15 @@ This function can be used for debugging purposes. It is also used by getXML in S
 <dl class="method">
 <dt id="pysvg.core.BaseShape.quote_attrib">
 <tt class="descname">quote_attrib</tt><big>(</big><em>inStr</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.quote_attrib" title="Permalink to this definition">¶</a></dt>
-<dd>Transforms characters between xml notation and python notation.</dd></dl>
+<dd><p>Transforms characters between xml notation and python notation.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseShape.save">
 <tt class="descname">save</tt><big>(</big><em>filename</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.save" title="Permalink to this definition">¶</a></dt>
-<dd>Stores any element in a svg file (including header). 
-Calling this method only makes sense if the root element is an svg elemnt</dd></dl>
+<dd><p>Stores any element in a svg file (including header). 
+Calling this method only makes sense if the root element is an svg elemnt</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseShape.setAttribute">
@@ -424,9 +504,10 @@ Calling this method only makes sense if the root element is an svg elemnt</dd></
 <dl class="method">
 <dt id="pysvg.core.BaseShape.setKWARGS">
 <tt class="descname">setKWARGS</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.setKWARGS" title="Permalink to this definition">¶</a></dt>
-<dd>Used to set all attributes given in a <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs parameter.
+<dd><p>Used to set all attributes given in a <a href="#id3"><span class="problematic" id="id4">**</span></a>kwargs parameter.
 Might throw an Exception if attribute was not found.
-#TODO: check if we should fix this using &#8220;setAttribute&#8221;</dd></dl>
+#TODO: check if we should fix this using &#8220;setAttribute&#8221;</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="pysvg.core.BaseShape.set_class">
@@ -661,13 +742,14 @@ Might throw an Exception if attribute was not found.
 <dl class="method">
 <dt id="pysvg.core.BaseShape.wrap_xml">
 <tt class="descname">wrap_xml</tt><big>(</big><em>xml</em>, <em>encoding='ISO-8859-1'</em>, <em>standalone='no'</em><big>)</big><a class="headerlink" href="#pysvg.core.BaseShape.wrap_xml" title="Permalink to this definition">¶</a></dt>
-<dd>Method that provides a standard svg header string for a file</dd></dl>
+<dd><p>Method that provides a standard svg header string for a file</p>
+</dd></dl>
 
 </dd></dl>
 
 </div>
 <div class="section" id="deltapointattrib">
-<h3><a title="pysvg.core.DeltaPointAttrib" class="reference internal" href="#pysvg.core.DeltaPointAttrib"><tt class="xref docutils literal"><span class="pre">DeltaPointAttrib</span></tt></a><a class="headerlink" href="#deltapointattrib" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.DeltaPointAttrib" title="pysvg.core.DeltaPointAttrib"><tt class="xref py py-class docutils literal"><span class="pre">DeltaPointAttrib</span></tt></a><a class="headerlink" href="#deltapointattrib" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.DeltaPointAttrib">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">DeltaPointAttrib</tt><a class="headerlink" href="#pysvg.core.DeltaPointAttrib" title="Permalink to this definition">¶</a></dt>
@@ -696,7 +778,7 @@ Might throw an Exception if attribute was not found.
 
 </div>
 <div class="section" id="dimensionattrib">
-<h3><a title="pysvg.core.DimensionAttrib" class="reference internal" href="#pysvg.core.DimensionAttrib"><tt class="xref docutils literal"><span class="pre">DimensionAttrib</span></tt></a><a class="headerlink" href="#dimensionattrib" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.DimensionAttrib" title="pysvg.core.DimensionAttrib"><tt class="xref py py-class docutils literal"><span class="pre">DimensionAttrib</span></tt></a><a class="headerlink" href="#dimensionattrib" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.DimensionAttrib">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">DimensionAttrib</tt><a class="headerlink" href="#pysvg.core.DimensionAttrib" title="Permalink to this definition">¶</a></dt>
@@ -725,7 +807,7 @@ Might throw an Exception if attribute was not found.
 
 </div>
 <div class="section" id="pointattrib">
-<h3><a title="pysvg.core.PointAttrib" class="reference internal" href="#pysvg.core.PointAttrib"><tt class="xref docutils literal"><span class="pre">PointAttrib</span></tt></a><a class="headerlink" href="#pointattrib" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.PointAttrib" title="pysvg.core.PointAttrib"><tt class="xref py py-class docutils literal"><span class="pre">PointAttrib</span></tt></a><a class="headerlink" href="#pointattrib" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.PointAttrib">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">PointAttrib</tt><a class="headerlink" href="#pysvg.core.PointAttrib" title="Permalink to this definition">¶</a></dt>
@@ -754,7 +836,7 @@ Might throw an Exception if attribute was not found.
 
 </div>
 <div class="section" id="pointtoattrib">
-<h3><a title="pysvg.core.PointToAttrib" class="reference internal" href="#pysvg.core.PointToAttrib"><tt class="xref docutils literal"><span class="pre">PointToAttrib</span></tt></a><a class="headerlink" href="#pointtoattrib" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.PointToAttrib" title="pysvg.core.PointToAttrib"><tt class="xref py py-class docutils literal"><span class="pre">PointToAttrib</span></tt></a><a class="headerlink" href="#pointtoattrib" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.PointToAttrib">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">PointToAttrib</tt><a class="headerlink" href="#pysvg.core.PointToAttrib" title="Permalink to this definition">¶</a></dt>
@@ -783,7 +865,7 @@ Might throw an Exception if attribute was not found.
 
 </div>
 <div class="section" id="rotateattrib">
-<h3><a title="pysvg.core.RotateAttrib" class="reference internal" href="#pysvg.core.RotateAttrib"><tt class="xref docutils literal"><span class="pre">RotateAttrib</span></tt></a><a class="headerlink" href="#rotateattrib" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.RotateAttrib" title="pysvg.core.RotateAttrib"><tt class="xref py py-class docutils literal"><span class="pre">RotateAttrib</span></tt></a><a class="headerlink" href="#rotateattrib" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.RotateAttrib">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">RotateAttrib</tt><a class="headerlink" href="#pysvg.core.RotateAttrib" title="Permalink to this definition">¶</a></dt>
@@ -802,7 +884,7 @@ Might throw an Exception if attribute was not found.
 
 </div>
 <div class="section" id="textcontent">
-<h3><a title="pysvg.core.TextContent" class="reference internal" href="#pysvg.core.TextContent"><tt class="xref docutils literal"><span class="pre">TextContent</span></tt></a><a class="headerlink" href="#textcontent" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="#pysvg.core.TextContent" title="pysvg.core.TextContent"><tt class="xref py py-class docutils literal"><span class="pre">TextContent</span></tt></a><a class="headerlink" href="#textcontent" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
 <dt id="pysvg.core.TextContent">
 <em class="property">class </em><tt class="descclassname">pysvg.core.</tt><tt class="descname">TextContent</tt><big>(</big><em>content</em><big>)</big><a class="headerlink" href="#pysvg.core.TextContent" title="Permalink to this definition">¶</a></dt>
@@ -815,6 +897,11 @@ Might throw an Exception if attribute was not found.
 <dl class="method">
 <dt id="pysvg.core.TextContent.getXML">
 <tt class="descname">getXML</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.TextContent.getXML" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pysvg.core.TextContent.get_id">
+<tt class="descname">get_id</tt><big>(</big><big>)</big><a class="headerlink" href="#pysvg.core.TextContent.get_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -834,43 +921,43 @@ Might throw an Exception if attribute was not found.
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
-            <h3><a href="../index.html">Table Of Contents</a></h3>
-            <ul>
-<li><a class="reference external" href="">core</a><ul>
-<li><a class="reference external" href="#module-pysvg.core">Module: <tt class="docutils literal"><span class="pre">core</span></tt></a></li>
-<li><a class="reference external" href="#classes">Classes</a><ul>
-<li><a class="reference external" href="#baseelement"><tt class="docutils literal"><span class="pre">BaseElement</span></tt></a></li>
-<li><a class="reference external" href="#baseshape"><tt class="docutils literal"><span class="pre">BaseShape</span></tt></a></li>
-<li><a class="reference external" href="#deltapointattrib"><tt class="docutils literal"><span class="pre">DeltaPointAttrib</span></tt></a></li>
-<li><a class="reference external" href="#dimensionattrib"><tt class="docutils literal"><span class="pre">DimensionAttrib</span></tt></a></li>
-<li><a class="reference external" href="#pointattrib"><tt class="docutils literal"><span class="pre">PointAttrib</span></tt></a></li>
-<li><a class="reference external" href="#pointtoattrib"><tt class="docutils literal"><span class="pre">PointToAttrib</span></tt></a></li>
-<li><a class="reference external" href="#rotateattrib"><tt class="docutils literal"><span class="pre">RotateAttrib</span></tt></a></li>
-<li><a class="reference external" href="#textcontent"><tt class="docutils literal"><span class="pre">TextContent</span></tt></a></li>
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">core</a><ul>
+<li><a class="reference internal" href="#module-core">Module: <tt class="docutils literal"><span class="pre">core</span></tt></a></li>
+<li><a class="reference internal" href="#classes">Classes</a><ul>
+<li><a class="reference internal" href="#baseelement"><tt class="docutils literal"><span class="pre">BaseElement</span></tt></a></li>
+<li><a class="reference internal" href="#baseshape"><tt class="docutils literal"><span class="pre">BaseShape</span></tt></a></li>
+<li><a class="reference internal" href="#deltapointattrib"><tt class="docutils literal"><span class="pre">DeltaPointAttrib</span></tt></a></li>
+<li><a class="reference internal" href="#dimensionattrib"><tt class="docutils literal"><span class="pre">DimensionAttrib</span></tt></a></li>
+<li><a class="reference internal" href="#pointattrib"><tt class="docutils literal"><span class="pre">PointAttrib</span></tt></a></li>
+<li><a class="reference internal" href="#pointtoattrib"><tt class="docutils literal"><span class="pre">PointToAttrib</span></tt></a></li>
+<li><a class="reference internal" href="#rotateattrib"><tt class="docutils literal"><span class="pre">RotateAttrib</span></tt></a></li>
+<li><a class="reference internal" href="#textcontent"><tt class="docutils literal"><span class="pre">TextContent</span></tt></a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 
-            <h3>This Page</h3>
-            <ul class="this-page-menu">
-              <li><a href="../_sources/generated/pysvg.core.txt"
-                     rel="nofollow">Show Source</a></li>
-            </ul>
-          <div id="searchbox" style="display: none">
-            <h3>Quick search</h3>
-              <form class="search" action="../search.html" method="get">
-                <input type="text" name="q" size="18" />
-                <input type="submit" value="Go" />
-                <input type="hidden" name="check_keywords" value="yes" />
-                <input type="hidden" name="area" value="default" />
-              </form>
-              <p class="searchtip" style="font-size: 90%">
-              Enter search terms or a module, class or function name.
-              </p>
-          </div>
-          <script type="text/javascript">$('#searchbox').show(0);</script>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/generated/pysvg.core.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -882,14 +969,14 @@ Might throw an Exception if attribute was not found.
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../modindex.html" title="Global Module Index"
+          <a href="../py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
-        <li><a href="../index.html">pySVG v0.2.1 documentation</a> &raquo;</li> 
+        <li><a href="../index.html">pySVG 0.2.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
-      &copy; Copyright 2010, Kerim Mansour.
-      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.3.
+        &copy; Copyright 2010, Kerim Mansour.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
 </html>

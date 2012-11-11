@@ -1,0 +1,14 @@
+include doc/*.txt
+recursive-include docs *.txt
+
+include doc/html/*.*
+recursive-include docs *.*
+
+include doc/html/generated/*.*
+recursive-include docs *.*
+
+include doc/html/_static/*.*
+recursive-include docs *.*
+
+include doc/html/_sources/*.*
+recursive-include docs *.*

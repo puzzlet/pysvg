@@ -17,11 +17,11 @@ Inheritance diagram for ``pysvg.linking``:
 Classes
 -------
 
-:class:`a`
+:class:`A`
 ~~~~~~~~~~
 
 
-.. autoclass:: a
+.. autoclass:: A
   :members:
   :undoc-members:
   :show-inheritance:
@@ -29,11 +29,11 @@ Classes
 
   .. automethod:: __init__
 
-:class:`view`
+:class:`View`
 ~~~~~~~~~~~~~
 
 
-.. autoclass:: view
+.. autoclass:: View
   :members:
   :undoc-members:
   :show-inheritance:

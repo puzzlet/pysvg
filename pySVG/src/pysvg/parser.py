@@ -6,6 +6,7 @@ For licensing information please refer to license.txt
 '''
 from xml.dom import minidom
 from xml.dom import Node
+import string
 from pysvg.animate import *
 from pysvg.filter import *
 from pysvg.gradient import *
@@ -38,7 +39,8 @@ def build(node_, object):
         nodeName_ = child_.nodeName.split(':')[-1]
         if child_.nodeType == Node.ELEMENT_NODE:
             try:
-                objectinstance=eval(nodeName_) ()                
+                capitalLetter = string.upper(nodeName_[0])
+                objectinstance=eval(capitalLetter+nodeName_[1:]) ()                
             except:
                 print 'no class for: '+nodeName_
                 continue
@@ -64,7 +66,7 @@ def build(node_, object):
 def parse(inFileName):
     doc = minidom.parse(inFileName)
     rootNode = doc.documentElement
-    rootObj = svg()
+    rootObj = Svg()
     build(rootNode,rootObj)
     # Enable Python to collect the space used by the DOM.
     doc = None

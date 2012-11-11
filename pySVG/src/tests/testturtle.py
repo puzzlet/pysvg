@@ -4,7 +4,7 @@ Created on 27.02.2010
 @author: kerim
 '''
 from pysvg.turtle import Turtle, Vector
-from pysvg.structure import svg
+from pysvg.structure import Svg
 
 def testMultiplePaths():
     """
@@ -34,7 +34,7 @@ def testMultiplePaths():
     print(t.getPosition())
     t.finish()
     #print (t.getXML())
-    s=svg(0, 0, 2000, 2000)
+    s=Svg(0, 0, 2000, 2000)
     s=t.addTurtlePathToSVG(s)
     s.save('./testoutput/testTurtle.svg')
 
@@ -42,7 +42,7 @@ def testMultiplePaths():
 
 
 def testLindenMayer():
-    s=svg(0, 0, 2000, 2000)
+    s=Svg(0, 0, 2000, 2000)
     commands='F+F-F-FF+F+F-F+F+F-F-FF+F+F-F+F+F-F-FF+F+F-F+F+F-F-FF+F+F-F'
     t=Turtle()
     t.moveTo(Vector(500,250))

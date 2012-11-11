@@ -8,7 +8,7 @@ from attributes import *
 from core import BaseElement, BaseShape, PointAttrib, DimensionAttrib, PointToAttrib
 
         
-class rect(BaseShape, PointAttrib, DimensionAttrib):
+class Rect(BaseShape, PointAttrib, DimensionAttrib):
     """
     Class representing the rect element of an svg doc.
     """
@@ -96,7 +96,7 @@ class rect(BaseShape, PointAttrib, DimensionAttrib):
         self.set_y(float(self.get_y()) + float(y))
 
 
-class circle(BaseShape):
+class Circle(BaseShape):
     """
     Class representing the circle element of an svg doc.
     """
@@ -176,7 +176,7 @@ class circle(BaseShape):
         self.set_cx(float(self.get_cx()) + float(x))
         self.set_cy(float(self.get_cy()) + float(y))
 
-class ellipse(BaseShape):
+class Ellipse(BaseShape):
     """
     Class representing the ellipse element of an svg doc.
     """
@@ -243,7 +243,7 @@ class ellipse(BaseShape):
         """
         return (float(self.get_cx()) + float(self.get_rx()), float(self.get_cy()) + float(self.get_ry()))
     
-class line(BaseShape, PointToAttrib):
+class Line(BaseShape, PointToAttrib):
     """
     Class representing the line element of an svg doc.
     Note that this element is NOT painted VISIBLY by default UNLESS you provide
@@ -392,7 +392,7 @@ class line(BaseShape, PointToAttrib):
         self.set_y1(float(self.get_y1()) + float(y))
         self.set_y2(float(self.get_y2()) + float(y))
         
-class path(BaseShape, ExternalAttrib, MarkerAttrib):
+class Path(BaseShape, ExternalAttrib, MarkerAttrib):
     """
     Class representing the path element of an svg doc.
     """
@@ -457,7 +457,7 @@ class path(BaseShape, ExternalAttrib, MarkerAttrib):
     def appendArcToPath(self,rx,ry,x,y,x_axis_rotation=0,large_arc_flag=0,sweep_flag=1 ,relative=True):
         self.__append__('a',[rx,ry,x_axis_rotation,large_arc_flag,sweep_flag,x,y], relative)
 
-class polyline(BaseShape):
+class Polyline(BaseShape):
     """
     Class representing the polyline element of an svg doc.
     """
@@ -471,7 +471,7 @@ class polyline(BaseShape):
     def get_points(self):
         return self._attributes.get('points')
     
-class polygon(polyline):
+class Polygon(Polyline):
     """
     Class representing the polygon element of an svg doc.
     """

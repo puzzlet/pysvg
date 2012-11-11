@@ -8,8 +8,8 @@ from pysvg.builders import ShapeBuilder
 import math
 
 def testIterationsWithUse():
-    s=svg()
-    d = defs()
+    s=Svg()
+    d = Defs()
     sb =ShapeBuilder()
     rectangle = sb.createRect(0,0,100,200,fill='000')
     rectangle.set_id('baseRect')
@@ -17,7 +17,7 @@ def testIterationsWithUse():
     s.addElement(d)
     coords=[(1,1),(200,200)]
     for (x,y) in coords:
-        r=use()
+        r=Use()
         r.set_x(x)
         r.set_y(y)
         r.set_xlink_href('#baseRect')
@@ -27,7 +27,7 @@ def testIterationsWithUse():
 
 
 def testIterationsWithAttributesChange():
-    s=svg()
+    s=Svg()
     
     sb =ShapeBuilder()
     coords=[(1,1),(200,200)]

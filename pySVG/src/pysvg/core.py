@@ -96,7 +96,7 @@ class BaseElement:
                 if type(s) != unicode:
                     s = str(s)
                 xml+=s
-                xml+=str(subelement.getXML())
+               # xml+=str(subelement.getXML())
             #else:
             #if self._textContent!=None:
             #    xml+=self._textContent
